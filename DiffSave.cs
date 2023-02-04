@@ -2,7 +2,7 @@
 {
     public class DiffSave : Save
     {
-        public DiffSave() 
+        public DiffSave()
             //: base(Appellation, RepSource, RepCible)
         {
             this.IsCompleteSave = false;

@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="CompleteSave.cs" />
+    <Compile Include="DiffSave.cs" />
+    <Compile Include="GeneralTools.cs" />
+    <Compile Include="MainPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Save.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

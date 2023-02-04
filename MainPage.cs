@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Runtime.InteropServices;
 
 namespace EasySave
@@ -43,7 +44,6 @@ namespace EasySave
                             {
                                 Console.WriteLine("\nSource Path :");
                                 completeSave.SourcePath = Console.ReadLine();
-                                
                                 if(!System.IO.Directory.Exists(completeSave.SourcePath)) 
                                     GeneralTools.WriteWarningMessage("Source path does not exist");
                             }
@@ -52,29 +52,57 @@ namespace EasySave
                             {
                                 Console.WriteLine("\nTarget Path :");
                                 completeSave.TargetPath = Console.ReadLine();
-                                
+
+                                // Check if directory exist
                                 if (!System.IO.Directory.Exists(completeSave.TargetPath))
                                 {
-                                    validPath = GeneralTools.GetValidDirectoryPath(completeSave.TargetPath);
-                                    invalidPath = completeSave.TargetPath.Substring(validPath.Length,
+                                    if (completeSave.TargetPath.StartsWith(completeSave.SourcePath))
+                                    {
+                                        Console.WriteLine("ooffoof");
+                                        GeneralTools.WriteWarningMessage("You can't make a save inside your source file");
+                                    }
+                                    else
+                                    {
+                                        validPath = GeneralTools.GetValidDirectoryPath(completeSave.TargetPath);
+
+                                        invalidPath = completeSave.TargetPath.Substring(validPath.Length,
                                             completeSave.TargetPath.Length - validPath.Length);
 
-                                    Console.WriteLine("jkfskdkfkf");
-                                    GeneralTools.WriteWarningMessage(
-                                        "Target Path does not exist : \n would you like to create : \n"
-                                        + $"\"{invalidPath}\" folders in \"{validPath}\" \n yes(y) - no(n)");
+                                        GeneralTools.WriteWarningMessage("Target Path does not exist.\n");
+                                        Console.WriteLine("Would you like to create : \n"
+                                                          + $"\"{invalidPath}\" folders in \"{validPath}\"\n\n yes(y) - no(n)");
 
-                                    do
+                                        do
+                                        {
+                                            choice = Console.ReadLine();
+                                            if (choice != "y" || choice != "n")
+                                            {
+                                                GeneralTools.WriteWarningMessage("This option does not exist");
+                                                Console.WriteLine("Choose between : yes(y) - no(n)");
+                                            }
+
+                                        } while (choice != "y" && choice != "n");
+
+                                        if (choice == "y") System.IO.Directory.CreateDirectory(completeSave.TargetPath);
+                                    }
+
+                                }
+                                else
+                                {
+                                    if (completeSave.TargetPath.Equals(completeSave.SourcePath) ||
+                                        completeSave.TargetPath.StartsWith(completeSave.SourcePath))
                                     {
-                                        choice = Console.ReadLine();
-                                        if (choice != "y" || choice != "n")
-                                            GeneralTools.WriteWarningMessage("Choose between : yes(y) - no(n)");
-                                    } while (choice != "y" || choice != "n");
-
-                                    if (choice == "y") System.IO.Directory.CreateDirectory(completeSave.TargetPath);
+                                        GeneralTools.WriteWarningMessage(
+                                            "You can't make a save inside your source file");
+                                        completeSave.TargetPath = "";
+                                    }
                                 }
                             }
+
                             completeSave.RepositorySave();
+                            throw new Exception("kks");
+                            Console.Clear();
+
                             break;
 
                         case "2":

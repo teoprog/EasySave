@@ -24,10 +24,7 @@ namespace EasySave
         /// <returns></returns>
         public static string GetValidDirectoryPath(string path)
         {
-            while (!Directory.Exists(path))
-            {
-                path = Path.GetDirectoryName(path);
-            }
+            while (!Directory.Exists(path)) path = Path.GetDirectoryName(path);
             return path;
         }
     }
