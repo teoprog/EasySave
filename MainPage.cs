@@ -56,36 +56,28 @@ namespace EasySave
                                 // Check if directory exist
                                 if (!System.IO.Directory.Exists(completeSave.TargetPath))
                                 {
-                                    if (completeSave.TargetPath.StartsWith(completeSave.SourcePath))
+                                    
+                                    validPath = GeneralTools.GetValidDirectoryPath(completeSave.TargetPath);
+
+                                    invalidPath = completeSave.TargetPath.Substring(validPath.Length,
+                                        completeSave.TargetPath.Length - validPath.Length);
+
+                                    GeneralTools.WriteWarningMessage("Target Path does not exist.\n");
+                                    Console.WriteLine("Would you like to create : \n"
+                                                      + $"\"{invalidPath}\" folders in \"{validPath}\"\n\n yes(y) - no(n)");
+
+                                    do
                                     {
-                                        Console.WriteLine("ooffoof");
-                                        GeneralTools.WriteWarningMessage("You can't make a save inside your source file");
-                                    }
-                                    else
-                                    {
-                                        validPath = GeneralTools.GetValidDirectoryPath(completeSave.TargetPath);
-
-                                        invalidPath = completeSave.TargetPath.Substring(validPath.Length,
-                                            completeSave.TargetPath.Length - validPath.Length);
-
-                                        GeneralTools.WriteWarningMessage("Target Path does not exist.\n");
-                                        Console.WriteLine("Would you like to create : \n"
-                                                          + $"\"{invalidPath}\" folders in \"{validPath}\"\n\n yes(y) - no(n)");
-
-                                        do
+                                        choice = Console.ReadLine();
+                                        if (choice != "y" && choice != "n")
                                         {
-                                            choice = Console.ReadLine();
-                                            if (choice != "y" || choice != "n")
-                                            {
-                                                GeneralTools.WriteWarningMessage("This option does not exist");
-                                                Console.WriteLine("Choose between : yes(y) - no(n)");
-                                            }
+                                            GeneralTools.WriteWarningMessage("This option does not exist");
+                                            Console.WriteLine("Choose between : yes(y) - no(n)");
+                                        }
 
-                                        } while (choice != "y" && choice != "n");
+                                    } while (choice != "y" && choice != "n");
 
-                                        if (choice == "y") System.IO.Directory.CreateDirectory(completeSave.TargetPath);
-                                    }
-
+                                    if (choice == "y") System.IO.Directory.CreateDirectory(completeSave.TargetPath);
                                 }
                                 else
                                 {
@@ -100,9 +92,9 @@ namespace EasySave
                             }
 
                             completeSave.RepositorySave();
-                            throw new Exception("kks");
                             Console.Clear();
-
+                            Console.WriteLine("Sauvegarde bien effectuée");
+                            
                             break;
 
                         case "2":

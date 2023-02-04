@@ -16,35 +16,33 @@ namespace EasySave
         
         internal void RepositorySave()
         {
-            if (System.IO.Directory.Exists(this.SourcePath))
-            {
-                string fileName;
-                string destFilePath;
-                string[] files;
-                this.CopyDirectory(this.SourcePath, this.TargetPath);
-            }
+           this.RepositorySave(this.SourcePath, this.TargetPath);
         }
         
+        
         /// <summary>
-        /// Simple copy of a directory
+        /// Simple copy of directory
         /// </summary>
-        private void CopyDirectory(string sourceDirectory, string targetDirectory)
+        /// <param name="sourceDirectory"></param>
+        /// <param name="targetDirectory"></param>
+        private void RepositorySave(string sourceDirectory, string targetDirectory)
         {
-            string targetPath;
-            foreach (var file in Directory.GetFiles(this.SourcePath))
+            string path;
+            
+            if (!Directory.Exists(targetDirectory)) 
+                Directory.CreateDirectory(targetDirectory);
+
+            foreach (var file in Directory.GetFiles(sourceDirectory))
             {
-                targetPath = Path.Combine(this.TargetPath, Path.GetFileName(file));
-                File.Copy(file, targetPath, true);
+                path = Path.Combine(targetDirectory, Path.GetFileName(file));
+                Console.WriteLine(file + "       " + path);
+                File.Copy(file, path, true);
             }
 
-            foreach (var directory in Directory.GetDirectories(this.SourcePath))
+            foreach (var directory in Directory.GetDirectories(sourceDirectory))
             {
-                targetPath = Path.Combine(this.TargetPath, Path.GetFileName(directory));
-                if (!Directory.Exists(targetPath))
-                {
-                    Directory.CreateDirectory(targetPath);
-                }
-                CopyDirectory(directory, targetPath);
+                path = Path.Combine(targetDirectory, Path.GetFileName(directory));
+                RepositorySave(directory, path);
             }
         }
     }
