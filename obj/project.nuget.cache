@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R+7nqiyCovA08+TPnStJiIdN7jQZ1+QF3WQddyLLmMuOljA54/c7L2q6XDKvCKjY4saxvRDCPitZLFRUuZ+tEw==",
+  "dgSpecHash": "seIJ6/ZCyVWng1YIsbbeCsgHyX28X8sT3pquwCZVmyMJCsKtvaQ5W1rsDm+o6YPkQx1AWJSAzlew1RN2KXT7ew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emiro\\EasySave\\EasySave.csproj",
+  "projectFilePath": "C:\\Users\\emiro\\source\\repos\\EasySave\\EasySave\\EasySave.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emiro\\.nuget\\packages\\newtonsoft.json\\13.0.3-beta1\\newtonsoft.json.13.0.3-beta1.nupkg.sha512"
   ],

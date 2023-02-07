@@ -1,8 +1,0 @@
-C:\Users\emiro\EasySave\bin\Debug\EasySave.exe.config
-C:\Users\emiro\EasySave\bin\Debug\EasySave.exe
-C:\Users\emiro\EasySave\bin\Debug\EasySave.pdb
-C:\Users\emiro\EasySave\obj\Debug\EasySave.csproj.AssemblyReference.cache
-C:\Users\emiro\EasySave\obj\Debug\EasySave.csproj.SuggestedBindingRedirects.cache
-C:\Users\emiro\EasySave\obj\Debug\EasySave.csproj.CoreCompileInputs.cache
-C:\Users\emiro\EasySave\obj\Debug\EasySave.exe
-C:\Users\emiro\EasySave\obj\Debug\EasySave.pdb
