@@ -1,6 +1,9 @@
 # EasySave
 Logiciel de sauvegarde pour 2F Roaming
 
+# Important if you work on Visual Studio
+First you will need the 2022 version for make working the application. Cause it dispose of NET Core 7.0 that we currently use in our application.
+
 ## Starting with GIT
 1. Open git bash
 2. Do git clone "https://github.com/[your_username_github]/EasySave.git" (you can find this url if you click on clone on github, a path should be shown)
@@ -11,7 +14,7 @@ Logiciel de sauvegarde pour 2F Roaming
 3. Create a branch with the name 'EasySave-[number_of_US]' with :    git branch [name]
 4. Change of branch with :    git checkout [name]
 
-## Use git on Visual Studio 2019 for share changes
+## Use git on Visual Studio 2022 for share changes
 1. Open the folder of the project previously clone (name: EasySave)
 2. For push on Visual Studio you need to configurate username and email (on the right panel) : use the same as github
 You can now use all command git on Visual Studio.
