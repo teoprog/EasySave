@@ -1,0 +1,5 @@
+C:\Users\emiro\EasySave\obj\Debug\net7.0\EasySave.csproj.AssemblyReference.cache
+C:\Users\emiro\EasySave\obj\Debug\net7.0\EasySave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emiro\EasySave\obj\Debug\net7.0\EasySave.AssemblyInfoInputs.cache
+C:\Users\emiro\EasySave\obj\Debug\net7.0\EasySave.AssemblyInfo.cs
+C:\Users\emiro\EasySave\obj\Debug\net7.0\EasySave.csproj.CoreCompileInputs.cache
