@@ -29,11 +29,13 @@ namespace EasySave
             string path, path2;
             FileInfo targetInfo, sourceInfo;
             long fileSize;
-            int numberFiles;
+            long totalFiles;
             
             Stopwatch stopwatch = new Stopwatch();
-            numberFiles = Directory.GetFiles(sourceDirectory, "*", SearchOption.AllDirectories).Length;
+            this.FilesToCopy = totalFiles = Directory.GetFiles(sourceDirectory, "*", SearchOption.AllDirectories).Length;
+            this.FilesSize = DirectorySize(new DirectoryInfo(sourceDirectory));
 
+            UpdateProgressSave(totalFiles, "ACTIVE");
             if (!Directory.Exists(targetDirectory)) 
                 Directory.CreateDirectory(targetDirectory);
 
@@ -50,6 +52,7 @@ namespace EasySave
                     stopwatch.Stop();
                     
                     fileSize = (new FileInfo(file)).Length;
+                    UpdateProgressSave(totalFiles, "ACTIVE");
                     UpdateProgress(file,path, fileSize,  stopwatch.Elapsed.ToString());
                 }
             }
@@ -59,6 +62,7 @@ namespace EasySave
                 path = Path.Combine(targetDirectory, Path.GetFileName(directory));
                 RepositorySave(directory, path);
             }
+            UpdateProgressSave(totalFiles, "END");
         }
     }
 }

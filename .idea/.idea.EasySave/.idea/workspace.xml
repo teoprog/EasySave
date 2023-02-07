@@ -5,7 +5,16 @@
     <projectFile>EasySave/EasySave.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10ec3e5b-6e04-494d-940a-6e76b6e8039e" name="Changes" comment="" />
+    <list default="true" id="10ec3e5b-6e04-494d-940a-6e76b6e8039e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.vs/EasySave/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/EasySave/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/EasySave/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/EasySave/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompleteSave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CompleteSave.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiffSave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DiffSave.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasySave.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EasySave.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneralTools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeneralTools.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainPage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainPage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Save.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Save.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +130,7 @@
       <workItem from="1675726567224" duration="259000" />
       <workItem from="1675778213797" duration="414000" />
       <workItem from="1675778658173" duration="902000" />
-      <workItem from="1675779882501" duration="2354000" />
+      <workItem from="1675779882501" duration="2945000" />
     </task>
     <servers />
   </component>

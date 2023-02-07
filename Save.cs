@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace EasySave
 {
@@ -20,23 +21,20 @@ namespace EasySave
         internal string TargetPath;
 
 
-        internal int FilesToCopy; 
+        internal long FilesToCopy;
+
+        internal long FilesSize;
             
         protected Save()
         {
             
         }
 
-        protected Save(string Appellation, string SourcePath, string TargetPath)
-        {
-         }
-
-
         protected void UpdateProgress(string sourceFile, string fileTarget, long directorySize, string stopwatch)
         {
-            // C:\Users\emiro\RiderProjects\EasySave\EasySave
-            string filepath = AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\Sample_log.json";
-                
+            string filepath = DriveInfo.GetDrives()[0].Name + @"\temp\Sample_log.json";
+            if (!File.Exists(filepath)) File.Create(filepath);   
+            
             // Read the existing JSON file content into a string
             string jsonContent = File.ReadAllText(filepath);
 
@@ -58,42 +56,60 @@ namespace EasySave
             if (jsonObjects == null) jsonObjects = new List<dynamic>();
                 jsonObjects.Add(jsonInfoSaveFile);
 
-                string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
+            string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
             
             File.WriteAllText(filepath, updatedJson);
         }
         
-        protected void UpdateProgressSave(long numberFiles, long folderSize)
+        protected void UpdateProgressSave(long totalFiles, string status)
         {
-            // C:\Users\emiro\RiderProjects\EasySave\EasySave
-            string filepath = AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\Sample_state.json";
-                
-            // Read the existing JSON file content into a string
-            string jsonContent = File.ReadAllText(filepath);
-    
-            // Parse the string into a JObject
-            List<dynamic>? jsonObjects = JsonConvert.DeserializeObject<List<dynamic>>(jsonContent);
-
-            // Create a new dynamic object
-            dynamic jsonInfoSaveFile = new
-            {
-                Name = this.Appellation,
-                FileSource = this.SourcePath,
-                FileTarget = this.TargetPath,
-                
-                State = "ACTIVE",
-                TotalFilesToCopy = numberFiles,
-                TotalFilesSize = folderSize,
-                NbFilesLeftToDo = "",
-                Progression = ""
-            };
-            if (jsonObjects == null) jsonObjects = new List<dynamic>();
+            string filepath = DriveInfo.GetDrives()[0].Name + @"\temp\Sample_state.json";
+            if (!File.Exists(filepath)) File.Create(filepath);   
             
-            jsonObjects.Add(jsonInfoSaveFile);
+            // Parse the string into a JObject
+            List<dynamic> jsonObjects = JsonConvert.DeserializeObject<List<dynamic>>(File.ReadAllText(filepath));
+            
+            // Create JObject with our values
+            JObject  g = new JObject
+            (
+                new JProperty("Name", this.Appellation),
+                new JProperty("FileSource", this.SourcePath),
+                new JProperty("FileTarget", this.TargetPath),
+                new JProperty("State", status),
+                new JProperty("TotalFilesToCopy", totalFiles),
+                new JProperty("TotalFilesSize", this.FilesSize),
+                new JProperty("Progression", totalFiles - this.FilesToCopy)
+            );
 
-            string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
-                
-            File.WriteAllText(filepath, updatedJson);
+            int i = 0;
+            if (jsonObjects != null)
+            {
+                foreach (JObject obj in jsonObjects)
+                {
+                    // foreach (var property in obj)
+                    // {
+                    //     if (property.Key == "Name" && property.Value.ToString() == this.Appellation)
+                    if (i != 1 && (string)obj["Name"] == this.Appellation)
+                    {
+                        obj["TotalFilesSize"] = this.FilesSize;
+                        obj["NbFilesLeftToDo"] = this.FilesToCopy;
+                        obj["State"] = status;
+                        
+                        i = 1; // occurence fund
+                    }
+                }
+
+                if (i != 1) jsonObjects.Add(g);
+
+                    string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
+                File.WriteAllText(filepath, updatedJson);
+            } else
+            {
+                jsonObjects = new List<dynamic>();
+                jsonObjects.Add(g);
+                string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
+                File.WriteAllText(filepath, updatedJson);
+            }
         }
         
         

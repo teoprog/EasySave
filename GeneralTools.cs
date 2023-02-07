@@ -6,11 +6,11 @@
         /// A simple function who write a warning message
         /// </summary>
         /// <param name="word">Message you want to write on Console</param>
-        internal static void WriteWarningMessage(string word)
-        {
+        internal static void WriteWarningMessage(string word) {
+            ConsoleColor temp = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine(word);
-            Console.ForegroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = temp;
         }
         
         /// <summary>
