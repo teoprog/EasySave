@@ -13,6 +13,7 @@
             string invalidPath;
             string lang = "fr"; // language fr by default
 
+            
             Console.WriteLine(Language.Welcome.get("ang"));
             do
             {

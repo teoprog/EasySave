@@ -122,7 +122,7 @@ public class Language
         public class ChangeLanguage
         {
             public static string Ang = "3- Change Language (Languages available : French, English)";
-            public static string Fr = "3- Changement de langue (Langues disponubles : Français, Anglais)";
+            public static string Fr = "3- Changement de langue (Langues disponibles : Français, Anglais)";
             
             public static string get(string word)
             {
