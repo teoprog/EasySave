@@ -24,6 +24,9 @@ First you will need the 2022 version for make working the application. Cause it 
    1. Open the folder of the project previously clone (name: EasySave)
    2. For push on Visual Studio you need to configure username and email (on the right panel) : use the same as github
    You can now use all command git on Visual Studio.
+   
+## If you encounter some problems with the visibility of the branch
+git checkout -b EasySave-v0 origin/EasySave-v0
 
 ## More explications
 At the right panel :
