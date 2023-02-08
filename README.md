@@ -26,7 +26,7 @@ First you will need the 2022 version for make working the application. Cause it 
    You can now use all command git on Visual Studio.
    
 ## If you encounter some problems with the visibility of the branch
-git checkout -b EasySave-v0 origin/EasySave-v0
+git checkout -b [branch_name] origin/[branch_name]
 
 ## More explications
 At the right panel :
