@@ -18,7 +18,7 @@
         /// </summary>
         internal void RepositorySave()
         {
-            this.FilesSize = DirectorySize(this.SourcePath, this.TargetPath);
+            this.FilesSize = DirectorySize();
             this.TotalFiles = this.FilesToCopy = Directory.GetFiles(this.SourcePath, "*", SearchOption.AllDirectories).Length;
             base.RepositorySave(this.SourcePath, this.TargetPath);
         }

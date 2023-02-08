@@ -22,21 +22,43 @@ namespace EasySave
         internal string TargetPath;
 
 
+        /// <summary>
+        /// Files need to be copied (decrement when a file is copied)
+        /// </summary>
         internal long FilesToCopy;
 
+        /// <summary>
+        /// Size of path directory
+        /// </summary>
         internal long FilesSize;
 
+        /// <summary>
+        /// Files total to be copied
+        /// </summary>
         internal long TotalFiles;
 
+        /// <summary>
+        /// Var who stock the path to the logs directory
+        /// </summary>
         internal static readonly string DirectoryPath = System.IO.Directory.GetCurrentDirectory() + @"..\..\..\..\Save_logs";
 
+        /// <summary>
+        /// Constructor of Save
+        /// </summary>
         protected Save()
         {
             this.TotalFiles = 0;
             CreateLogsFiles();
         }
 
-        protected void UpdateLogs(string sourceFile, string fileTarget, long directorySize, string stopwatch)
+        /// <summary>
+        /// Function who update dynamically the log file
+        /// </summary>
+        /// <param name="sourceFile">File source to be copied</param>
+        /// <param name="fileTarget">File target, location to where we want to copy sourceFile</param>
+        /// <param name="fileSize">Size of the file</param>
+        /// <param name="stopwatch">Time of the copy</param>
+        protected void UpdateLogs(string sourceFile, string fileTarget, long fileSize, string stopwatch)
         {
             string filepath = DirectoryPath + @"\logs.json";
 
@@ -48,29 +70,33 @@ namespace EasySave
 
             // Create a new object
             JsonLog jsonInfoSaveFile = new JsonLog(this.Appellation, 
-                sourceFile, 
-                fileTarget, 
-                this.TargetPath, 
-                directorySize.ToString(), 
-                stopwatch,
-                DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+                                                        sourceFile, 
+                                                        fileTarget, 
+                                                        this.TargetPath, 
+                                                        fileSize.ToString(), 
+                                                        stopwatch,
+                                                        DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
             
             // Nothing in the json file, so it create a List for our Saves and Add the item to the list
             if (jsonObjects == null) jsonObjects = new List<dynamic>();
             jsonObjects.Add(jsonInfoSaveFile);
 
-            // Serialise l'objet créé
+            // Serialize created object
             string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
             
             File.WriteAllText(filepath, updatedJson);
         }
         
-        protected void UpdateState(string status)
+        /// <summary>
+        /// Function who update dynamically the state file
+        /// </summary>
+        /// <param name="status"></param>
+        public void UpdateState(string status)
         {
             string filepath = DirectoryPath + @"\state.json";
 
             // Parse the string into a JObject
-            List<dynamic> jsonObjects = JsonConvert.DeserializeObject<List<dynamic>>(File.ReadAllText(filepath));
+            List<dynamic>? jsonObjects = JsonConvert.DeserializeObject<List<dynamic>>(File.ReadAllText(filepath));
             
             // Create JObject with our values
             JsonState json = new JsonState(this.Appellation,
@@ -81,6 +107,8 @@ namespace EasySave
                                                 this.FilesSize.ToString(),
                                                 this.FilesToCopy != 0 && this.TotalFiles != 0 ? (this.FilesToCopy / this.TotalFiles)*100 + "%" : 0 + "%"
             );
+            
+            // Transform our object into a JObject
             JObject jobject = JObject.FromObject(json);
             
             int i = 0;
@@ -88,14 +116,16 @@ namespace EasySave
             {
                 foreach (JObject obj in jsonObjects)
                 {
-                    if (i != 1 && (string)obj["Name"] == this.Appellation)
+                    if (i != 1 && obj["Name"].ToString() == this.Appellation)
                     {
+                        // Permit to update our file values if occurence with same appellation found
+                        obj["State"] = status;
                         obj["TotalFilesToCopy"] = this.TotalFiles;
                         obj["TotalFilesSize"] = this.FilesSize;
                         obj["NbFilesLeftToDo"] = this.FilesToCopy;
-                        obj["State"] = status;
-                        
-                        i = 1; // occurence fund
+                        obj["Progression"] = this.TotalFiles == 0 || this.FilesToCopy == 0 ? 100 + "%" : (100 - ((this.FilesToCopy / this.TotalFiles) * 100)) + "%";
+
+                        i = 1; // occurence found
                     }
                 }
 
@@ -105,6 +135,7 @@ namespace EasySave
                 File.WriteAllText(filepath, updatedJson);
             } else
             {
+                // Initialize list and add objects to list
                 jsonObjects = new List<dynamic>();
                 jsonObjects.Add(jobject);
                 string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
@@ -114,39 +145,39 @@ namespace EasySave
 
         /// <summary>
         /// Calculate the size of a directory
-        /// </summary>
-        /// <param name="infoDirectory">Calcule la taille d'un répertoire</param>
-        /// <param name="targetInfo"></param>
-        /// <returns></returns>
-        public long DirectorySize(string sourceDirectoryPath, string targetDirectoryPath) 
+        /// </summary>+
+        /// <returns>The size of the directory</returns>
+        public long DirectorySize() 
         {
             long size = 0;
 
-            DirectoryInfo sourceDirectory = new DirectoryInfo(sourceDirectoryPath);
-            DirectoryInfo targetDirectory = new DirectoryInfo(targetDirectoryPath);
-            
-            FileInfo[] sourceFiles = sourceDirectory.GetFiles();
-            FileInfo[] targetFiles = targetDirectory.GetFiles();
+            DirectoryInfo sourceDirectory = new DirectoryInfo(this.SourcePath);
+            DirectoryInfo targetDirectory = new DirectoryInfo(this.TargetPath);
             
             if (this is CompleteSave)
             {
-                foreach (FileInfo sourceFile in sourceFiles)
-                {
-                    FileInfo targetFile = Array.Find(targetFiles, f => f.Name == sourceFile.Name);
-                    if (targetFile != null) size += targetFile.Length;
-                }
+                foreach (FileInfo file in sourceDirectory.EnumerateFiles("*", SearchOption.AllDirectories))
+                    size += file.Length;
             }
             else
             {
-                foreach (FileInfo sourceFile in sourceFiles)
+                foreach (FileSystemInfo info in sourceDirectory.GetFileSystemInfos())
                 {
-                    FileInfo targetFile = Array.Find(targetFiles, f => f.Name == sourceFile.Name);
-                    if (targetFile != null && sourceFile.LastWriteTime > targetFile.LastWriteTime) size += targetFile.Length;
+                    foreach (FileInfo file in sourceDirectory.EnumerateFiles("*", SearchOption.AllDirectories))
+                    {
+                        FileInfo? targetFile = targetDirectory.EnumerateFiles("*", SearchOption.AllDirectories)
+                            .FirstOrDefault(f => f.Name == file.Name);
+                        
+                        if (targetFile != null && file.LastWriteTime > targetFile.LastWriteTime) size += file.Length;
+                    }
                 }
             }
             return size;
         }
 
+        /// <summary>
+        /// Create log folder and logs files if they don't exist
+        /// </summary>
         protected static void CreateLogsFiles()
         {
             if (!System.IO.Directory.Exists(DirectoryPath))
@@ -161,22 +192,23 @@ namespace EasySave
                 System.IO.File.Create(DirectoryPath + @"\state.json");
         }
 
+        /// <summary>
+        /// Function who save a repository (completeSave and diffSave)
+        /// </summary>
+        /// <param name="sourceDirectory">The source directory we actually browse</param>
+        /// <param name="targetDirectory">The target directory we want to add modifications</param>
         public void RepositorySave(string sourceDirectory, string targetDirectory)
         {
             // Global param
             string path;
             long fileSize;
-
-            // Params only use for DiffSave
+            Stopwatch stopwatch = new Stopwatch();
+            
+            // Params only used for DiffSave
             string path2;
             FileInfo targetInfo, sourceInfo;
 
-            Stopwatch stopwatch = new Stopwatch();
-
-
             UpdateState("ACTIVE");
-            if (!Directory.Exists(targetDirectory)) 
-                Directory.CreateDirectory(targetDirectory);
 
             if (this is CompleteSave)
             {
@@ -186,10 +218,13 @@ namespace EasySave
                     stopwatch.Start();
                     File.Copy(file, path, true);
                     stopwatch.Stop();
+                    
+                    // Different values we need for json
                     fileSize = (new FileInfo(file)).Length;
                     this.FilesToCopy--;
                     this.FilesSize -= fileSize;
                     
+                    // Update our logs
                     UpdateState("ACTIVE");
                     UpdateLogs(file,path, fileSize,  stopwatch.Elapsed.ToString());
                 }
@@ -206,9 +241,11 @@ namespace EasySave
                     stopwatch.Start();
                     if (sourceInfo.LastWriteTime > targetInfo.LastWriteTime)
                     {
-                        fileSize = (new FileInfo(file)).Length;
-                        
                         File.Copy(file, path, true);
+                        
+                        //Different values we need for our json
+                        fileSize = (new FileInfo(file)).Length;
+                        this.FilesSize -= fileSize;
                     }
                     else
                     {
@@ -216,10 +253,12 @@ namespace EasySave
                     }
                     stopwatch.Stop();
                     
+                    //Different values we need for our json
+                    this.FilesToCopy--;
+                    
+                    // Update our logs
                     UpdateState("ACTIVE");
                     UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString());
-                    this.FilesToCopy--;
-                    this.FilesSize -= fileSize;
                 }
             }
 

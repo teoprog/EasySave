@@ -4,14 +4,6 @@ namespace EasySave;
 
 public class JsonLog
 {
-    //     Name = this.Appellation,
-    //     FileSource = sourceFile,
-    //     FileTarget = fileTarget,
-    //     destPath = this.TargetPath,
-    //     FileSize = directorySize,
-    //     FileTransferTime = stopwatch,
-    //     time
-    
     [JsonProperty("Name")]
     private string Name  {get; set; }
 

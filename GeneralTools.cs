@@ -17,8 +17,8 @@
         /// Get the valid directory of a path :
         ///  ex : C:/Bureau/iufdfgoqug --> get C:/Bureau cause iufdfgoqug does not exist
         /// </summary>
-        /// <param name="path"></param>
-        /// <returns></returns>
+        /// <param name="path">Invalid path</param>
+        /// <returns>The valid path</returns>
         public static string GetValidDirectoryPath(string path)
         {
             while (!Directory.Exists(path)) path = Path.GetDirectoryName(path);

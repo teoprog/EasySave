@@ -81,9 +81,11 @@
                                     completeSave.RepositorySave();
                                 } catch (System.UnauthorizedAccessException e)
                                 {
+                                    completeSave.UpdateState("ERROR");
                                     GeneralTools.WriteWarningMessage(Language.Error.Access.get(lang));
                                 } catch (System.IO.IOException i)
                                 {
+                                    completeSave.UpdateState("ERROR");
                                     GeneralTools.WriteWarningMessage(Language.Error.Access.get(lang));
                                 }
                             });
@@ -122,9 +124,11 @@
                                     diffSave.RepositorySave();
                                 } catch (System.UnauthorizedAccessException e)
                                 {
+                                    diffSave.UpdateState("ERROR");
                                     GeneralTools.WriteWarningMessage(Language.Error.Access.get(lang));
                                 } catch (System.IO.IOException i)
                                 {
+                                    diffSave.UpdateState("ERROR");
                                     GeneralTools.WriteWarningMessage(Language.Error.Access.get(lang));
                                 }
                             });
