@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace EasySave;
+﻿namespace EasySave;
 
 public class Language
 {

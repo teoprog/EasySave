@@ -1,8 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using System.IO;
-
-namespace EasySave
+﻿namespace EasySave
 {
     public class DiffSave : Save
     {

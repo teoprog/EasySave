@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace EasySave
+﻿namespace EasySave
 {
     public class CompleteSave : Save
     {
