@@ -1,0 +1,17 @@
+C:\Users\emiro\EasySave\bin\Debug\net7.0\EasySave.exe
+C:\Users\emiro\EasySave\bin\Debug\net7.0\EasySave.deps.json
+C:\Users\emiro\EasySave\bin\Debug\net7.0\EasySave.runtimeconfig.json
+C:\Users\emiro\EasySave\bin\Debug\net7.0\EasySave.dll
+C:\Users\emiro\EasySave\bin\Debug\net7.0\EasySave.pdb
+C:\Users\emiro\EasySave\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\emiro\EasySave\obj\Debug\net7.0\EasySave.csproj.AssemblyReference.cache
+C:\Users\emiro\EasySave\obj\Debug\net7.0\EasySave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emiro\EasySave\obj\Debug\net7.0\EasySave.AssemblyInfoInputs.cache
+C:\Users\emiro\EasySave\obj\Debug\net7.0\EasySave.AssemblyInfo.cs
+C:\Users\emiro\EasySave\obj\Debug\net7.0\EasySave.csproj.CoreCompileInputs.cache
+C:\Users\emiro\EasySave\obj\Debug\net7.0\EasySave.csproj.CopyComplete
+C:\Users\emiro\EasySave\obj\Debug\net7.0\EasySave.dll
+C:\Users\emiro\EasySave\obj\Debug\net7.0\refint\EasySave.dll
+C:\Users\emiro\EasySave\obj\Debug\net7.0\EasySave.pdb
+C:\Users\emiro\EasySave\obj\Debug\net7.0\EasySave.genruntimeconfig.cache
+C:\Users\emiro\EasySave\obj\Debug\net7.0\ref\EasySave.dll
