@@ -6,9 +6,12 @@
         {
             // The option user have to choose
             string option;
-            CompleteSave completeSave;
-            DiffSave diffSave;
+            ISave?[] saves = new ISave?[5];
+            int saveError;
             string choice;
+            string? appellation;
+            string sourcePath,
+                   targetPath;
             string validPath;
             string invalidPath;
             string lang = "fr"; // language fr by default
@@ -20,6 +23,7 @@
                 Console.WriteLine(Language.Menu.Choice.get(lang));
                 Console.WriteLine(Language.Menu.CompleteSave.get(lang));
                 Console.WriteLine(Language.Menu.DiffSave.get(lang));
+                Console.WriteLine(Language.Menu.LaunchSaves.get(lang));
                 Console.WriteLine(Language.Menu.ChangeLanguage.get(lang));
                 Console.WriteLine(Language.Menu.Exit.get(lang));
 
@@ -28,127 +32,180 @@
                     {
                         case "1":
                             Console.Clear();
-                            completeSave = new CompleteSave();
+
+                            saveError = -1;
+                            for(int i = 0; i < saves.Length - 1; i++) 
+                            {
+                                if (Object.Equals(saves[i], null))
+                                {
+                                    saveError = i;
+                                    i = saves.Length;
+                                }
+                            }
 
                             Console.Write(Language.Selected.CompleteSave.get(lang)); 
-                            Console.WriteLine(Language.BackupName.get(lang));
-                            completeSave.Appellation = Console.ReadLine();
-
-                            while (!System.IO.Directory.Exists(completeSave.SourcePath))
+                            if (saveError != -1)
                             {
-                                Console.WriteLine(Language.SourcePath.get(lang));
-                                completeSave.SourcePath = Console.ReadLine();
-                                if (!System.IO.Directory.Exists(completeSave.SourcePath))
-                                    GeneralTools.WriteWarningMessage(Language.Error.SourceExistence.get(lang));
-                            }
-
-                            while (!System.IO.Directory.Exists(completeSave.TargetPath))
-                            {
-                                Console.WriteLine(Language.TargetPath.get(lang));
-                                completeSave.TargetPath = Console.ReadLine();
-
-                                // Check if directory exist
-                                if (!System.IO.Directory.Exists(completeSave.TargetPath))
+                                Console.WriteLine(Language.BackupName.get(lang));
+                                appellation = Console.ReadLine();
+                                do
                                 {
+                                    Console.WriteLine(Language.SourcePath.get(lang));
+                                    sourcePath = Console.ReadLine();
+                                    if (!System.IO.Directory.Exists(sourcePath)) GeneralTools.WriteWarningMessage(Language.Error.SourceExistence.get(lang));
+                                } while (!System.IO.Directory.Exists(sourcePath));
 
-                                    validPath = GeneralTools.GetValidDirectoryPath(completeSave.TargetPath);
+                                do
+                                {
+                                    Console.WriteLine(Language.TargetPath.get(lang));
+                                    targetPath = Console.ReadLine();
 
-                                    invalidPath = completeSave.TargetPath.Substring(validPath.Length,
-                                        completeSave.TargetPath.Length - validPath.Length);
-
-                                    GeneralTools.WriteWarningMessage(Language.Error.TargetPath.get(lang));
-                                    Console.WriteLine(Language.CreationDirectory.get(lang, validPath, invalidPath));
-
-                                    do
+                                    // Check if directory exist
+                                    if (!System.IO.Directory.Exists(targetPath))
                                     {
-                                        choice = Console.ReadLine();
-                                        if (choice != "y" && choice != "n")
+                                        validPath = GeneralTools.GetValidDirectoryPath(targetPath);
+
+                                        invalidPath = targetPath.Substring(validPath.Length,
+                                            targetPath.Length - validPath.Length);
+
+                                        GeneralTools.WriteWarningMessage(Language.Error.TargetPath.get(lang));
+                                        Console.WriteLine(Language.CreationDirectory.get(lang, validPath, invalidPath));
+
+                                        do
                                         {
-                                            GeneralTools.WriteWarningMessage(Language.Error.Option.get(lang));
-                                            Console.WriteLine(Language.YesNo.get(lang));
-                                        }
+                                            choice = Console.ReadLine();
+                                            if (choice != "y" && choice != "n")
+                                            {
+                                                GeneralTools.WriteWarningMessage(Language.Error.Option.get(lang));
+                                                Console.WriteLine(Language.YesNo.get(lang));
+                                            }
 
-                                    } while (choice != "y" && choice != "n");
+                                        } while (choice != "y" && choice != "n");
 
-                                    if (choice == "y") System.IO.Directory.CreateDirectory(completeSave.TargetPath);
-                                }
+                                        if (choice == "y") System.IO.Directory.CreateDirectory(targetPath);
+                                        Console.Clear();
+                                    }
+                                } while ((!System.IO.Directory.Exists(targetPath)));
+                                Console.Clear();
+                                saves[saveError] = new CompleteSave(appellation, sourcePath, targetPath);
                             }
-
-                            Task.Run(() =>
+                            else
                             {
-                                try
-                                {
-                                    completeSave.RepositorySave();
-                                } catch (System.UnauthorizedAccessException e)
-                                {
-                                    completeSave.UpdateState("ERROR");
-                                    GeneralTools.WriteWarningMessage(Language.Error.Access.get(lang));
-                                } catch (System.IO.IOException i)
-                                {
-                                    completeSave.UpdateState("ERROR");
-                                    GeneralTools.WriteWarningMessage(Language.Error.Access.get(lang));
-                                }
-                            });
+                                Console.Clear();
+                                GeneralTools.WriteWarningMessage(Language.Error.SavesOverflow.get(lang));
+                            }
+                            
                             break;
 
                         case "2":
                             Console.Clear();
-                            diffSave = new DiffSave();
+                            saveError = -1;
+                            for(int i = 0; i < saves.Length - 1; i++) 
+                            {
+                                if (Object.Equals(saves[i], null))
+                                {
+                                    saveError = i;
+                                    i = saves.Length;
+                                }
+                            }
 
                             Console.Write(Language.Selected.CompleteSave.get(lang));
-                            Console.WriteLine(Language.BackupName.get(lang));
-                            diffSave.Appellation = Console.ReadLine();
 
-                            while (!System.IO.Directory.Exists(diffSave.SourcePath))
+                            if (saveError != -1)
                             {
-                                Console.WriteLine(Language.SourcePath.get(lang));
-                                diffSave.SourcePath = Console.ReadLine();
-                                if(!System.IO.Directory.Exists(diffSave.SourcePath)) 
-                                    GeneralTools.WriteWarningMessage(Language.Error.SourceExistence.get(lang));
+                                Console.WriteLine(Language.BackupName.get(lang));
+                                appellation = Console.ReadLine();
+
+                                do
+                                {
+                                    Console.WriteLine(Language.SourcePath.get(lang));
+                                    sourcePath = Console.ReadLine();
+                                    if (!System.IO.Directory.Exists(sourcePath))
+                                        GeneralTools.WriteWarningMessage(Language.Error.SourceExistence.get(lang));
+                                } while (!System.IO.Directory.Exists(sourcePath));
+
+                                do
+                                {
+                                    Console.WriteLine(Language.TargetPath.get(lang));
+                                    targetPath = Console.ReadLine();
+
+                                    // Check if directory exist
+                                    if (!System.IO.Directory.Exists(targetPath))
+                                        GeneralTools.WriteWarningMessage(Language.Error.TargetExistence.get(lang));
+                                } while (!System.IO.Directory.Exists(targetPath));
+
+                                saves[saveError] = new DiffSave(appellation, sourcePath, targetPath);
+                                Console.Clear();
                             }
-
-                            while (!System.IO.Directory.Exists(diffSave.TargetPath))
+                            else
                             {
-                                Console.WriteLine(Language.TargetPath.get(lang));
-                                diffSave.TargetPath = Console.ReadLine();
-
-                                // Check if directory exist
-                                if (!System.IO.Directory.Exists(diffSave.TargetPath))
-                                    GeneralTools.WriteWarningMessage(Language.Error.TargetExistence.get(lang));
+                                Console.Clear();
+                                GeneralTools.WriteWarningMessage(Language.Error.SavesOverflow.get(lang));
                             }
-
-                            Task.Run(() =>
-                            {
-                                try
-                                {
-                                    diffSave.RepositorySave();
-                                } catch (System.UnauthorizedAccessException e)
-                                {
-                                    diffSave.UpdateState("ERROR");
-                                    GeneralTools.WriteWarningMessage(Language.Error.Access.get(lang));
-                                } catch (System.IO.IOException i)
-                                {
-                                    diffSave.UpdateState("ERROR");
-                                    GeneralTools.WriteWarningMessage(Language.Error.Access.get(lang));
-                                }
-                            });
-                            Console.Clear();
                             break;
                         
                         case "3":
+                            Task.Run(() =>
+                            {
+                                for(int i = 0; i < saves.Length - 1; i++) 
+                                {
+                                    if (!Object.Equals(saves[i], null))
+                                    {
+                                            if (saves[i] is CompleteSave)
+                                            {
+                                                try
+                                                {
+                                                    (saves[i] as CompleteSave).RepositorySave();
+                                                } catch (System.UnauthorizedAccessException e)
+                                                {
+                                                    (saves[i] as CompleteSave).UpdateState("ERROR");
+                                                    GeneralTools.WriteWarningMessage( (saves[i] as CompleteSave).Appellation + Language.Error.Access.get(lang));
+                                                } catch (System.IO.IOException r)
+                                                {
+                                                    (saves[i] as CompleteSave).UpdateState("ERROR");
+                                                    GeneralTools.WriteWarningMessage((saves[i] as CompleteSave).Appellation + Language.Error.Access.get(lang));
+                                                } 
+                                            } else if (saves[i] is DiffSave)
+                                            {
+                                                try
+                                                {
+                                                    (saves[i] as DiffSave).RepositorySave();
+                                                } catch (System.UnauthorizedAccessException e)
+                                                {
+                                                    (saves[i] as DiffSave).UpdateState("ERROR");
+                                                    GeneralTools.WriteWarningMessage((saves[i] as CompleteSave).Appellation + Language.Error.Access.get(lang));
+                                                } catch (System.IO.IOException r)
+                                                {
+                                                    (saves[i] as DiffSave).UpdateState("ERROR");
+                                                    GeneralTools.WriteWarningMessage((saves[i] as CompleteSave).Appellation + Language.Error.Access.get(lang));
+                                                }
+                                            }
+                                    }
+                                    saves[i] = null;
+                                }
+                            });
+                            ;
+                            Console.Clear();
+                            Console.WriteLine("Save progress... Enter for continue");
+                            Console.ReadLine();
+                            Console.Clear();
+                            break;
+                        
+                        case "4":
                             lang = changeLang(lang);
+                            Console.Clear();
                             break;
             
                         default:
                             Console.Clear();
-                                GeneralTools.WriteWarningMessage(Language.Error.Option.get(lang));
+                            GeneralTools.WriteWarningMessage(Language.Error.Option.get(lang));
                             break;
                     }
             } while ((option != "e"));
             Console.WriteLine(Language.GoodBye.get(lang));
         }
 
-        internal static string changeLang(string language)
+        private static string changeLang(string language)
         {
             return "fr" == language ? "ang" : "fr";
         }

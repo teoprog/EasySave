@@ -5,7 +5,7 @@ namespace EasySave;
 public class JsonLog
 {
     [JsonProperty("Name")]
-    private string Name  {get; set; }
+    private string? Name  {get; set; }
 
     [JsonProperty("FileSource")]
     private string FileSource {get; set; }
@@ -25,7 +25,7 @@ public class JsonLog
     [JsonProperty("Time")]
     private string Time {get; set; }
 
-    public JsonLog(string name, string fileSource, string fileTarget, string destPath, string fileSize, string fileTransferTime, string time)
+    public JsonLog(string? name, string fileSource, string fileTarget, string destPath, string fileSize, string fileTransferTime, string time)
     {
         Name = name;
         FileSource = fileSource;

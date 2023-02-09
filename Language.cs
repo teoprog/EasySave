@@ -117,10 +117,21 @@ public class Language
             }
         }
         
+        public class LaunchSaves
+        {
+            public static string Ang = "3- Launch the saves in memory (max 5)";
+            public static string Fr = "3- Lance les sauvegardes en mémoire (5 max)";
+            
+            public static string get(string word)
+            {
+                return word == "fr" ? Fr : Ang;
+            }
+        }
+        
         public class ChangeLanguage
         {
-            public static string Ang = "3- Change Language (Languages available : French, English)";
-            public static string Fr = "3- Changement de langue (Langues disponibles : Français, Anglais)";
+            public static string Ang = "4- Change Language (Languages available : French, English)";
+            public static string Fr = "4- Changement de langue (Langues disponibles : Français, Anglais)";
             
             public static string get(string word)
             {
@@ -155,15 +166,26 @@ public class Language
     {
         public static string get(string word, string validPath, string invalidPath)
         {
-            return word == "fr" ? "Would you like to create le dossier : \n"
-                                  + $"\"{invalidPath}\" at the path :\n\"{validPath}\"\n\n yes(y) - no(n)"
-                                  : "Voudriez-vous créer : \n"
-                                    + $"\"{invalidPath}\" au chemin :\n\"{validPath}\"\n\n yes(y) - no(n)";
+            return word == "fr" ? "Souhaitez-vous créer le dossier :          \n"
+                                  + $"\"{invalidPath}\" au chemin :\n\"{validPath}\"\n\n oui(y) - non(n)"
+                                  : "Would you like to create the directory : \n"
+                                    + $"\"{invalidPath}\" at the path :          \n\"{validPath}\"\n\n yes(y) - no(n)";
         }
     }
 
     public class Error
     {
+        public class SavesOverflow
+        {
+            public static string Ang = "You already have 5 saves in memory. Unable to add. Please run current saves for have the ability to create new ones.";
+            public static string Fr = "Vous avez déjà 5 sauvegardes en mémoire. Impossible d'en ajouter. Veuillez lancer les sauvegardes actuelles pour avoir la possibilité d'en créer des nouvelles.";
+            
+            public static string get(string word)
+            {
+                return word == "fr" ? Fr : Ang;
+            }
+        }
+        
         public class Option
         {
             public static string Ang = "Retry ! Chose a valid option";
@@ -177,8 +199,8 @@ public class Language
         
         public class Access
         {
-            public static string Ang = "Problem in save, some file access have been denied.";
-            public static string Fr = "Problème dans la sauvegarde, l'accès a été refusé.";
+            public static string Ang = " save : problem in the backup, access to a directory has been denied. It is read-only so the backup cannot be performed entirely.";
+            public static string Fr = " sauvegarde : problème dans la sauvegarde, l'accès à un répertoire à été refusé. Il est en lecture seule la sauvegarde ne peut donc s'effectuer entièrement";
             
             public static string get(string word)
             {

@@ -1,22 +1,20 @@
 ﻿namespace EasySave
 {
-    public class CompleteSave : Save
+    public class CompleteSave : Save, ISave
     {
         
         /// <summary>
         /// Constructor who call his parent
         /// </summary>
-        public CompleteSave() : base() {
-            this.Appellation = "";
-            this.SourcePath = "";
-            this.TargetPath = "";
-            this.FilesToCopy = 0;
+        public CompleteSave(string? appellation, string sourcePath, string targetPath) 
+            : base(appellation, sourcePath, targetPath)
+        {
         }
         
         /// <summary>
         /// Call parent file for do the Save
         /// </summary>
-        internal void RepositorySave()
+        public void RepositorySave()
         {
             this.FilesSize = DirectorySize();
             this.TotalFiles = this.FilesToCopy = Directory.GetFiles(this.SourcePath, "*", SearchOption.AllDirectories).Length;

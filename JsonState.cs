@@ -5,7 +5,7 @@ namespace EasySave;
 public class JsonState
 {
     [JsonProperty("Name")]
-    private string Name  {get; set; }
+    private string? Name  {get; set; }
 
     [JsonProperty("FileSource")]
     private string FileSource  {get; set; }
@@ -25,7 +25,7 @@ public class JsonState
     [JsonProperty("Progression")]
     private string Progression  {get; set; }
 
-    public JsonState(string name, string fileSource, string fileTarget, string state, string totalFilesToCopy, string totalFilesSize, string progression)
+    public JsonState(string? name, string fileSource, string fileTarget, string state, string totalFilesToCopy, string totalFilesSize, string progression)
     {
         Name = name;
         FileSource = fileSource;

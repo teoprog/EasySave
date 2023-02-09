@@ -4,12 +4,14 @@ using Newtonsoft.Json.Linq;
 
 namespace EasySave
 {
+    interface ISave {}
+    
     public abstract class Save
     {
         /// <summary>
         /// Name of the save
         /// </summary>
-        internal string Appellation;
+        internal string? Appellation;
 
         /// <summary>
         /// What you want to save
@@ -41,16 +43,16 @@ namespace EasySave
         /// Var who stock the path to the logs directory
         /// </summary>
         internal static readonly string DirectoryPath = System.IO.Directory.GetCurrentDirectory() + @"..\..\..\..\Save_logs";
-
-        /// <summary>
-        /// Constructor of Save
-        /// </summary>
-        protected Save()
+        
+        protected Save(string? appellation, string sourcePath, string targetPath)
         {
+            Appellation = appellation;
+            SourcePath = sourcePath;
+            TargetPath = targetPath;
             this.TotalFiles = 0;
             CreateLogsFiles();
         }
-
+        
         /// <summary>
         /// Function who update dynamically the log file
         /// </summary>
@@ -123,8 +125,8 @@ namespace EasySave
                         obj["TotalFilesToCopy"] = this.TotalFiles;
                         obj["TotalFilesSize"] = this.FilesSize;
                         obj["NbFilesLeftToDo"] = this.FilesToCopy;
-                        obj["Progression"] = this.TotalFiles == 0 || this.FilesToCopy == 0 ? 100 + "%" : (100 - ((this.FilesToCopy / this.TotalFiles) * 100)) + "%";
-
+                        obj["Progression"] = this.TotalFiles == 0 || this.FilesToCopy == 0 ? 100 + "%" : (100 - ((double)this.FilesToCopy / this.TotalFiles) * 100).ToString("0.00") + "%";
+                        
                         i = 1; // occurence found
                     }
                 }
