@@ -8,10 +8,10 @@ public class JsonState
     private string? Name  {get; set; }
 
     [JsonProperty("FileSource")]
-    private string FileSource  {get; set; }
+    private string? FileSource  {get; set; }
 
     [JsonProperty("FileTarget")]
-    private string FileTarget  {get; set; }
+    private string? FileTarget  {get; set; }
 
     [JsonProperty("State")]
     private string State  {get; set; }
@@ -25,7 +25,7 @@ public class JsonState
     [JsonProperty("Progression")]
     private string Progression  {get; set; }
 
-    public JsonState(string? name, string fileSource, string fileTarget, string state, string totalFilesToCopy, string totalFilesSize, string progression)
+    public JsonState(string? name, string? fileSource, string? fileTarget, string state, string totalFilesToCopy, string totalFilesSize, string progression)
     {
         Name = name;
         FileSource = fileSource;

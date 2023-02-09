@@ -5,7 +5,7 @@
         /// <summary>
         /// Constructor who call his parent
         /// </summary>
-        public DiffSave(string? appellation, string sourcePath, string targetPath) 
+        public DiffSave(string? appellation, string? sourcePath, string? targetPath) 
             : base(appellation, sourcePath, targetPath)
         {
         }
@@ -16,8 +16,12 @@
         public void RepositorySave()
         {
             this.FilesSize = DirectorySize();
-            this.TotalFiles = this.FilesToCopy = Directory.GetFiles(this.SourcePath, "*", SearchOption.AllDirectories).Length;
-            base.RepositorySave(this.SourcePath, this.TargetPath);
+            if (this.SourcePath != null)
+            {
+                this.TotalFiles = this.FilesToCopy = Directory.GetFiles(this.SourcePath, "*", SearchOption.AllDirectories).Length;
+                this.CreateDirectoriesOfADirectory();
+                base.RepositorySave(this.SourcePath, this.TargetPath);
+            }
         }
     }
 }

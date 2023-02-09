@@ -6,7 +6,7 @@
         /// <summary>
         /// Constructor who call his parent
         /// </summary>
-        public CompleteSave(string? appellation, string sourcePath, string targetPath) 
+        public CompleteSave(string? appellation, string? sourcePath, string? targetPath) 
             : base(appellation, sourcePath, targetPath)
         {
         }
@@ -17,8 +17,12 @@
         public void RepositorySave()
         {
             this.FilesSize = DirectorySize();
-            this.TotalFiles = this.FilesToCopy = Directory.GetFiles(this.SourcePath, "*", SearchOption.AllDirectories).Length;
-            base.RepositorySave(this.SourcePath, this.TargetPath);
+            if (this.SourcePath != null)
+            {
+                this.TotalFiles = this.FilesToCopy = Directory.GetFiles(this.SourcePath, "*", SearchOption.AllDirectories).Length;
+                CreateDirectoriesOfADirectory();
+                base.RepositorySave(this.SourcePath, this.TargetPath);
+            }
         }
     }
 }

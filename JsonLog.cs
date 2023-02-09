@@ -11,10 +11,10 @@ public class JsonLog
     private string FileSource {get; set; }
     
     [JsonProperty("FileTarget")]
-    private string FileTarget {get; set; }
+    private string? FileTarget {get; set; }
 
     [JsonProperty("DestPath")]
-    private string DestPath {get; set; }
+    private string? DestPath {get; set; }
 
     [JsonProperty("FileSize")]
     private string FileSize {get; set; }
@@ -25,7 +25,7 @@ public class JsonLog
     [JsonProperty("Time")]
     private string Time {get; set; }
 
-    public JsonLog(string? name, string fileSource, string fileTarget, string destPath, string fileSize, string fileTransferTime, string time)
+    public JsonLog(string? name, string fileSource, string? fileTarget, string? destPath, string fileSize, string fileTransferTime, string time)
     {
         Name = name;
         FileSource = fileSource;

@@ -1,38 +1,30 @@
 ﻿namespace EasySave
 {
-    internal class MainPage
+    internal static class MainPage
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             // The option user have to choose
-            string option;
+            string? option;
             ISave?[] saves = new ISave?[5];
-            int saveError;
-            string choice;
-            string? appellation;
-            string sourcePath,
-                   targetPath;
-            string validPath;
-            string invalidPath;
             string lang = "fr"; // language fr by default
 
             
-            Console.WriteLine(Language.Welcome.get("ang"));
+            Console.WriteLine(Language.Welcome.Get("ang"));
             do
             {
-                Console.WriteLine(Language.Menu.Choice.get(lang));
-                Console.WriteLine(Language.Menu.CompleteSave.get(lang));
-                Console.WriteLine(Language.Menu.DiffSave.get(lang));
-                Console.WriteLine(Language.Menu.LaunchSaves.get(lang));
-                Console.WriteLine(Language.Menu.ChangeLanguage.get(lang));
-                Console.WriteLine(Language.Menu.Exit.get(lang));
+                Console.WriteLine(Language.Menu.Choice.Get(lang));
+                Console.WriteLine(Language.Menu.CompleteSave.Get(lang));
+                Console.WriteLine(Language.Menu.DiffSave.Get(lang));
+                Console.WriteLine(Language.Menu.LaunchSaves.Get(lang));
+                Console.WriteLine(Language.Menu.ChangeLanguage.Get(lang));
+                Console.WriteLine(Language.Menu.Exit.Get(lang));
 
                 option = Console.ReadLine();
                 switch (option)
                     {
                         case "1":
                             saves = Champ(saves, option, lang);
-                            
                             break;
 
                         case "2":
@@ -46,35 +38,20 @@
                                 {
                                     if (!Object.Equals(saves[i], null))
                                     {
+                                        try {
                                             if (saves[i] is CompleteSave)
                                             {
-                                                try
-                                                {
-                                                    (saves[i] as CompleteSave).RepositorySave();
-                                                } catch (System.UnauthorizedAccessException e)
-                                                {
-                                                    (saves[i] as CompleteSave).UpdateState("ERROR");
-                                                    GeneralTools.WriteWarningMessage( (saves[i] as CompleteSave).Appellation + Language.Error.Access.get(lang));
-                                                } catch (System.IO.IOException r)
-                                                {
-                                                    (saves[i] as CompleteSave).UpdateState("ERROR");
-                                                    GeneralTools.WriteWarningMessage((saves[i] as CompleteSave).Appellation + Language.Error.Access.get(lang));
-                                                } 
+                                                (saves[i] as CompleteSave)?.RepositorySave();
                                             } else if (saves[i] is DiffSave)
                                             {
-                                                try
-                                                {
-                                                    (saves[i] as DiffSave).RepositorySave();
-                                                } catch (System.UnauthorizedAccessException e)
-                                                {
-                                                    (saves[i] as DiffSave).UpdateState("ERROR");
-                                                    GeneralTools.WriteWarningMessage((saves[i] as CompleteSave).Appellation + Language.Error.Access.get(lang));
-                                                } catch (System.IO.IOException r)
-                                                {
-                                                    (saves[i] as DiffSave).UpdateState("ERROR");
-                                                    GeneralTools.WriteWarningMessage((saves[i] as CompleteSave).Appellation + Language.Error.Access.get(lang));
-                                                }
+                                                (saves[i] as DiffSave).RepositorySave();
                                             }
+                                        } catch (Exception e)
+                                        {
+                                            Console.WriteLine(e);
+                                            (saves[i] as DiffSave)?.UpdateState("ERROR");
+                                            GeneralTools.WriteWarningMessage((saves[i] as CompleteSave)?.Appellation + Language.Error.Access.Get(lang));
+                                        }
                                     }
                                     saves[i] = null;
                                 }
@@ -92,120 +69,138 @@
             
                         default:
                             Console.Clear();
-                            GeneralTools.WriteWarningMessage(Language.Error.Option.get(lang));
+                            GeneralTools.WriteWarningMessage(Language.Error.Option.Get(lang));
                             break;
                     }
             } while ((option != "e"));
-            Console.WriteLine(Language.GoodBye.get(lang));
+            Console.WriteLine(Language.GoodBye.Get(lang));
         }
 
 
-        public static ISave?[] Champ(ISave?[] saves, string option, string lang)
+        /// <summary>
+        /// Ask user the entree of some values and create the object associated at the option selected
+        /// </summary>
+        /// <param name="iSaves">The ISave arrays</param>
+        /// <param name="option">The option selected</param>
+        /// <param name="lang">The actual language</param>
+        /// <returns></returns>
+        private static ISave?[] Champ(ISave?[] iSaves, string? option, string lang)
         {
-            string choice;
-            string validPath;
-            string invalidPath;
-            int saveError;
-            string appellation;
-            string sourcePath;
-            string targetPath;
-
-            choice = targetPath = "";
             Console.Clear();
-            saveError = PositionAvaible(saves);
+            var saveError = PositionAvailable(iSaves);
 
-            Console.Write(Language.Selected.CompleteSave.get(lang));
+            Console.Write(Language.Selected.CompleteSave.Get(lang));
             if (saveError != -1)
             {
-                Console.WriteLine(Language.BackupName.get(lang));
-                appellation = Console.ReadLine();
+                Console.WriteLine(Language.BackupName.Get(lang));
+                var appellation = Console.ReadLine();
+                string? sourcePath;
                 do
                 {
-                    Console.WriteLine(Language.SourcePath.get(lang));
+                    Console.WriteLine(Language.SourcePath.Get(lang));
                     sourcePath = Console.ReadLine();
-                    if (!System.IO.Directory.Exists(sourcePath)) GeneralTools.WriteWarningMessage(Language.Error.SourceExistence.get(lang));
-                } while (!System.IO.Directory.Exists(sourcePath));
+                    if (!Directory.Exists(sourcePath)) GeneralTools.WriteWarningMessage(Language.Error.SourceExistence.Get(lang));
+                } while (!Directory.Exists(sourcePath));
 
+                string? targetPath;
                 switch (option)
                 {
                     case "1":
                     {
-                        do
+                        targetPath = "";
+                        while ((!Directory.Exists(targetPath)))
                         {
-                            Console.WriteLine(Language.TargetPath.get(lang));
+                            Console.WriteLine(Language.TargetPath.Get(lang));
                             targetPath = Console.ReadLine();
 
                             // Check if directory exist
-                            if (!System.IO.Directory.Exists(targetPath))
+                            if (!Directory.Exists(targetPath))
                             {
-                                if (targetPath != null && GeneralTools.GetValidDirectoryPath(targetPath) != "")
+                                string validPath = GeneralTools.GetValidDirectoryPath(targetPath);
+                                if (targetPath != "" && validPath != "")
                                 {
-                                    validPath = GeneralTools.GetValidDirectoryPath(targetPath);
+                                    if (validPath != "")
+                                    {
+                                        var invalidPath = targetPath?.Substring(validPath.Length,
+                                            targetPath.Length - validPath.Length);
 
-                                    invalidPath = targetPath.Substring(validPath.Length,
-                                        targetPath.Length - validPath.Length);
+                                        GeneralTools.WriteWarningMessage(Language.Error.ErrTargetPath.Get(lang));
+                                        Console.WriteLine(Language.CreationDirectory.Get(lang, validPath, invalidPath));
+                                    }
+                                    else
+                                    {
+                                        GeneralTools.WriteWarningMessage(Language.Error.ErrTargetPath.Get(lang));
+                                        Console.WriteLine(Language.YesNo.Get(lang));
+                                    }
 
-                                    GeneralTools.WriteWarningMessage(Language.Error.TargetPath.get(lang));
-                                    Console.WriteLine(Language.CreationDirectory.get(lang, validPath, invalidPath));
-
+                                    string? choice;
                                     do
                                     {
                                         choice = Console.ReadLine();
                                         if (choice != "y" && choice != "n")
                                         {
-                                            GeneralTools.WriteWarningMessage(Language.Error.Option.get(lang));
-                                            Console.WriteLine(Language.YesNo.get(lang));
+                                            GeneralTools.WriteWarningMessage(Language.Error.Option.Get(lang));
+                                            Console.WriteLine(Language.YesNo.Get(lang));
                                         }
                                     } while (choice != "y" && choice != "n");
 
-                                    if (choice == "y") System.IO.Directory.CreateDirectory(targetPath);
+                                    if (choice == "y")
+                                        if (targetPath != null)
+                                            Directory.CreateDirectory(targetPath);
                                 }
 
                                 Console.Clear();
                             }
-                        } while ((!System.IO.Directory.Exists(targetPath)));
-                        saves[saveError] = new CompleteSave(appellation, sourcePath, targetPath);
+                        }
+
+                        iSaves[saveError] = new CompleteSave(appellation, sourcePath, targetPath);
                         break;
                     }
                     case "2":
                     {
                         do
                         {
-                            Console.WriteLine(Language.TargetPath.get(lang));
+                            Console.WriteLine(Language.TargetPath.Get(lang));
                             targetPath = Console.ReadLine();
 
                             // Check if directory exist
-                            if (!System.IO.Directory.Exists(targetPath))
-                                GeneralTools.WriteWarningMessage(Language.Error.TargetExistence.get(lang));
-                        } while (!System.IO.Directory.Exists(targetPath));
+                            if (!Directory.Exists(targetPath))
+                                GeneralTools.WriteWarningMessage(Language.Error.TargetExistence.Get(lang));
+                        } while (!Directory.Exists(targetPath));
 
-                        saves[saveError] = new DiffSave(appellation, sourcePath, targetPath);
+                        iSaves[saveError] = new DiffSave(appellation, sourcePath, targetPath);
                         break;
                     }
                 }
-                Console.Clear();
-                return saves;
-                }
-                else
-                {
-                    Console.Clear();
-                    GeneralTools.WriteWarningMessage(Language.Error.SavesOverflow.get(lang));
-                }
 
-            return saves;
+                Console.Clear();
+            } else {
+                    Console.Clear();
+                    GeneralTools.WriteWarningMessage(Language.Error.SavesOverflow.Get(lang));
+            }
+
+            return iSaves;
         }
 
-        private static int PositionAvaible(ISave?[] saves)
+        /// <summary>
+        /// Check if a position in save array is null
+        /// </summary>
+        /// <param name="saves">List of ISave (can be CompleteSave or DiffSave)</param>
+        /// <returns>Int the first free position in the array. If full, return -1.</returns>
+        private static int PositionAvailable(IReadOnlyList<ISave?> saves)
         {
-            for(int i = 0; i < saves.Length - 1; i++) 
+            for(int i = 0; i < saves.Count - 1; i++) 
             {
-                if (Object.Equals(saves[i], null))
-                {
-                    return i;
-                }
+                if (Equals(saves[i], null)) return i;
             }
             return -1;
         }
+        
+        /// <summary>
+        /// Change Language when click by using Language Class
+        /// </summary>
+        /// <param name="language">String, can be Fr or Ang</param>
+        /// <returns>string return the changed language</returns>
         private static string ChangeLang(string language)
         {
             return "fr" == language ? "ang" : "fr";

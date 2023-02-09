@@ -11,17 +11,17 @@ namespace EasySave
         /// <summary>
         /// Name of the save
         /// </summary>
-        internal string? Appellation;
+        internal readonly string? Appellation;
 
         /// <summary>
         /// What you want to save
         /// </summary>
-        internal string SourcePath;
+        internal readonly string? SourcePath;
 
         /// <summary>
         /// Where you want to save
         /// </summary>
-        internal string TargetPath;
+        internal readonly string? TargetPath;
 
 
         /// <summary>
@@ -42,9 +42,9 @@ namespace EasySave
         /// <summary>
         /// Var who stock the path to the logs directory
         /// </summary>
-        internal static readonly string DirectoryPath = System.IO.Directory.GetCurrentDirectory() + @"..\..\..\..\Save_logs";
+        private static readonly string DirectoryPath = Directory.GetCurrentDirectory() + @"..\..\..\..\Save_logs";
         
-        protected Save(string? appellation, string sourcePath, string targetPath)
+        protected Save(string? appellation, string? sourcePath, string? targetPath)
         {
             Appellation = appellation;
             SourcePath = sourcePath;
@@ -60,7 +60,7 @@ namespace EasySave
         /// <param name="fileTarget">File target, location to where we want to copy sourceFile</param>
         /// <param name="fileSize">Size of the file</param>
         /// <param name="stopwatch">Time of the copy</param>
-        protected void UpdateLogs(string sourceFile, string fileTarget, long fileSize, string stopwatch)
+        private void UpdateLogs(string sourceFile, string? fileTarget, long fileSize, string stopwatch)
         {
             string filepath = DirectoryPath + @"\logs.json";
 
@@ -80,7 +80,7 @@ namespace EasySave
                                                         DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
             
             // Nothing in the json file, so it create a List for our Saves and Add the item to the list
-            if (jsonObjects == null) jsonObjects = new List<dynamic>();
+            jsonObjects ??= new List<dynamic>();
             jsonObjects.Add(jsonInfoSaveFile);
 
             // Serialize created object
@@ -118,7 +118,7 @@ namespace EasySave
             {
                 foreach (JObject obj in jsonObjects)
                 {
-                    if (i != 1 && obj["Name"].ToString() == this.Appellation)
+                    if (i != 1 && obj["Name"]?.ToString() == this.Appellation)
                     {
                         // Permit to update our file values if occurence with same appellation found
                         obj["State"] = status;
@@ -138,8 +138,7 @@ namespace EasySave
             } else
             {
                 // Initialize list and add objects to list
-                jsonObjects = new List<dynamic>();
-                jsonObjects.Add(jobject);
+                jsonObjects = new List<dynamic> { jobject };
                 string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
                 File.WriteAllText(filepath, updatedJson);
             }
@@ -149,49 +148,50 @@ namespace EasySave
         /// Calculate the size of a directory
         /// </summary>+
         /// <returns>The size of the directory</returns>
-        public long DirectorySize() 
+        protected long DirectorySize() 
         {
             long size = 0;
 
-            DirectoryInfo sourceDirectory = new DirectoryInfo(this.SourcePath);
-            DirectoryInfo targetDirectory = new DirectoryInfo(this.TargetPath);
+            if (SourcePath != null && TargetPath != null)
+            {
+                DirectoryInfo sourceDirectory = new DirectoryInfo(SourcePath);
+                DirectoryInfo targetDirectory = new DirectoryInfo(TargetPath);
             
-            if (this is CompleteSave)
-            {
-                foreach (FileInfo file in sourceDirectory.EnumerateFiles("*", SearchOption.AllDirectories))
-                    size += file.Length;
-            }
-            else
-            {
-                foreach (FileSystemInfo info in sourceDirectory.GetFileSystemInfos())
+                if (this is CompleteSave)
+                {
+                    foreach (FileInfo file in sourceDirectory.EnumerateFiles("*", SearchOption.AllDirectories))
+                        size += file.Length;
+                }
+                else
                 {
                     foreach (FileInfo file in sourceDirectory.EnumerateFiles("*", SearchOption.AllDirectories))
                     {
                         FileInfo? targetFile = targetDirectory.EnumerateFiles("*", SearchOption.AllDirectories)
                             .FirstOrDefault(f => f.Name == file.Name);
-                        
+                    
                         if (targetFile != null && file.LastWriteTime > targetFile.LastWriteTime) size += file.Length;
                     }
                 }
             }
+
             return size;
         }
 
         /// <summary>
         /// Create log folder and logs files if they don't exist
         /// </summary>
-        protected static void CreateLogsFiles()
+        private static void CreateLogsFiles()
         {
-            if (!System.IO.Directory.Exists(DirectoryPath))
+            if (!Directory.Exists(DirectoryPath))
             {
-                System.IO.Directory.CreateDirectory(DirectoryPath);
+                Directory.CreateDirectory(DirectoryPath);
             }
             
-            if(!System.IO.File.Exists(DirectoryPath + @"\logs.json"))
-                System.IO.File.Create(DirectoryPath + @"\logs.json");
+            if(!File.Exists(DirectoryPath + @"\logs.json"))
+                File.Create(DirectoryPath + @"\logs.json");
                 
-            if(!System.IO.File.Exists(DirectoryPath + @"\state.json"))
-                System.IO.File.Create(DirectoryPath + @"\state.json");
+            if(!File.Exists(DirectoryPath + @"\state.json"))
+                File.Create(DirectoryPath + @"\state.json");
         }
 
         /// <summary>
@@ -199,77 +199,94 @@ namespace EasySave
         /// </summary>
         /// <param name="sourceDirectory">The source directory we actually browse</param>
         /// <param name="targetDirectory">The target directory we want to add modifications</param>
-        public void RepositorySave(string sourceDirectory, string targetDirectory)
+        protected void RepositorySave(string? sourceDirectory, string? targetDirectory)
         {
             // Global param
-            string path;
-            long fileSize;
+            string? path = null;
             Stopwatch stopwatch = new Stopwatch();
-            
+
             // Params only used for DiffSave
-            string path2;
-            FileInfo targetInfo, sourceInfo;
-
             UpdateState("ACTIVE");
+            if (sourceDirectory != null && targetDirectory != null ){
+                long fileSize;
+                if (this is CompleteSave)
+                {
 
-            if (this is CompleteSave)
-            {
-                foreach (var file in Directory.GetFiles(sourceDirectory))
-                {
-                    path = Path.Combine(targetDirectory, Path.GetFileName(file));
-                    stopwatch.Start();
-                    File.Copy(file, path, true);
-                    stopwatch.Stop();
-                    
-                    // Different values we need for json
-                    fileSize = (new FileInfo(file)).Length;
-                    this.FilesToCopy--;
-                    this.FilesSize -= fileSize;
-                    
-                    // Update our logs
-                    UpdateState("ACTIVE");
-                    UpdateLogs(file,path, fileSize,  stopwatch.Elapsed.ToString());
-                }
-            }
-            else
-            {
-                foreach (var file in Directory.GetFiles(sourceDirectory))
-                {
-                    path = Path.Combine(targetDirectory, Path.GetFileName(file));
-                    path2 = Path.Combine(sourceDirectory, Path.GetFileName(file));
-                    targetInfo = new FileInfo(path);
-                    sourceInfo = new FileInfo(path2);
-                    fileSize = 0;
-                    stopwatch.Start();
-                    if (sourceInfo.LastWriteTime > targetInfo.LastWriteTime)
+                    foreach (var file in Directory.GetFiles(sourceDirectory))
                     {
-                        File.Copy(file, path, true);
-                        
+                        if (targetDirectory != null) path = Path.Combine(targetDirectory, Path.GetFileName(file));
+                        stopwatch.Start();
+                        if (path != null)
+                        {
+                            File.Copy(file, path, true);
+                            stopwatch.Stop();
+
+                            // Different values we need for json
+                            fileSize = (new FileInfo(file)).Length;
+                            this.FilesToCopy--;
+                            this.FilesSize -= fileSize;
+
+                            // Update our logs
+                            // UpdateState("ACTIVE");
+                            // UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString());
+                        }
+                    }
+                }
+                else
+                {
+                    foreach (var file in Directory.GetFiles(sourceDirectory))
+                    {
+                        path = Path.Combine(targetDirectory, Path.GetFileName(file));
+                        var path2 = Path.Combine(sourceDirectory, Path.GetFileName(file));
+                        var targetInfo = new FileInfo(path);
+                        var sourceInfo = new FileInfo(path2);
+                        fileSize = 0;
+                        stopwatch.Start();
+                        if (sourceInfo.LastWriteTime > targetInfo.LastWriteTime)
+                        {
+                            File.Copy(file, path, true);
+
+                            //Different values we need for our json
+                            fileSize = (new FileInfo(file)).Length;
+                            this.FilesSize -= fileSize;
+                        }
+                        else
+                        {
+                            this.TotalFiles--;
+                        }
+
+                        stopwatch.Stop();
+
                         //Different values we need for our json
-                        fileSize = (new FileInfo(file)).Length;
-                        this.FilesSize -= fileSize;
-                    }
-                    else
-                    {
-                        this.TotalFiles--;
-                    }
-                    stopwatch.Stop();
-                    
-                    //Different values we need for our json
-                    this.FilesToCopy--;
-                    
-                    // Update our logs
-                    UpdateState("ACTIVE");
-                    UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString());
-                }
-            }
+                        this.FilesToCopy--;
 
-            foreach (var directory in Directory.GetDirectories(sourceDirectory))
-            {
-                path = Path.Combine(targetDirectory, Path.GetFileName(directory));
-                RepositorySave(directory, path);
+                        // Update our logs
+                        UpdateState("ACTIVE");
+                        UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString());
+                    }
+                }
+
+
+                foreach (var directory in Directory.GetDirectories(sourceDirectory))
+                {
+                    if (targetDirectory != null) path = Path.Combine(targetDirectory, Path.GetFileName(directory));
+                    RepositorySave(directory, path);
+                }
             }
             UpdateState("END");
+        }
+
+        protected void CreateDirectoriesOfADirectory()
+        {
+            if (SourcePath != null && TargetPath != null)
+            {
+                foreach (string subDirectory in Directory.GetDirectories(SourcePath, "*", SearchOption.AllDirectories))
+                {
+                    string relativePath = subDirectory.Replace(SourcePath, "");
+                    string targetSubDirectory = Path.Combine(TargetPath, relativePath);
+                    Directory.CreateDirectory(TargetPath + targetSubDirectory);
+                }
+            }
         }
     }
 }
