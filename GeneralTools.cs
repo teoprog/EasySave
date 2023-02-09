@@ -21,6 +21,7 @@
         /// <returns>The valid path</returns>
         public static string GetValidDirectoryPath(string path)
         {
+            if (!path.Contains(@"\") && !path.Contains("/")) return "";
             while (!Directory.Exists(path)) path = Path.GetDirectoryName(path);
             return path;
         }

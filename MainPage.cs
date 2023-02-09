@@ -31,117 +31,12 @@
                 switch (option)
                     {
                         case "1":
-                            Console.Clear();
-
-                            saveError = -1;
-                            for(int i = 0; i < saves.Length - 1; i++) 
-                            {
-                                if (Object.Equals(saves[i], null))
-                                {
-                                    saveError = i;
-                                    i = saves.Length;
-                                }
-                            }
-
-                            Console.Write(Language.Selected.CompleteSave.get(lang)); 
-                            if (saveError != -1)
-                            {
-                                Console.WriteLine(Language.BackupName.get(lang));
-                                appellation = Console.ReadLine();
-                                do
-                                {
-                                    Console.WriteLine(Language.SourcePath.get(lang));
-                                    sourcePath = Console.ReadLine();
-                                    if (!System.IO.Directory.Exists(sourcePath)) GeneralTools.WriteWarningMessage(Language.Error.SourceExistence.get(lang));
-                                } while (!System.IO.Directory.Exists(sourcePath));
-
-                                do
-                                {
-                                    Console.WriteLine(Language.TargetPath.get(lang));
-                                    targetPath = Console.ReadLine();
-
-                                    // Check if directory exist
-                                    if (!System.IO.Directory.Exists(targetPath))
-                                    {
-                                        validPath = GeneralTools.GetValidDirectoryPath(targetPath);
-
-                                        invalidPath = targetPath.Substring(validPath.Length,
-                                            targetPath.Length - validPath.Length);
-
-                                        GeneralTools.WriteWarningMessage(Language.Error.TargetPath.get(lang));
-                                        Console.WriteLine(Language.CreationDirectory.get(lang, validPath, invalidPath));
-
-                                        do
-                                        {
-                                            choice = Console.ReadLine();
-                                            if (choice != "y" && choice != "n")
-                                            {
-                                                GeneralTools.WriteWarningMessage(Language.Error.Option.get(lang));
-                                                Console.WriteLine(Language.YesNo.get(lang));
-                                            }
-
-                                        } while (choice != "y" && choice != "n");
-
-                                        if (choice == "y") System.IO.Directory.CreateDirectory(targetPath);
-                                        Console.Clear();
-                                    }
-                                } while ((!System.IO.Directory.Exists(targetPath)));
-                                Console.Clear();
-                                saves[saveError] = new CompleteSave(appellation, sourcePath, targetPath);
-                            }
-                            else
-                            {
-                                Console.Clear();
-                                GeneralTools.WriteWarningMessage(Language.Error.SavesOverflow.get(lang));
-                            }
+                            saves = Champ(saves, option, lang);
                             
                             break;
 
                         case "2":
-                            Console.Clear();
-                            saveError = -1;
-                            for(int i = 0; i < saves.Length - 1; i++) 
-                            {
-                                if (Object.Equals(saves[i], null))
-                                {
-                                    saveError = i;
-                                    i = saves.Length;
-                                }
-                            }
-
-                            Console.Write(Language.Selected.CompleteSave.get(lang));
-
-                            if (saveError != -1)
-                            {
-                                Console.WriteLine(Language.BackupName.get(lang));
-                                appellation = Console.ReadLine();
-
-                                do
-                                {
-                                    Console.WriteLine(Language.SourcePath.get(lang));
-                                    sourcePath = Console.ReadLine();
-                                    if (!System.IO.Directory.Exists(sourcePath))
-                                        GeneralTools.WriteWarningMessage(Language.Error.SourceExistence.get(lang));
-                                } while (!System.IO.Directory.Exists(sourcePath));
-
-                                do
-                                {
-                                    Console.WriteLine(Language.TargetPath.get(lang));
-                                    targetPath = Console.ReadLine();
-
-                                    // Check if directory exist
-                                    if (!System.IO.Directory.Exists(targetPath))
-                                        GeneralTools.WriteWarningMessage(Language.Error.TargetExistence.get(lang));
-                                } while (!System.IO.Directory.Exists(targetPath));
-
-                                saves[saveError] = new DiffSave(appellation, sourcePath, targetPath);
-                                Console.Clear();
-                            }
-                            else
-                            {
-                                Console.Clear();
-                                GeneralTools.WriteWarningMessage(Language.Error.SavesOverflow.get(lang));
-                            }
+                            saves = Champ(saves, option, lang);
                             break;
                         
                         case "3":
@@ -184,7 +79,6 @@
                                     saves[i] = null;
                                 }
                             });
-                            ;
                             Console.Clear();
                             Console.WriteLine("Save progress... Enter for continue");
                             Console.ReadLine();
@@ -192,7 +86,7 @@
                             break;
                         
                         case "4":
-                            lang = changeLang(lang);
+                            lang = ChangeLang(lang);
                             Console.Clear();
                             break;
             
@@ -205,7 +99,114 @@
             Console.WriteLine(Language.GoodBye.get(lang));
         }
 
-        private static string changeLang(string language)
+
+        public static ISave?[] Champ(ISave?[] saves, string option, string lang)
+        {
+            string choice;
+            string validPath;
+            string invalidPath;
+            int saveError;
+            string appellation;
+            string sourcePath;
+            string targetPath;
+
+            choice = targetPath = "";
+            Console.Clear();
+            saveError = PositionAvaible(saves);
+
+            Console.Write(Language.Selected.CompleteSave.get(lang));
+            if (saveError != -1)
+            {
+                Console.WriteLine(Language.BackupName.get(lang));
+                appellation = Console.ReadLine();
+                do
+                {
+                    Console.WriteLine(Language.SourcePath.get(lang));
+                    sourcePath = Console.ReadLine();
+                    if (!System.IO.Directory.Exists(sourcePath)) GeneralTools.WriteWarningMessage(Language.Error.SourceExistence.get(lang));
+                } while (!System.IO.Directory.Exists(sourcePath));
+
+                switch (option)
+                {
+                    case "1":
+                    {
+                        do
+                        {
+                            Console.WriteLine(Language.TargetPath.get(lang));
+                            targetPath = Console.ReadLine();
+
+                            // Check if directory exist
+                            if (!System.IO.Directory.Exists(targetPath))
+                            {
+                                if (targetPath != null && GeneralTools.GetValidDirectoryPath(targetPath) != "")
+                                {
+                                    validPath = GeneralTools.GetValidDirectoryPath(targetPath);
+
+                                    invalidPath = targetPath.Substring(validPath.Length,
+                                        targetPath.Length - validPath.Length);
+
+                                    GeneralTools.WriteWarningMessage(Language.Error.TargetPath.get(lang));
+                                    Console.WriteLine(Language.CreationDirectory.get(lang, validPath, invalidPath));
+
+                                    do
+                                    {
+                                        choice = Console.ReadLine();
+                                        if (choice != "y" && choice != "n")
+                                        {
+                                            GeneralTools.WriteWarningMessage(Language.Error.Option.get(lang));
+                                            Console.WriteLine(Language.YesNo.get(lang));
+                                        }
+                                    } while (choice != "y" && choice != "n");
+
+                                    if (choice == "y") System.IO.Directory.CreateDirectory(targetPath);
+                                }
+
+                                Console.Clear();
+                            }
+                        } while ((!System.IO.Directory.Exists(targetPath)));
+                        saves[saveError] = new CompleteSave(appellation, sourcePath, targetPath);
+                        break;
+                    }
+                    case "2":
+                    {
+                        do
+                        {
+                            Console.WriteLine(Language.TargetPath.get(lang));
+                            targetPath = Console.ReadLine();
+
+                            // Check if directory exist
+                            if (!System.IO.Directory.Exists(targetPath))
+                                GeneralTools.WriteWarningMessage(Language.Error.TargetExistence.get(lang));
+                        } while (!System.IO.Directory.Exists(targetPath));
+
+                        saves[saveError] = new DiffSave(appellation, sourcePath, targetPath);
+                        break;
+                    }
+                }
+                Console.Clear();
+                return saves;
+                }
+                else
+                {
+                    Console.Clear();
+                    GeneralTools.WriteWarningMessage(Language.Error.SavesOverflow.get(lang));
+                }
+
+            return saves;
+        }
+
+        private static int PositionAvaible(ISave?[] saves)
+        {
+            for(int i = 0; i < saves.Length - 1; i++) 
+            {
+                if (Object.Equals(saves[i], null))
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        private static string ChangeLang(string language)
         {
             return "fr" == language ? "ang" : "fr";
         }
