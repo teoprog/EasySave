@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "R+7nqiyCovA08+TPnStJiIdN7jQZ1+QF3WQddyLLmMuOljA54/c7L2q6XDKvCKjY4saxvRDCPitZLFRUuZ+tEw==",
+  "dgSpecHash": "aCzjzTlRBSl+pwOT5E4cRt2TLdPIDDEYcq9/fHdmP1nfYHgf0XRN1yFobWJDIMe1PyUPRNx4tHX4KVu2Tg5spQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emiro\\EasySave\\EasySave.csproj",
+  "projectFilePath": "C:\\Users\\mathy\\EasySave\\Easysavegraphique2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\emiro\\.nuget\\packages\\newtonsoft.json\\13.0.3-beta1\\newtonsoft.json.13.0.3-beta1.nupkg.sha512"
+    "C:\\Users\\mathy\\.nuget\\packages\\microsoft-windowsapicodepack-core\\1.1.4\\microsoft-windowsapicodepack-core.1.1.4.nupkg.sha512",
+    "C:\\Users\\mathy\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
   ],
   "logs": []
 }

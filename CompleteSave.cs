@@ -1,61 +1,30 @@
-﻿using System.Diagnostics;
+﻿using System.IO;
 
 namespace EasySave
 {
-    public class CompleteSave : Save
+    public class CompleteSave : Save, ISave
     {
-        public CompleteSave() {
-            this.Appellation = "";
-            this.SourcePath = "";
-            this.TargetPath = "";
-            this.FilesToCopy = 0;
-        }
-        
-        internal void RepositorySave()
-        {
-            this.RepositorySave(this.SourcePath, this.TargetPath);
-        }
-        
         
         /// <summary>
-        /// Simple copy of directory
+        /// Constructor who call his parent
         /// </summary>
-        /// <param name="sourceDirectory"></param>
-        /// <param name="targetDirectory"></param>
-        private void RepositorySave(string sourceDirectory, string targetDirectory)
+        public CompleteSave(string? appellation, string? sourcePath, string? targetPath) 
+            : base(appellation, sourcePath, targetPath)
         {
-            string path;
-            long fileSize;
-            long totalFiles;
-            
-            Stopwatch stopwatch = new Stopwatch();
-            this.FilesToCopy = totalFiles = Directory.GetFiles(sourceDirectory, "*", SearchOption.AllDirectories).Length;
-            this.FilesSize = DirectorySize(new DirectoryInfo(sourceDirectory));
-            UpdateProgressSave(totalFiles, "ACTIVE");
-            if (!Directory.Exists(targetDirectory)) 
-                Directory.CreateDirectory(targetDirectory);
-
-            foreach (var file in Directory.GetFiles(sourceDirectory))
+        }
+        
+        /// <summary>
+        /// Call parent file for do the Save
+        /// </summary>
+        public void RepositorySave()
+        {
+            this.FilesSize = DirectorySize();
+            if (this.SourcePath != null)
             {
-                path = Path.Combine(targetDirectory, Path.GetFileName(file));
-                
-                stopwatch.Start();
-                File.Copy(file, path, true);
-                stopwatch.Stop();
-
-                fileSize = (new FileInfo(file)).Length;
-                this.FilesToCopy--;
-                this.FilesSize -= fileSize;
-                UpdateProgressSave(totalFiles, "ACTIVE");
-                UpdateProgress(file,path, fileSize,  stopwatch.Elapsed.ToString());
+                this.TotalFiles = this.FilesToCopy = Directory.GetFiles(this.SourcePath, "*", SearchOption.AllDirectories).Length;
+                CreateDirectoriesOfADirectory();
+                base.RepositorySave(this.SourcePath, this.TargetPath);
             }
-
-            foreach (var directory in Directory.GetDirectories(sourceDirectory))
-            {
-                path = Path.Combine(targetDirectory, Path.GetFileName(directory));
-                RepositorySave(directory, path);
-            }
-            UpdateProgressSave(totalFiles, "END");
         }
     }
 }
