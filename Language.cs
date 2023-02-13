@@ -2,11 +2,44 @@
 
 public abstract class Language
 {
+    public abstract class ProcessName
+    {
+        private const string Ang = "Enter Business Software process :\n";
+        private const string Fr = "Entre un processus de Logiciel Métier :\n";
+
+        public static string Get(string word)
+        {
+            return word == "fr" ? Fr : Ang;
+        }
+    }
+    
+    public abstract class Continue
+    {
+        private const string Ang = "Save progress... Enter for continue";
+        private const string Fr = "Enregistrement progrès... Entre pour continuer";
+
+        public static string Get(string word)
+        {
+            return word == "fr" ? Fr : Ang;
+        }
+    }
+
+    
+    public abstract class BusinessSoftware
+    {
+        private const string Ang = "Business software added.\n";
+        private const string Fr = "Logiciel métier ajouté.\n";
+
+        public static string Get(string word)
+        {
+            return word == "fr" ? Fr : Ang;
+        }
+    }
+    
     public abstract class Welcome
     {
-        private const string Fr = "Bienvenue sur EasySave !\n";
         private const string Ang = "Welcome on EasySave !\n";
-
+        private const string Fr = "Bienvenue sur EasySave !\n";
         public static string Get(string word)
         {
             return word == "fr" ? Fr : Ang;
@@ -128,10 +161,20 @@ public abstract class Language
             }
         }
         
+        public abstract class BlackList
+        {
+            private const string Ang = "4- Business software";
+            private const string Fr = "4- Logiciel métier";
+
+            public static string Get(string word)
+            {
+                return word == "fr" ? Fr : Ang;
+            }
+        }
         public abstract class ChangeLanguage
         {
-            private const string Ang = "4- Change Language (Languages available : French, English)";
-            private const string Fr = "4- Changement de langue (Langues disponibles : Français, Anglais)";
+            private const string Ang = "5- Change Language (Languages available : French, English)";
+            private const string Fr = "5- Changement de langue (Langues disponibles : Français, Anglais)";
 
             public static string Get(string word)
             {
@@ -177,8 +220,8 @@ public abstract class Language
     {
         public abstract class SavesOverflow
         {
-            private const string Ang = "You already have 5 saves in memory. Unable to add. Please run current saves for have the ability to create new ones.";
-            private const string Fr = "Vous avez déjà 5 sauvegardes en mémoire. Impossible d'en ajouter. Veuillez lancer les sauvegardes actuelles pour avoir la possibilité d'en créer des nouvelles.";
+            private const string Ang = "Invalid business software. If the software is not running, we can't add it to the buisness software list.";
+            private const string Fr = "Logiciel métier  invalide. Veuillez vérifier qu'il est lancé car c'est nécéssaire afin de l'ajouter aux logiciels métiers";
 
             public static string Get(string word)
             {
@@ -233,6 +276,26 @@ public abstract class Language
             private const string Ang = "Target path of the directory does not exist.\n";
             private const string Fr = "Le lien vers le répertoire n'existe pas.";
 
+            public static string Get(string word)
+            {
+                return word == "fr" ? Fr : Ang;
+            }
+        }
+        
+        public abstract class BusinessWorking
+        {
+            private const string Ang = "Business software already exist";
+            private const string Fr = "Logiciel métier existe déjà";
+            public static string Get(string word)
+            {
+                return word == "fr" ? Fr : Ang;
+            }
+        }
+        
+        public abstract class BusinessWork
+        {
+            private const string Ang = "Business software are working. Save impossible. Software maybe open in background. Enter for continue.";
+            private const string Fr = "Un logiciel métier fonctionne. Sauvegarde impossible. Logiciel peut-être ouvert en arrière plan. Entre pour continuer.";
             public static string Get(string word)
             {
                 return word == "fr" ? Fr : Ang;

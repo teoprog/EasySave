@@ -1,4 +1,7 @@
 ﻿using System.Collections;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
+using Microsoft.Extensions.Configuration;
 
 namespace EasySave
 {
@@ -6,12 +9,13 @@ namespace EasySave
     {
         private static void Main()
         {
+
             // The option user have to choose
             string? option;
             List<ISave> saves = new List<ISave>();
             string lang = "fr"; // language fr by default
+            BusinessSoftware businessSoftware = new BusinessSoftware();
 
-            
             Console.WriteLine(Language.Welcome.Get("ang"));
             do
             {
@@ -19,6 +23,7 @@ namespace EasySave
                 Console.WriteLine(Language.Menu.CompleteSave.Get(lang));
                 Console.WriteLine(Language.Menu.DiffSave.Get(lang));
                 Console.WriteLine(Language.Menu.LaunchSaves.Get(lang));
+                Console.WriteLine(Language.Menu.BlackList.Get(lang));
                 Console.WriteLine(Language.Menu.ChangeLanguage.Get(lang));
                 Console.WriteLine(Language.Menu.Exit.Get(lang));
 
@@ -111,39 +116,58 @@ namespace EasySave
                                 }
                                 Console.Clear();
                                 break;
-                        
+
                         case "3":
-                            Task.Run(() =>
+                            Process[] processesWorking = Process.GetProcesses();
+                            bool processesRunning = businessSoftware.Name.Any(processName => processesWorking.Any(process =>  string.Equals(process.ProcessName, processName, StringComparison.OrdinalIgnoreCase)));
+                             if (!processesRunning)
                             {
-                                for(int i = 0; i < saves.Count; i++) 
+                                Task.Run(() =>
                                 {
-                                    if (!Equals(saves[i], null))
+                                    for(int i = 0; i < saves.Count; i++) 
                                     {
-                                        try {
-                                            if (saves[i] is CompleteSave)
-                                            {
-                                                (saves[i] as CompleteSave)?.RepositorySave();
-                                            } else if (saves[i] is DiffSave)
-                                            {
-                                                (saves[i] as DiffSave)?.RepositorySave();
-                                            }
-                                        } catch (Exception e)
+                                        if (!Equals(saves[i], null))
                                         {
-                                            Console.WriteLine(e);
-                                            (saves[i] as DiffSave)?.UpdateState("ERROR");
-                                            GeneralTools.WriteWarningMessage((saves[i] as CompleteSave)?.Appellation + Language.Error.Access.Get(lang));
+                                            try {
+                                                if (saves[i] is CompleteSave)
+                                                {
+                                                    (saves[i] as CompleteSave)?.RepositorySave();
+                                                } else if (saves[i] is DiffSave)
+                                                {
+                                                    (saves[i] as DiffSave)?.RepositorySave();
+                                                }
+                                            } catch (Exception e)
+                                            {
+                                                Console.WriteLine(e);
+                                                (saves[i] as DiffSave)?.UpdateState("ERROR");
+                                                GeneralTools.WriteWarningMessage((saves[i] as CompleteSave)?.Appellation + Language.Error.Access.Get(lang));
+                                            }
                                         }
+                                        saves[i] = null;
                                     }
-                                    saves[i] = null;
-                                }
-                            });
-                            Console.Clear();
-                            Console.WriteLine("Save progress... Enter for continue");
-                            Console.ReadLine();
-                            Console.Clear();
+                                });
+                                                         
+                                Console.Clear();
+                                Console.WriteLine(Language.Continue.Get(lang));
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                GeneralTools.WriteWarningMessage(Language.Error.BusinessWork.Get(lang));
+                            }
                             break;
                         
                         case "4":
+                            Console.Write(Language.ProcessName.Get(lang));
+                            string? business;
+
+                            while ((business = Console.ReadLine()) == null) { }
+
+                            if (!businessSoftware.Add(business))
+                                GeneralTools.WriteWarningMessage(Language.Error.BusinessWorking.Get(lang));
+                            break;
+
+                        case "5":
                             lang = ChangeLang(lang);
                             Console.Clear();
                             break;

@@ -3,6 +3,11 @@
     public static class GeneralTools
     {
         /// <summary>
+        /// Var who stock the path to the logs directory
+        /// </summary>
+        public static readonly string DirectoryPath = "./../../../Save_logs";
+        
+        /// <summary>
         /// A simple function who write a warning message
         /// </summary>
         /// <param name="word">Message you want to write on Console</param>
@@ -11,6 +16,25 @@
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine(word);
             Console.ForegroundColor = temp;
+        }
+        
+        /// <summary>
+        /// Create log folder and logs files if they don't exist
+        /// </summary>
+        public static void CreateLogsFiles()
+        {
+            if (!Directory.Exists(DirectoryPath))
+                Directory.CreateDirectory(DirectoryPath);
+
+            if(!File.Exists(DirectoryPath + "/logs.json"))
+                File.Create(DirectoryPath + "/logs.json");
+                
+            
+            if(!File.Exists(DirectoryPath + "/state.json"))
+                File.Create(DirectoryPath + "/state.json");
+            
+            if(!File.Exists(DirectoryPath + "/businessSoftware.json"))
+                File.Create(DirectoryPath + "/businessSoftware.json");
         }
         
         /// <summary>

@@ -23,7 +23,6 @@ namespace EasySave
         /// </summary>
         internal readonly string? TargetPath;
 
-
         /// <summary>
         /// Files need to be copied (decrement when a file is copied)
         /// </summary>
@@ -39,18 +38,12 @@ namespace EasySave
         /// </summary>
         internal long TotalFiles;
 
-        /// <summary>
-        /// Var who stock the path to the logs directory
-        /// </summary>
-        private static readonly string DirectoryPath = Directory.GetCurrentDirectory() + @"..\..\..\..\Save_logs";
-        
         protected Save(string? appellation, string? sourcePath, string? targetPath)
-        {
+        { 
             Appellation = appellation;
             SourcePath = sourcePath;
             TargetPath = targetPath;
             this.TotalFiles = 0;
-            CreateLogsFiles();
         }
         
         /// <summary>
@@ -62,13 +55,13 @@ namespace EasySave
         /// <param name="stopwatch">Time of the copy</param>
         private void UpdateLogs(string sourceFile, string? fileTarget, long fileSize, string stopwatch)
         {
-            string filepath = DirectoryPath + @"\logs.json";
+            string filepath = GeneralTools.DirectoryPath + "/logs.json";
 
             // Read the existing JSON file content into a string
             string jsonContent = File.ReadAllText(filepath);
 
             // Parse the string into a JObject
-            List<dynamic>? jsonObjects = JsonConvert.DeserializeObject<List<dynamic>>(jsonContent);
+            List<dynamic> jsonObjects = JsonConvert.DeserializeObject<List<dynamic>>(jsonContent);
 
             // Create a new object
             JsonLog jsonInfoSaveFile = new JsonLog(this.Appellation, 
@@ -80,7 +73,7 @@ namespace EasySave
                                                         DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
             
             // Nothing in the json file, so it create a List for our Saves and Add the item to the list
-            jsonObjects ??= new List<dynamic>();
+            if(jsonObjects == null) jsonObjects = new List<dynamic>();
             jsonObjects.Add(jsonInfoSaveFile);
 
             // Serialize created object
@@ -95,7 +88,7 @@ namespace EasySave
         /// <param name="status"></param>
         public void UpdateState(string status)
         {
-            string filepath = DirectoryPath + @"\state.json";
+            string filepath = GeneralTools.DirectoryPath + "/state.json";
 
             // Parse the string into a JObject
             List<dynamic>? jsonObjects = JsonConvert.DeserializeObject<List<dynamic>>(File.ReadAllText(filepath));
@@ -178,29 +171,14 @@ namespace EasySave
         }
 
         /// <summary>
-        /// Create log folder and logs files if they don't exist
-        /// </summary>
-        private static void CreateLogsFiles()
-        {
-            if (!Directory.Exists(DirectoryPath))
-            {
-                Directory.CreateDirectory(DirectoryPath);
-            }
-            
-            if(!File.Exists(DirectoryPath + @"\logs.json"))
-                File.Create(DirectoryPath + @"\logs.json");
-                
-            if(!File.Exists(DirectoryPath + @"\state.json"))
-                File.Create(DirectoryPath + @"\state.json");
-        }
-
-        /// <summary>
         /// Function who save a repository (completeSave and diffSave)
         /// </summary>
         /// <param name="sourceDirectory">The source directory we actually browse</param>
         /// <param name="targetDirectory">The target directory we want to add modifications</param>
         protected void RepositorySave(string? sourceDirectory, string? targetDirectory)
         {
+            GeneralTools.CreateLogsFiles();
+            
             // Global param
             string? path = null;
             Stopwatch stopwatch = new Stopwatch();
@@ -227,8 +205,8 @@ namespace EasySave
                             this.FilesSize -= fileSize;
 
                             // Update our logs
-                            // UpdateState("ACTIVE");
-                            // UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString());
+                            UpdateState("ACTIVE");
+                            UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString());
                         }
                     }
                 }
