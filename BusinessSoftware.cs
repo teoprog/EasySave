@@ -11,6 +11,8 @@ public class BusinessSoftware
     {
         this.Name = new List<string>();
         
+        GeneralTools.CreateLogsFiles();
+        
         // In our Name affect the content of the json file
         using (StreamReader reader = new StreamReader(GeneralTools.DirectoryPath + "/businessSoftware.json"))
         {
