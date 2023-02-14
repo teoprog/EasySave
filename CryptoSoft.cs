@@ -1,6 +1,4 @@
-using System.Diagnostics;
 using System.Security.Cryptography;
-using CryptSharp;
 using Newtonsoft.Json;
 
 namespace EasySave;
@@ -16,7 +14,7 @@ public class CryptoSoft
         GeneralTools.CreateLogsFiles();
         
         // In our Name affect the content of the json file
-        using (StreamReader reader = new StreamReader(GeneralTools.DirectoryPath + "/cryptoSoft.json"))
+        using (StreamReader reader = new StreamReader(GeneralTools.LogPath + "/cryptoSoft.json"))
         {
             string json = reader.ReadToEnd();
             
@@ -32,7 +30,7 @@ public class CryptoSoft
         if (!this.Name.Contains(extensionName))
         {
             this.Name.Add(extensionName);
-            File.WriteAllText(GeneralTools.DirectoryPath + "/cryptoSoft.json", JsonConvert.SerializeObject(this));
+            File.WriteAllText(GeneralTools.LogPath + "/cryptoSoft.json", JsonConvert.SerializeObject(this));
             return true;
         }
         return false;
@@ -40,8 +38,8 @@ public class CryptoSoft
 
     public void Cryp()
     { 
-        string inputFile = @"C:\Users\bvict\OneDrive\Bureau\Nouveau dossier\azer.txt";
-        string outputFile = @"C:\Users\bvict\OneDrive\Bureau\Nouveau dossier\ok.txt";
+        string inputFile = @"C:\Users\emiro\OneDrive\Documents\Bureau\Cours Cesi\Programmation système\prosit-5\1.txt";
+        string outputFile = @"C:\Users\emiro\OneDrive\Documents\Bureau\Cours Cesi\Programmation système\prosit-5\2.txt";
 
         string password = "mysecretpassword";
         byte[] salt = new byte[] { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 };
@@ -65,8 +63,8 @@ public class CryptoSoft
 
     public void Decrypt()
     {
-        string inputFile = @"C:\Users\bvict\OneDrive\Bureau\Nouveau dossier\ok.txt";
-        string outputFile = @"C:\Users\bvict\OneDrive\Bureau\Nouveau dossier\ab.txt";
+        string inputFile = @"C:\Users\emiro\OneDrive\Documents\Bureau\Cours Cesi\Programmation système\prosit-5\2.txt";
+        string outputFile = @"C:\Users\emiro\OneDrive\Documents\Bureau\Cours Cesi\Programmation système\prosit-5\1.txt";
 
         string password = "mysecretpassword";
         byte[] salt = new byte[] { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 };

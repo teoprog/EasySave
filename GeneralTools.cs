@@ -1,11 +1,14 @@
-﻿namespace EasySave
+﻿using Microsoft.Extensions.Configuration;
+
+namespace EasySave
 {
     public static class GeneralTools
     {
         /// <summary>
         /// Var who stock the path to the logs directory
         /// </summary>
-        public static readonly string DirectoryPath = "./../../../Save_logs";
+        public static readonly string? LogPath = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true).Build()["Log_Path"];
         
         /// <summary>
         /// A simple function who write a warning message
@@ -23,21 +26,18 @@
         /// </summary>
         public static void CreateLogsFiles()
         {
-            if (!Directory.Exists(DirectoryPath))
-                Directory.CreateDirectory(DirectoryPath);
+            if (!Directory.Exists(LogPath))
+                Directory.CreateDirectory(LogPath);
 
-            if(!File.Exists(DirectoryPath + "/logs.json"))
-                File.Create(DirectoryPath + "/logs.json");
+            if(!File.Exists(LogPath + "/logs.json"))
+                File.Create(LogPath + "/logs.json");
                 
             
-            if(!File.Exists(DirectoryPath + "/state.json"))
-                File.Create(DirectoryPath + "/state.json");
+            if(!File.Exists(LogPath + "/state.json"))
+                File.Create(LogPath + "/state.json");
             
-            if(!File.Exists(DirectoryPath + "/businessSoftware.json"))
-                File.Create(DirectoryPath + "/businessSoftware.json");
-            
-            if(!File.Exists(DirectoryPath + "/cryptoSoft.json"))
-                File.Create(DirectoryPath + "/cryptoSoft.json");
+            if(!File.Exists(LogPath + "/cryptoSoft.json"))
+                File.Create(LogPath + "/cryptoSoft.json");
         }
         
         /// <summary>

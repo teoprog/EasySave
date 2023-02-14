@@ -1,27 +1,28 @@
 using System.Diagnostics;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 
 namespace EasySave;
 
 public class BusinessSoftware
 {
-    public List<string> Name { get; set; }
-
+    public List<string>? Name { get; set; }
+    
     public BusinessSoftware()
     {
-        this.Name = new List<string>();
+        IConfiguration business = new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: false, reloadOnChange: true).Build();
+
+        var businessList = business.GetSection("Business_Software").Get<List<string>>();
+        if (businessList != null)
+        {
+            this.Name = businessList;
+        }
+        else
+        {
+            this.Name = new List<string>();
+        }
         
         GeneralTools.CreateLogsFiles();
-        
-        // In our Name affect the content of the json file
-        using (StreamReader reader = new StreamReader(GeneralTools.DirectoryPath + "/businessSoftware.json"))
-        {
-            string json = reader.ReadToEnd();
-            
-            dynamic data = JsonConvert.DeserializeObject(json);
-            
-            if(data != null) this.Name = data.Name.ToObject<List<string>>();
-        }
     }
 
     public bool Add(string processName)
@@ -29,7 +30,11 @@ public class BusinessSoftware
         if (verifyProcessExistence(processName) && !this.Name.Contains(processName))
         {
             this.Name.Add(processName);
-            File.WriteAllText(GeneralTools.DirectoryPath + "/businessSoftware.json", JsonConvert.SerializeObject(this));
+            var business = JsonConvert.DeserializeObject<Dictionary<string, object>>(File.ReadAllText("appsettings.json"));
+            business["Business_Software"] = this.Name;
+            var json = JsonConvert.SerializeObject(business, Formatting.Indented);
+
+            File.WriteAllText("appsettings.json", json);
             return true;
         }
         return false;

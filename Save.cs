@@ -55,7 +55,7 @@ namespace EasySave
         /// <param name="stopwatch">Time of the copy</param>
         private void UpdateLogs(string sourceFile, string? fileTarget, long fileSize, string stopwatch)
         {
-            string filepath = GeneralTools.DirectoryPath + "/logs.json";
+            string filepath = GeneralTools.LogPath + "/logs.json";
 
             // Read the existing JSON file content into a string
             string jsonContent = File.ReadAllText(filepath);
@@ -88,7 +88,7 @@ namespace EasySave
         /// <param name="status"></param>
         public void UpdateState(string status)
         {
-            string filepath = GeneralTools.DirectoryPath + "/state.json";
+            string filepath = GeneralTools.LogPath + "/state.json";
 
             // Parse the string into a JObject
             List<dynamic>? jsonObjects = JsonConvert.DeserializeObject<List<dynamic>>(File.ReadAllText(filepath));

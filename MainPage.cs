@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Diagnostics;
-using System.Runtime.CompilerServices;
+﻿using System.Diagnostics;
 using Microsoft.Extensions.Configuration;
 
 namespace EasySave
@@ -9,9 +7,16 @@ namespace EasySave
     {
         private static void Main()
         {
-            CryptoSoft extension = new CryptoSoft();
-            extension.Decrypt();
-            extension.Add("txt");
+            // string? a =  new ConfigurationBuilder()
+            //     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true).Build()["Business_Software"];
+            // Console.WriteLine(a);
+            // var builder = new ConfigurationBuilder()
+            //     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true).Build().GetSection("Business_Software");
+            //
+            // List<string> a = builder.Get<List<string>>();
+            // CryptoSoft extension = new CryptoSoft();
+            // extension.Decrypt();
+            // extension.Add("txt");
 
             // The option user have to choose
             string? option;
