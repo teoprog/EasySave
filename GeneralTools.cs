@@ -35,6 +35,9 @@
             
             if(!File.Exists(DirectoryPath + "/businessSoftware.json"))
                 File.Create(DirectoryPath + "/businessSoftware.json");
+            
+            if(!File.Exists(DirectoryPath + "/cryptoSoft.json"))
+                File.Create(DirectoryPath + "/cryptoSoft.json");
         }
         
         /// <summary>

@@ -8,12 +8,21 @@
     ".NETCoreApp,Version=v7.0": {
       "EasySave/1.0.0": {
         "dependencies": {
+          "CryptSharpOfficial": "2.1.0",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Newtonsoft.Json": "13.0.3-beta1",
           "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "runtime": {
           "EasySave.dll": {}
+        }
+      },
+      "CryptSharpOfficial/2.1.0": {
+        "runtime": {
+          "lib/CryptSharp.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -178,6 +187,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "CryptSharpOfficial/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t90jvDpTXoP4LTTHh/+HnBsOxQwOmlhS0hlqgocLKN0T5udAG8QuVtwcpGsjwK2Sl6YfRgflCGiSgeVWwF6+jw==",
+      "path": "cryptsharpofficial/2.1.0",
+      "hashPath": "cryptsharpofficial.2.1.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/7.0.0": {
       "type": "package",

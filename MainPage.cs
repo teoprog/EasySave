@@ -9,6 +9,9 @@ namespace EasySave
     {
         private static void Main()
         {
+            CryptoSoft extension = new CryptoSoft();
+            extension.Decrypt();
+            extension.Add("txt");
 
             // The option user have to choose
             string? option;
