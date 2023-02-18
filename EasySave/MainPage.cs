@@ -9,6 +9,12 @@ namespace EasySave
         {
             List<ISave> saves = new List<ISave>();
             string lang = "fr"; // language fr by default
+            
+            string mutexName = "EasySave";
+            bool createdNew;
+            Mutex mutex = new Mutex(true, mutexName, out createdNew);
+
+            if (!createdNew) return;
 
             saves.Add(new CompleteSave("1", @"C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1", @"C:\Users\emiro\OneDrive\Documents\Bureau\1"));
             saves.Add(new DiffSave("2", @"C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1", @"C:\Users\emiro\OneDrive\Documents\Bureau\2"));
@@ -190,6 +196,7 @@ namespace EasySave
                     }
             } while ((option != "e"));
             Console.WriteLine(Language.GoodBye.Get(lang));
+            mutex.ReleaseMutex();
         }
 
         /// <summary>
