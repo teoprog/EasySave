@@ -118,24 +118,28 @@ namespace EasySave
                             // bool processesRunning = businessSoftware.Name.Any(processName => processesWorking.Any(process =>  string.Equals(process.ProcessName, processName, StringComparison.OrdinalIgnoreCase)));
                             //  if (!processesRunning)
                             // {
-                            Thread thread;
                                 Task.Run(() =>
                                 {
-                                    foreach(ISave save in saves) 
+                                    Thread[] threads = new Thread[saves.Count];
+
+                                    for (int i = 0; i < saves.Count; i++)
                                     {
-                                        if (!Equals(save, null))
+                                        ISave save = saves[i];
+                                        if (save != null)
                                         {
-                                            try {
+                                            try
+                                            {
                                                 if (save is CompleteSave)
                                                 {
-                                                    thread = new Thread(() => (save as CompleteSave)?.RepositorySave());
-                                                    thread.Start();
-                                                } else if (save is DiffSave)
-                                                {
-                                                    thread = new Thread(() => (save as DiffSave)?.RepositorySave());
-                                                    thread.Start();
+                                                    threads[i] = new Thread(() => (save as CompleteSave)?.RepositorySave());
                                                 }
-                                            } catch (Exception e)
+                                                else if (save is DiffSave)
+                                                {
+                                                    threads[i] = new Thread(() => (save as DiffSave)?.RepositorySave());
+                                                }
+                                                threads[i].Start();
+                                            }
+                                            catch (Exception e)
                                             {
                                                 Console.WriteLine(e);
                                                 (save as DiffSave)?.UpdateState("ERROR");
