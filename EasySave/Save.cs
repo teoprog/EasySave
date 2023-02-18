@@ -41,6 +41,9 @@ namespace EasySave
         
         private static object logsLock = new object();
         private static object stateLock = new object();
+        private static object fileSizeLock = new object();
+        
+        private static long sizeParallelFiles = 0;
 
         protected Save(string? appellation, string? sourcePath, string? targetPath)
         { 
@@ -163,7 +166,7 @@ namespace EasySave
                 
                 foreach (FileInfo file in sourceDirectory.EnumerateFiles("*", SearchOption.AllDirectories))
                     size += file.Length;
-                }
+            }
 
             return size;
         }
@@ -204,8 +207,21 @@ namespace EasySave
                         {
                             FileInfo fi = new FileInfo(file);
 
-                            // Console.WriteLine(businessList.Contains(fi.Extension));
-                            File.Copy(file, path, true);
+                            sizeParallelFiles += fi.Length; // For recuperate the size in Ko
+                            
+                            if (sizeParallelFiles > long.Parse(conf["Limit_Parallel_Size"] ?? string.Empty) *1024)
+                            {
+                                lock (fileSizeLock)
+                                {
+                                    File.Copy(file, path, true);
+                                }
+                            }
+                            else
+                            {
+                                File.Copy(file, path, true);
+                            }
+                           
+                            sizeParallelFiles -= fi.Length; // Save done so decrement
                             stopwatch.Stop();
                             fileSize = fi.Length;
                             if (businessList != null && businessList.Contains(fi.Extension))
@@ -252,7 +268,21 @@ namespace EasySave
 
                         if (sourceInfo.LastWriteTime > targetInfo.LastWriteTime)
                         {
-                            File.Copy(file, path, true);
+                            sizeParallelFiles += fi.Length; // For recuperate the size in Ko
+                            
+                            if (sizeParallelFiles > long.Parse(conf["Limit_Parallel_Size"] ?? string.Empty) * 1024)
+                            {
+                                lock (fileSizeLock)
+                                {
+                                    File.Copy(file, path, true);
+                                }
+                            }
+                            else
+                            {
+                                File.Copy(file, path, true);
+                            }
+                           
+                            sizeParallelFiles -= fi.Length; // Save done so decrement
 
                             // Recup list of ext in the config file
                             if (businessList != null && businessList.Contains(fi.Extension))
