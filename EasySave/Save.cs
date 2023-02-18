@@ -187,7 +187,7 @@ namespace EasySave
             List<Process> pro = new List<Process>();
             
             IConfiguration conf = new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: false, reloadOnChange: true).Build();
-            var businessList = conf.GetSection("Crypto_Ext").Get<List<string>>();
+            var cryptoList = conf.GetSection("Crypto_Ext").Get<List<string>>();
 
             // Params only used for DiffSave
           
@@ -206,13 +206,17 @@ namespace EasySave
                     FileInfo fi = new FileInfo(file);
 
                     sizeParallelFiles += fi.Length; // For recuperate the size in Ko
-                            
+                          
+                    List<string> businessList = conf.GetSection("Business_Software").Get<List<string>>();
+
                     if (sizeParallelFiles > long.Parse(conf["Limit_Parallel_Size"] ?? string.Empty) *1024)
                     {
                         lock (fileSizeLock)
                         {
                             if ((sourceInfo.LastWriteTime > targetInfo.LastWriteTime && this is DiffSave) || this is CompleteSave)
                             {
+                                // pause if business software is running
+                                while (VerifyBusinessSoftwareRunning(businessList)) Thread.Sleep(1000);
                                 File.Copy(file, path, true);
                             }
                             else
@@ -225,6 +229,7 @@ namespace EasySave
                     {
                         if ((sourceInfo.LastWriteTime > targetInfo.LastWriteTime && this is DiffSave) || this is CompleteSave)
                         {
+                            while (businessList != null || VerifyBusinessSoftwareRunning(businessList)) Thread.Sleep(1000);
                             File.Copy(file, path, true);
                         }
                         else
@@ -236,7 +241,7 @@ namespace EasySave
                     sizeParallelFiles -= fi.Length; // Save done so decrement
 
                     // Recup list of ext in the config file
-                    if (businessList != null && businessList.Contains(fi.Extension))
+                    if (cryptoList != null && cryptoList.Contains(fi.Extension))
                     {
                         pro.Add(new Process());
                                 
@@ -289,6 +294,18 @@ namespace EasySave
                     Directory.CreateDirectory(TargetPath + targetSubDirectory);
                 }
             }
+        }
+
+        private bool VerifyBusinessSoftwareRunning(List<string> processes)
+        {
+            foreach (string process in processes)
+            {
+                if (Process.GetProcessesByName(process).Length > 0)
+                    return true;
+            }
+    
+            // No process is running, return false
+            return false;
         }
     }
 }
