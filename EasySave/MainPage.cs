@@ -7,9 +7,15 @@ namespace EasySave
     {
         private static void Main()
         {
-            string? option;
             List<ISave> saves = new List<ISave>();
             string lang = "fr"; // language fr by default
+
+            saves.Add(new CompleteSave("1", @"C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1", @"C:\Users\emiro\OneDrive\Documents\Bureau\1"));
+            saves.Add(new DiffSave("2", @"C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1", @"C:\Users\emiro\OneDrive\Documents\Bureau\2"));
+            saves.Add(new DiffSave("3", @"C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2", @"C:\Users\emiro\OneDrive\Documents\Bureau\3"));
+            saves.Add(new CompleteSave("4", @"C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2", @"C:\Users\emiro\OneDrive\Documents\Bureau\4"));
+
+            string? option;
             BusinessSoftware businessSoftware = new BusinessSoftware();
 
             Console.WriteLine(Language.Welcome.Get("ang"));

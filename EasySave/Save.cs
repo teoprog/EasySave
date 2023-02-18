@@ -195,143 +195,85 @@ namespace EasySave
             // and can only be accessed by one thread at a time
             UpdateState("ACTIVE");
             if (sourceDirectory != null && targetDirectory != null ){
-                long fileSize;
-                if (this is CompleteSave)
+                foreach (var file in Directory.GetFiles(sourceDirectory))
                 {
+                    path = Path.Combine(targetDirectory, Path.GetFileName(file));
+                    var path2 = Path.Combine(sourceDirectory, Path.GetFileName(file));
+                    var targetInfo = new FileInfo(path);
+                    var sourceInfo = new FileInfo(path2);
+                    long fileSize = 0;
+                    stopwatch.Start();
+                    FileInfo fi = new FileInfo(file);
 
-                    foreach (var file in Directory.GetFiles(sourceDirectory))
-                    {
-                        if (targetDirectory != null) path = Path.Combine(targetDirectory, Path.GetFileName(file));
-                        stopwatch.Start();
-                        if (path != null)
-                        {
-                            FileInfo fi = new FileInfo(file);
-
-                            sizeParallelFiles += fi.Length; // For recuperate the size in Ko
+                    sizeParallelFiles += fi.Length; // For recuperate the size in Ko
                             
-                            if (sizeParallelFiles > long.Parse(conf["Limit_Parallel_Size"] ?? string.Empty) *1024)
-                            {
-                                lock (fileSizeLock)
-                                {
-                                    File.Copy(file, path, true);
-                                }
-                            }
-                            else
+                    if (sizeParallelFiles > long.Parse(conf["Limit_Parallel_Size"] ?? string.Empty) *1024)
+                    {
+                        lock (fileSizeLock)
+                        {
+                            if ((sourceInfo.LastWriteTime > targetInfo.LastWriteTime && this is DiffSave) || this is CompleteSave)
                             {
                                 File.Copy(file, path, true);
                             }
-                           
-                            sizeParallelFiles -= fi.Length; // Save done so decrement
-                            stopwatch.Stop();
-                            fileSize = fi.Length;
-                            if (businessList != null && businessList.Contains(fi.Extension))
-                            {
-                                pro.Add(new Process());
-                                
-                                pro[pro.Count-1].StartInfo = new ProcessStartInfo
-                                {
-                                    FileName = conf["Crypto_Path"],
-                                    Arguments = path + " " + conf["Crypto_Path"] +" encrypt"
-                                };
-                                pro[pro.Count - 1].Start();
-
-                                // Create a Task for stop the stopwatch cause it need to wait the end of the process
-                                pro[pro.Count - 1].WaitForExit();
-            
-                                // Different values we need for json
-                                UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString(),
-                                    pro[pro.Count - 1].ExitCode == 0 ? (pro[pro.Count - 1].ExitTime - pro[pro.Count - 1].StartTime).ToString(@"hh\:mm\:ss\.fffffff")
-                                        : "Error in encryption");
-                            }
                             else
                             {
-                                UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString(), "Not encrypted");
+                                this.TotalFiles--;
                             }
-                            this.FilesSize -= fileSize;
-                            this.FilesToCopy--;
-                            UpdateState("ACTIVE");
-                            stopwatch.Reset();
                         }
                     }
-                }
-                else
-                {
-                    foreach (var file in Directory.GetFiles(sourceDirectory))
+                    else
                     {
-                        path = Path.Combine(targetDirectory, Path.GetFileName(file));
-                        var path2 = Path.Combine(sourceDirectory, Path.GetFileName(file));
-                        var targetInfo = new FileInfo(path);
-                        var sourceInfo = new FileInfo(path2);
-                        fileSize = 0;
-                        stopwatch.Start();
-                        FileInfo fi = new FileInfo(file);
-
-                        if (sourceInfo.LastWriteTime > targetInfo.LastWriteTime)
+                        if ((sourceInfo.LastWriteTime > targetInfo.LastWriteTime && this is DiffSave) || this is CompleteSave)
                         {
-                            sizeParallelFiles += fi.Length; // For recuperate the size in Ko
-                            
-                            if (sizeParallelFiles > long.Parse(conf["Limit_Parallel_Size"] ?? string.Empty) * 1024)
-                            {
-                                lock (fileSizeLock)
-                                {
-                                    File.Copy(file, path, true);
-                                }
-                            }
-                            else
-                            {
-                                File.Copy(file, path, true);
-                            }
-                           
-                            sizeParallelFiles -= fi.Length; // Save done so decrement
-
-                            // Recup list of ext in the config file
-                            if (businessList != null && businessList.Contains(fi.Extension))
-                            {
-                                pro.Add(new Process());
-                                
-                                pro[pro.Count-1].StartInfo = new ProcessStartInfo
-                                {
-                                    FileName = conf["Crypto_Path"],
-                                    Arguments = path + " " + conf["Crypto_Path"] +" encrypt"
-                                };
-                                pro[pro.Count - 1].Start();
-
-                                // Create a Task for stop the stopwatch cause it need to wait the end of the process
-                                pro[pro.Count - 1].WaitForExit();
-            
-                                // Different values we need for json
-                                stopwatch.Stop();
-                                UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString(),
-                                    pro[pro.Count - 1].ExitCode == 0 ? (pro[pro.Count - 1].ExitTime - pro[pro.Count - 1].StartTime).ToString(@"hh\:mm\:ss\.fffffff")
-                                        : "Error in encryption");
-                            }
-                            else
-                            {
-                                stopwatch.Stop();
-                                UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString(), "Not encrypted");
-                            }  
+                            File.Copy(file, path, true);
                         }
                         else
                         {
                             this.TotalFiles--;
                         }
-
-                        fileSize = fi.Length;
-                        this.FilesSize -= fileSize;
-                        this.FilesToCopy--;
-
-                        // Update our logs
-                        UpdateState("ACTIVE");
-                        stopwatch.Reset();
                     }
+                    stopwatch.Stop(); // Copy done so stop stopwatch
+                    sizeParallelFiles -= fi.Length; // Save done so decrement
+
+                    // Recup list of ext in the config file
+                    if (businessList != null && businessList.Contains(fi.Extension))
+                    {
+                        pro.Add(new Process());
+                                
+                        pro[pro.Count-1].StartInfo = new ProcessStartInfo
+                        {
+                            FileName = conf["Crypto_Path"],
+                            Arguments = path + " " + conf["Crypto_Path"] +" encrypt"
+                        };
+                        pro[pro.Count - 1].Start();
+
+                        // Create a Task for stop the stopwatch cause it need to wait the end of the process
+                        pro[pro.Count - 1].WaitForExit();
+            
+                        // Different values we need for json
+                        UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString(),
+                            pro[pro.Count - 1].ExitCode == 0 ? (pro[pro.Count - 1].ExitTime - pro[pro.Count - 1].StartTime).ToString(@"hh\:mm\:ss\.fffffff")
+                                : "Error in encryption");
+                    }
+                    else
+                    {
+                        UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString(), "Not encrypted");
+                    }  
+                    fileSize = fi.Length;
+                    this.FilesSize -= fileSize;
+                    this.FilesToCopy--;
                 }
 
+                // Update our logs
+                UpdateState("ACTIVE");
+                stopwatch.Reset();
+            }
 
-                foreach (var directory in Directory.GetDirectories(sourceDirectory))
-                {
-                    if (targetDirectory != null) path = Path.Combine(targetDirectory, Path.GetFileName(directory));
-                    RepositorySave(directory, path);
-                }
+
+            foreach (var directory in Directory.GetDirectories(sourceDirectory))
+            {
+                if (targetDirectory != null) path = Path.Combine(targetDirectory, Path.GetFileName(directory));
+                RepositorySave(directory, path);
             }
             UpdateState("END");
         }
