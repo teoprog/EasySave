@@ -39,7 +39,8 @@ namespace EasySave
         /// </summary>
         internal long TotalFiles;
         
-        private static object fileLock = new object();
+        private static object logsLock = new object();
+        private static object stateLock = new object();
 
         protected Save(string? appellation, string? sourcePath, string? targetPath)
         { 
@@ -59,31 +60,34 @@ namespace EasySave
         private void UpdateLogs(string sourceFile, string? fileTarget, long fileSize, string stopwatch,
             string cryptTime)
         {
-            string filepath = GeneralTools.LogPath + "\\logs.json";
+            lock (logsLock)
+            {
+                string filepath = GeneralTools.LogPath + "\\logs.json";
             
-            // Read the existing JSON file content into a string
-            string jsonContent = File.ReadAllText(filepath);
+                // Read the existing JSON file content into a string
+                string jsonContent = File.ReadAllText(filepath);
 
-            // Parse the string into a JObject
-            List<dynamic> jsonObjects = JsonConvert.DeserializeObject<List<dynamic>>(jsonContent);
+                // Parse the string into a JObject
+                List<dynamic> jsonObjects = JsonConvert.DeserializeObject<List<dynamic>>(jsonContent);
 
-            // Create a new object
-            JsonLog jsonInfoSaveFile = new JsonLog(this.Appellation,
-                sourceFile,
-                fileTarget,
-                this.TargetPath,
-                fileSize.ToString(),
-                stopwatch,
-                DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
-                cryptTime);
+                // Create a new object
+                JsonLog jsonInfoSaveFile = new JsonLog(this.Appellation,
+                    sourceFile,
+                    fileTarget,
+                    this.TargetPath,
+                    fileSize.ToString(),
+                    stopwatch,
+                    DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
+                    cryptTime);
 
-            if(jsonObjects == null) jsonObjects = new List<dynamic>();
-            jsonObjects.Add(jsonInfoSaveFile);
+                if(jsonObjects == null) jsonObjects = new List<dynamic>();
+                jsonObjects.Add(jsonInfoSaveFile);
 
-            // Serialize created object
-            string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
+                // Serialize created object
+                string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
             
-            File.WriteAllText(filepath, updatedJson);
+                File.WriteAllText(filepath, updatedJson);
+            }
         }
 
         /// <summary>
@@ -92,7 +96,9 @@ namespace EasySave
         /// <param name="status"></param>
         public void UpdateState(string status)
         {
-            string filepath = GeneralTools.LogPath + "\\state.json";
+            lock (stateLock)
+            {
+                string filepath = GeneralTools.LogPath + "\\state.json";
 
             // Parse the string into a JObject
             List<dynamic>? jsonObjects = JsonConvert.DeserializeObject<List<dynamic>>(File.ReadAllText(filepath));
@@ -139,6 +145,7 @@ namespace EasySave
                 string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
                 File.WriteAllText(filepath, updatedJson);
             }
+            }
         }
 
         /// <summary>
@@ -180,6 +187,9 @@ namespace EasySave
             var businessList = conf.GetSection("Crypto_Ext").Get<List<string>>();
 
             // Params only used for DiffSave
+          
+            // This code is protected by the lock
+            // and can only be accessed by one thread at a time
             UpdateState("ACTIVE");
             if (sourceDirectory != null && targetDirectory != null ){
                 long fileSize;

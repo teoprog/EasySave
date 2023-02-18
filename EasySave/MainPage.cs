@@ -118,29 +118,34 @@ namespace EasySave
                             // bool processesRunning = businessSoftware.Name.Any(processName => processesWorking.Any(process =>  string.Equals(process.ProcessName, processName, StringComparison.OrdinalIgnoreCase)));
                             //  if (!processesRunning)
                             // {
+                            Thread thread;
                                 Task.Run(() =>
                                 {
-                                    for(int i = 0; i < saves.Count; i++) 
+                                    foreach(ISave save in saves) 
                                     {
-                                        if (!Equals(saves[i], null))
+                                        if (!Equals(save, null))
                                         {
                                             try {
-                                                if (saves[i] is CompleteSave)
+                                                if (save is CompleteSave)
                                                 {
-                                                    (saves[i] as CompleteSave)?.RepositorySave();
-                                                } else if (saves[i] is DiffSave)
+                                                    thread = new Thread(() => (save as CompleteSave)?.RepositorySave());
+                                                    thread.Start();
+                                                } else if (save is DiffSave)
                                                 {
-                                                    (saves[i] as DiffSave)?.RepositorySave();
+                                                    thread = new Thread(() => (save as DiffSave)?.RepositorySave());
+                                                    thread.Start();
                                                 }
                                             } catch (Exception e)
                                             {
                                                 Console.WriteLine(e);
-                                                (saves[i] as DiffSave)?.UpdateState("ERROR");
-                                                GeneralTools.WriteWarningMessage((saves[i] as CompleteSave)?.Appellation + Language.Error.Access.Get(lang));
+                                                (save as DiffSave)?.UpdateState("ERROR");
+                                                GeneralTools.WriteWarningMessage((save as CompleteSave)?.Appellation + Language.Error.Access.Get(lang));
                                             }
                                         }
-                                        saves[i] = null;
                                     }
+                                    
+                                    // clear the List
+                                    saves = new List<ISave>();
                                 });
                                                          
                                 Console.Clear();
