@@ -1,0 +1,129 @@
+﻿
+using EasySave;
+using System.IO;
+using System.Windows;
+using System.Windows.Controls;
+//using EasySave;
+
+
+namespace View.MVVM.View
+{
+    /// <summary>
+    /// Logique d'interaction pour ThirdView.xaml
+    /// </summary>
+    public partial class ThirdView : UserControl
+    {
+        public ThirdView()
+        {
+            InitializeComponent();
+        }
+
+        private void DifferentialButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(BackUpNameBox.Text))
+            {
+                ErrorNameLabel.Content = "Le champ BackUp Name est requis.";
+                ErrorNameLabel.Visibility = Visibility.Visible;
+                return;
+            }
+
+            if (string.IsNullOrEmpty(SoucePathBox.Text))
+            {
+                ErrorSourceLabel.Content = "Le champ Source Path est requis.";
+                ErrorSourceLabel.Visibility = Visibility.Visible;
+                return;
+            }
+            else if (!Directory.Exists(SoucePathBox.Text))
+            {
+                ErrorSourceLabel.Content = "Le répertoire Source Path n'existe pas.";
+                ErrorSourceLabel.Visibility = Visibility.Visible;
+                return;
+            }
+
+            if (string.IsNullOrEmpty(TargetPathBox.Text))
+            {
+                ErrorTargetLabel.Content = "Le champ Target Path est requis.";
+                ErrorTargetLabel.Visibility = Visibility.Visible;
+                return;
+            }
+            else if (!Directory.Exists(TargetPathBox.Text))
+            {
+                ErrorTargetLabel.Content = "Le répertoire Target Path n'existe pas.";
+                ErrorTargetLabel.Visibility = Visibility.Visible;
+                return;
+            }
+
+            HomeView.Jobs job = new HomeView.Jobs
+            {
+                appellation = BackUpNameBox.Text,
+                sourcePath = SoucePathBox.Text,
+                targetPath = TargetPathBox.Text
+            };
+
+            BackUpNameBox.Text = "";
+            SoucePathBox.Text = "";
+            TargetPathBox.Text = "";
+
+            SuccesLabel.Content = "Les données ont été sauvegardées avec succès.";
+            SuccesLabel.Visibility = Visibility.Visible;
+
+
+
+           HomeView.Saves.Add(new DiffSave(job.appellation, job.sourcePath, job.targetPath));
+            HomeView.DiffSaveNumber = HomeView.DiffSaveNumber + 1;
+
+            
+        }
+
+        private void BackUpNameBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ErrorNameLabel.Visibility = Visibility.Collapsed;
+            SuccesLabel.Visibility = Visibility.Collapsed;
+
+        }
+
+        private void SoucePathBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ErrorSourceLabel.Visibility = Visibility.Collapsed;
+            SuccesLabel.Visibility = Visibility.Collapsed;
+
+
+        }
+
+        private void TargetPathBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ErrorTargetLabel.Visibility = Visibility.Collapsed;
+            SuccesLabel.Visibility = Visibility.Collapsed;
+
+
+        }
+
+        private void source_Folder_Button_Click(object sender, RoutedEventArgs e)
+        {
+            var folderBrowserDialog = new Microsoft.Win32.OpenFileDialog();
+            folderBrowserDialog.ValidateNames = false;
+            folderBrowserDialog.CheckFileExists = false;
+            folderBrowserDialog.CheckPathExists = true;
+            folderBrowserDialog.FileName = "Folder Selection.";
+
+            if (folderBrowserDialog.ShowDialog() == true)
+            {
+                SoucePathBox.Text = System.IO.Path.GetDirectoryName(folderBrowserDialog.FileName);
+            }
+        }
+
+        private void target_Folder_Button_Click(object sender, RoutedEventArgs e)
+        {
+            var folderBrowserDialog = new Microsoft.Win32.OpenFileDialog();
+            folderBrowserDialog.ValidateNames = false;
+            folderBrowserDialog.CheckFileExists = false;
+            folderBrowserDialog.CheckPathExists = true;
+            folderBrowserDialog.FileName = "Folder Selection.";
+
+            if (folderBrowserDialog.ShowDialog() == true)
+            {
+                TargetPathBox.Text = System.IO.Path.GetDirectoryName(folderBrowserDialog.FileName);
+            }
+        }
+    }
+}

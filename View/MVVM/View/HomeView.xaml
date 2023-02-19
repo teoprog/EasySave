@@ -1,0 +1,171 @@
+﻿<UserControl x:Class="View.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+
+
+
+    <StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="250"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="DashBoard"
+                   Foreground="#ccd7ff"
+                   FontSize="26"
+                   HorizontalAlignment="Left"
+                   Margin="50 0 0 20"/>
+
+            <Grid Grid.Row="1" Margin="50 20 15 40" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Margin="0 0 25 0" Grid.Column="0">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#827BFF" Offset="0" />
+                            <GradientStop Color="#D9B5FF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="15" RadiusY="15" Rect="0,0,180,140"/>
+                    </Border.Clip>
+
+                    <Grid>
+                        <Ellipse Width="230" Height="230" Margin="0 -130 -90 0" HorizontalAlignment="Right">
+                            <Ellipse.Fill>
+                                <LinearGradientBrush StartPoint="1,0" EndPoint="0,1">
+                                    <GradientStop Color="#B298FD" Offset="0" />
+                                    <GradientStop Color="#E4BBFF" Offset="1" />
+                                </LinearGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+
+                        <Image Source="C:\Users\ayman\source\repos\View\View\Images\BriefCase.png" Margin="0 0 25 55" Width="60" Height="60"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+                        <StackPanel Margin="15 0 0 20" VerticalAlignment="Bottom">
+                            <TextBlock Text="Jobs" Foreground="#e9e9e9" FontSize="14" Width="188"/>
+                            <TextBlock x:Name="JobsnumberTextBlock" Text="" Foreground="#ffffff" FontSize="28" FontWeight="SemiBold"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+
+                <Border Margin="0 0 25 0" Grid.Column="1">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#FD8A87" Offset="0" />
+                            <GradientStop Color="#F3AB92" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="15" RadiusY="15" Rect="0,0,180,140"/>
+                    </Border.Clip>
+
+                    <Grid>
+                        <Ellipse Width="230" Height="230" Margin="0 -130 -90 0" HorizontalAlignment="Right">
+                            <Ellipse.Fill>
+                                <LinearGradientBrush StartPoint="1,0" EndPoint="0,1">
+                                    <GradientStop Color="#FBD5A8" Offset="0" />
+                                    <GradientStop Color="#FDB89B" Offset="1" />
+                                </LinearGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+
+                        <Image Source="C:\Users\ayman\source\repos\View\View\Images\CompleteSave.png" Margin="0 0 25 55" Width="60" Height="60"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+                        <StackPanel Margin="15 0 0 20" VerticalAlignment="Bottom">
+                            <TextBlock Text="Complete Saves" Foreground="#e9e9e9" FontSize="14" Width="188"/>
+                            <TextBlock Name ="CompleteSaveNumberTextBlock" Text="" Foreground="#ffffff" FontSize="28" FontWeight="SemiBold"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <Border Margin="0 0 25 0" Grid.Column="2">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#FC84CB" Offset="0" />
+                            <GradientStop Color="#FC8FAE" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="15" RadiusY="15" Rect="0,0,180,140"/>
+                    </Border.Clip>
+
+                    <Grid>
+                        <Ellipse Width="230" Height="230" Margin="0 -130 -90 0" HorizontalAlignment="Right">
+                            <Ellipse.Fill>
+                                <LinearGradientBrush StartPoint="1,0" EndPoint="0,1">
+                                    <GradientStop Color="#FC8FAE" Offset="0" />
+                                    <GradientStop Color="#FFABE6" Offset="1" />
+                                </LinearGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+
+                        <Image Source="C:\Users\ayman\source\repos\View\View\Images\Differential Save.png" Margin="0 0 25 55" Width="60" Height="60"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+                        <StackPanel Margin="15 0 0 20" VerticalAlignment="Bottom">
+                            <TextBlock Text="Differential Saves" Foreground="#e9e9e9" FontSize="14" Width="188"/>
+                            <TextBlock Name="DiffSaveNumberTextBlock" Text="" Foreground="#ffffff" FontSize="28" FontWeight="SemiBold"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <DataGrid Style="{DynamicResource DataGridStyle1}"  x:Name="JobsGrid"  AutoGenerateColumns="False" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" ItemsSource="{Binding saves}" Cursor="Hand"
+                                       Background="#1F1C2E">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Nom" Binding="{Binding appellation}" IsReadOnly="True" Width="auto" />
+                        <DataGridTextColumn x:Name="PathFromColumn" Header="Source" Binding="{Binding sourcePath}" IsReadOnly="True" Width="auto"/>
+                        <DataGridTextColumn x:Name="PathToColumn" Header="Destination" Binding="{Binding targetPath}" IsReadOnly="True" Width="auto"/>
+                    </DataGrid.Columns>
+
+                    <DataGrid.Resources>
+
+                        <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="Background" Value="#1F1C2E" />
+                            <Setter Property="BorderThickness" Value="0 0 1 1"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                            <Setter Property="VerticalContentAlignment" Value="Center"/>
+
+                        </Style>
+                        <Style BasedOn="{StaticResource {x:Type DataGridCell}}" TargetType="{x:Type DataGridCell}">
+                            <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                            <Setter Property="Background" Value="Transparent" />
+                        </Style>
+                    </DataGrid.Resources>
+                </DataGrid>
+            </Grid>
+
+            <Grid Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 40 50 0" >
+                <Button VerticalAlignment="Center" HorizontalAlignment="Center" Content="Envoyer" Click="JobsButton_Click"
+                        BorderThickness="0 0 0 1"
+                        Background="#1F1C2E"
+                        Margin="10 0 0 0"
+                        Padding="10"
+                        Foreground="White"/>
+                
+            </Grid>
+        </Grid>
+    </StackPanel>
+
+
+</UserControl>
