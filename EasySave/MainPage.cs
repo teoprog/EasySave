@@ -3,12 +3,17 @@ using Microsoft.Extensions.Configuration;
 
 namespace EasySave
 {
+
     internal static class MainPage
     {
         private static void Main()
         {
             string? option;
             List<ISave> saves = new List<ISave>();
+            saves.Add(new CompleteSave("1", @"C:\Users\bvict\OneDrive\Bureau\prosit-1", @"C:\Users\bvict\OneDrive\Bureau\1"));
+            saves.Add(new DiffSave("2", @"C:\Users\bvict\OneDrive\Bureau\prosit-1", @"C:\Users\bvict\OneDrive\Bureau\2"));
+            saves.Add(new DiffSave("3", @"C:\Users\bvict\OneDrive\Bureau\prosit-2", @"C:\Users\bvict\OneDrive\Bureau\3"));
+            saves.Add(new CompleteSave("4", @"C:\Users\bvict\OneDrive\Bureau\prosit-2", @"C:\Users\bvict\OneDrive\Bureau\4"));
             string lang = "fr"; // language fr by default
             BusinessSoftware businessSoftware = new BusinessSoftware();
 
@@ -135,7 +140,6 @@ namespace EasySave
                                             } catch (Exception e)
                                             {
                                                 Console.WriteLine(e);
-                                                (saves[i] as DiffSave)?.UpdateState("ERROR");
                                                 GeneralTools.WriteWarningMessage((saves[i] as CompleteSave)?.Appellation + Language.Error.Access.Get(lang));
                                             }
                                         }

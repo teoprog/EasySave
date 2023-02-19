@@ -29,12 +29,19 @@ namespace EasySave
             if (!Directory.Exists(LogPath))
                 Directory.CreateDirectory(LogPath);
 
+            
             if(!File.Exists(LogPath + "/logs.json"))
                 File.Create(LogPath + "/logs.json");
-                
             
             if(!File.Exists(LogPath + "/state.json"))
                 File.Create(LogPath + "/state.json");
+            
+            
+            if(!File.Exists(LogPath + "/logs.xml"))
+                File.Create(LogPath + "/logs.xml");
+        
+            if(!File.Exists(LogPath + "/state.xml"))
+                File.Create(LogPath + "/state.xml");
         }
         
         /// <summary>
