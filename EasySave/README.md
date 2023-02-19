@@ -8,7 +8,7 @@ chrome link : https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkf
 
 # For Developers
 ## Important if you work on Visual Studio
-First you will need the 2022 version for make working the application. Cause it dispose of NET Core 7.0 that we currently use in our application.
+First you will need the 2022 version for make working the application. Cause it disposes of NET Core 7.0 that we currently use in our application.
 
 ## A- Starting with GIT
 1. Open GIT Bash
@@ -28,10 +28,10 @@ First you will need the 2022 version for make working the application. Cause it 
 ## If you encounter some problems with the visibility of the branch
 git checkout -b [branch_name] origin/[branch_name]
 
-## More explications
+## More explanations
 At the right panel :
     - The modification correspond at what you have modified, when you commit it will disappear (same behaviour as red file when you do "git status" on bash)
     Notice that you can see specific changes on a file with a solid line next to the number of the line.
-    - index change it correspond at what you can commit and push on the github (same behaviour as "git add [file_name]" on git bash).
-    - All the changes you chose are index, you can now commit for share them with the team, on Visual it correspond to the textfield with validate index changes, write a short message corresponding to what you've done and click on this button (same behaviour as "git push" on bash).
+    - index changes: it corresponds to what you can commit and push on the github (same behaviour as "git add [file_name]" on git bash).
+    - All the changes you chose are indexed, you can now commit for share them with the team, on Visual it correspond to the textfield with validate index changes, write a short message corresponding to what you've done and click on this button (same behaviour as "git push" on bash).
 
