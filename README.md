@@ -6,6 +6,11 @@ Our application to help you to encrypt and decrypt different type files.
 
 ## The link to the executable is the following :
 EasySave/bin/Debug/net7.0/
+
+## For project management (where are located our US) we use Zenhub
+Zenhub is an extension for your browser
+chrome link : https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd
+
 # For Developers
 ## Important if you work on Visual Studio
 First you will need the 2022 version for make working the application. Cause it disposes of NET Core 7.0 that we currently use in our application.
