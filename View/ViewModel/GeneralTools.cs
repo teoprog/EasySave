@@ -9,8 +9,7 @@ namespace EasySave
         /// <summary>
         /// Var who stock the path to the logs directory
         /// </summary>
-        public static readonly string? LogPath = new ConfigurationBuilder()
-            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true).Build()["Log_Path"];
+        public static IConfiguration conf = new ConfigurationBuilder().AddJsonFile(Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\ViewModel\appsettings.json"), optional: false, reloadOnChange: true).Build();
         
         /// <summary>
         /// A simple function who write a warning message
@@ -28,15 +27,16 @@ namespace EasySave
         /// </summary>
         public static void CreateLogsFiles()
         {
-            if (!Directory.Exists(LogPath))
-                Directory.CreateDirectory(LogPath);
+            string logPath = conf["Log_Path"];
+            if (!Directory.Exists(logPath))
+                Directory.CreateDirectory(logPath);
 
-            if(!File.Exists(LogPath + "/logs.json"))
-                File.Create(LogPath + "/logs.json");
+            if(!File.Exists(logPath + "/logs.json"))
+                File.Create(logPath + "/logs.json");
                 
             
-            if(!File.Exists(LogPath + "/state.json"))
-                File.Create(LogPath + "/state.json");
+            if(!File.Exists(logPath + "/state.json"))
+                File.Create(logPath + "/state.json");
         }
         
         /// <summary>

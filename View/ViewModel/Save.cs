@@ -50,7 +50,7 @@ namespace EasySave
         private static long sizeParallelFiles = 0;
 
         protected Save(string? appellation, string? sourcePath, string? targetPath)
-        { 
+        {
             Appellation = appellation;
             SourcePath = sourcePath;
             TargetPath = targetPath;
@@ -69,7 +69,7 @@ namespace EasySave
         {
             lock (logsLock)
             {
-                string filepath = GeneralTools.LogPath + "\\logs.json";
+                string filepath = GeneralTools.conf["Log_Path"] + "\\logs.json";
             
                 // Read the existing JSON file content into a string
                 string jsonContent = File.ReadAllText(filepath);
@@ -105,7 +105,7 @@ namespace EasySave
         {
             lock (stateLock)
             {
-                string filepath = GeneralTools.LogPath + "\\state.json";
+                string filepath = GeneralTools.conf["Log_Path"]+ "\\state.json";
 
             // Parse the string into a JObject
             List<dynamic>? jsonObjects = JsonConvert.DeserializeObject<List<dynamic>>(File.ReadAllText(filepath));
@@ -166,7 +166,6 @@ namespace EasySave
             if (SourcePath != null && TargetPath != null)
             {
                 DirectoryInfo sourceDirectory = new DirectoryInfo(SourcePath);
-                DirectoryInfo targetDirectory = new DirectoryInfo(TargetPath);
                 
                 foreach (FileInfo file in sourceDirectory.EnumerateFiles("*", SearchOption.AllDirectories))
                     size += file.Length;
@@ -190,8 +189,7 @@ namespace EasySave
             
             List<Process> pro = new List<Process>();
             
-            IConfiguration conf = new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: false, reloadOnChange: true).Build();
-            var cryptoList = conf.GetSection("Crypto_ext").Get<List<string>>();
+            var cryptoList = GeneralTools.conf.GetSection("Crypto_ext").Get<List<string>>();
 
 
             // Params only used for DiffSave
@@ -212,9 +210,9 @@ namespace EasySave
 
                     sizeParallelFiles += fi.Length; // For recuperate the size in Ko
                           
-                    List<string> businessList = conf.GetSection("Business_Software").Get<List<string>>();
+                    List<string> businessList = GeneralTools.conf.GetSection("Business_Software").Get<List<string>>();
 
-                    if (sizeParallelFiles > long.Parse(conf["Limit_Parallel_Size"] ?? string.Empty) *1024)
+                    if (sizeParallelFiles > long.Parse(GeneralTools.conf["Limit_Parallel_Size"] ?? string.Empty) *1024)
                     {
                         lock (fileSizeLock)
                         {
@@ -234,7 +232,7 @@ namespace EasySave
                     {
                         if ((sourceInfo.LastWriteTime > targetInfo.LastWriteTime && this is DiffSave) || this is CompleteSave)
                         {
-                            while (businessList != null || VerifyBusinessSoftwareRunning(businessList)) Thread.Sleep(1000);
+                            while (businessList != null && VerifyBusinessSoftwareRunning(businessList)) Thread.Sleep(1000);
                             File.Copy(file, path, true);
                         }
                         else
@@ -252,8 +250,8 @@ namespace EasySave
                                 
                         pro[pro.Count-1].StartInfo = new ProcessStartInfo
                         {
-                            FileName = conf["Crypto_Path"],
-                            Arguments = path + " " + conf["Crypto_Path"] +" encrypt"
+                            FileName = GeneralTools.conf["Crypto_Path"],
+                            Arguments = path + " " + GeneralTools.conf["Crypto_Path"] +" encrypt"
                         };
                         pro[pro.Count - 1].Start();
 

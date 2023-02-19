@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,17 +23,11 @@ namespace View.MVVM.View
 
         }
 
-       public static List<ISave> Saves { get; set; } = new List<ISave>();
-        
+        public static List<ISave> Saves { get; set; } = new List<ISave>();
 
         public int JobsNumber;
-        public string teotest;
         public static int CompleteSaveNumber = 0;
         public static int DiffSaveNumber = 0;
-        
-
-        
-
 
         public HomeView()
         {
@@ -48,36 +43,27 @@ namespace View.MVVM.View
 
         public void JobsButton_Click(object sender, RoutedEventArgs e)
         {
+            Thread[] threads = new Thread[Saves.Count];
 
             for (int i = 0; i < Saves.Count; i++)
             {
-                if (!Equals(Saves[i], null))
+                ISave save = Saves[i];
+                if (save is CompleteSave)
                 {
-                    try
-                    {
-
-                        if (Saves[i] is CompleteSave)
-                        {
-                            (Saves[i] as CompleteSave)?.RepositorySave();
-                        }
-                        else if (Saves[i] is DiffSave)
-                        {
-                            (Saves[i] as DiffSave).RepositorySave();
-                        }
-                    }
-                    catch (Exception h)
-                    {
-                        Console.WriteLine(h);
-
-                    }
+                    threads[i] = new Thread(() => (save as CompleteSave)?.RepositorySave());
                 }
-                Saves[i] = null;
-                CompleteSaveNumber = 0;
-                DiffSaveNumber = 0;
-                JobsNumber = 0;
-
-
-            };
+                else if (save is DiffSave)
+                {
+                    threads[i] = new Thread(() => (save as DiffSave)?.RepositorySave());
+                }
+                threads[i].Start();
+            }
+                                
+            // clear the List and set the jobs to 0
+            Saves = new List<ISave>();
+            CompleteSaveNumber = 0;
+            DiffSaveNumber = 0;
+            JobsNumber = 0;
         }
     }
 }
