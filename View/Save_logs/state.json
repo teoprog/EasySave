@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "aze",
+    "FileSource": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\1",
+    "FileTarget": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": 5,
+    "TotalFilesSize": 0,
+    "Progression": "100%",
+    "NbFilesLeftToDo": 0
+  },
+  {
+    "Name": "azert",
+    "FileSource": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\1",
+    "FileTarget": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": 5,
+    "TotalFilesSize": 0,
+    "Progression": "100%",
+    "NbFilesLeftToDo": 0
+  },
+  {
+    "Name": "lolo",
+    "FileSource": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\1",
+    "FileTarget": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": 1,
+    "TotalFilesSize": 0,
+    "Progression": "100%",
+    "NbFilesLeftToDo": 0
+  }
+]

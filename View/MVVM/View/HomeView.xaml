@@ -131,9 +131,9 @@
                 </Grid.ColumnDefinitions>
 
                 <DataGrid Style="{DynamicResource DataGridStyle1}"  x:Name="JobsGrid"  AutoGenerateColumns="False" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" ItemsSource="{Binding saves}" Cursor="Hand"
-                                       Background="#1F1C2E">
+                                       Background="#1F1C2E" Margin="50 0 50 0" BorderThickness="0 0 0 0">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Nom" Binding="{Binding appellation}" IsReadOnly="True" Width="auto" />
+                        <DataGridTextColumn Header="Nom" Binding="{Binding appellation}" IsReadOnly="True" Width="70" />
                         <DataGridTextColumn x:Name="PathFromColumn" Header="Source" Binding="{Binding sourcePath}" IsReadOnly="True" Width="auto"/>
                         <DataGridTextColumn x:Name="PathToColumn" Header="Destination" Binding="{Binding targetPath}" IsReadOnly="True" Width="auto"/>
                     </DataGrid.Columns>
@@ -145,6 +145,7 @@
                             <Setter Property="BorderThickness" Value="0 0 1 1"/>
                             <Setter Property="HorizontalContentAlignment" Value="Center"/>
                             <Setter Property="VerticalContentAlignment" Value="Center"/>
+                            <Setter Property="Foreground" Value="White"/>
 
                         </Style>
                         <Style BasedOn="{StaticResource {x:Type DataGridCell}}" TargetType="{x:Type DataGridCell}">
@@ -155,15 +156,45 @@
                 </DataGrid>
             </Grid>
 
-            <Grid Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 40 50 0" >
-                <Button VerticalAlignment="Center" HorizontalAlignment="Center" Content="Envoyer" Click="JobsButton_Click"
+            <Grid Grid.Row="3" VerticalAlignment="Center" Margin="50 20 50 0" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="80"/>
+                </Grid.ColumnDefinitions>
+
+                
+                <Button Grid.Column="0" VerticalAlignment="Center"  Content="Play"
                         BorderThickness="0 0 0 1"
                         Background="#1F1C2E"
-                        Margin="10 0 0 0"
+                        Margin="0 0 5 0"
+                        Padding="10"
+                        Foreground="White"/>
+
+                <Button Grid.Column="1" VerticalAlignment="Center"  Content="Stop"
+                        BorderThickness="0 0 0 1"
+                        Background="#1F1C2E"
+                        Margin="5 0 0 0"
+                        Padding="10"
+                        Foreground="White"/>
+
+                <ProgressBar Grid.Column="2" Minimum="0" Maximum="100" 
+                             Margin="10 0 0 5"
+                             Height="40"
+                             VerticalAlignment="Center">
+                    
+                </ProgressBar>
+
+                <Button Grid.Column="3" VerticalAlignment="Center"  Content="Envoyer" Click="JobsButton_Click"
+                        BorderThickness="0 0 0 1"
+                        Background="#1F1C2E"
+                        Margin="5 0 0 0"
                         Padding="10"
                         Foreground="White"/>
                 
             </Grid>
+            
         </Grid>
     </StackPanel>
 

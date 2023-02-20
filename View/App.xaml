@@ -27,6 +27,10 @@
                 <view:SettingsView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:BlackListSoftwareViewModel}">
+                <view:BlackListSoftware/>
+            </DataTemplate>
+
 
             <Style x:Key="{ComponentResourceKey ResourceId=DataGridSelectAllButtonStyle, TypeInTargetAssembly={x:Type DataGrid}}" TargetType="{x:Type Button}">
                 <Setter Property="Template">
@@ -111,6 +115,9 @@
                     </MultiTrigger>
                 </Style.Triggers>
             </Style>
+            
+            
+            
 
 
         </ResourceDictionary>
