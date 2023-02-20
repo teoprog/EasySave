@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLogFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LogFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\exo_script_powershell_1 - Copie (2).ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\1\exo_script_powershell_1 - Copie (2).ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\1</DestPath>
+    <FileSize>161</FileSize>
+    <FileTransfertTime>00:00:00.0030840</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\exo_script_powershell_1 - Copie.ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\1\exo_script_powershell_1 - Copie.ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\1</DestPath>
+    <FileSize>161</FileSize>
+    <FileTransfertTime>00:00:00.0047128</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\exo_script_powershell_1.ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\1\exo_script_powershell_1.ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\1</DestPath>
+    <FileSize>161</FileSize>
+    <FileTransfertTime>00:00:00.0072672</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>2</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\exo_script_powershell_1 - Copie (2).ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2\exo_script_powershell_1 - Copie (2).ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\2</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0020490</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>2</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\exo_script_powershell_1 - Copie.ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2\exo_script_powershell_1 - Copie.ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\2</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0046571</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>2</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\exo_script_powershell_1.ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2\exo_script_powershell_1.ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\2</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0059204</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (2).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3\Diagramme de séquence - Copie (2).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\3</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0072227</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (3).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3\Diagramme de séquence - Copie (3).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\3</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0127802</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (4).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3\Diagramme de séquence - Copie (4).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\3</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0186361</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (5).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3\Diagramme de séquence - Copie (5).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\3</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0253022</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (6).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3\Diagramme de séquence - Copie (6).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\3</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0326611</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie.pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3\Diagramme de séquence - Copie.pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\3</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0405799</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence.pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3\Diagramme de séquence.pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\3</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0471553</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (2).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4\Diagramme de séquence - Copie (2).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\4</DestPath>
+    <FileSize>13876</FileSize>
+    <FileTransfertTime>00:00:00.0056844</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (3).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4\Diagramme de séquence - Copie (3).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\4</DestPath>
+    <FileSize>13876</FileSize>
+    <FileTransfertTime>00:00:00.0110413</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (4).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4\Diagramme de séquence - Copie (4).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\4</DestPath>
+    <FileSize>13876</FileSize>
+    <FileTransfertTime>00:00:00.0178913</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (5).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4\Diagramme de séquence - Copie (5).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\4</DestPath>
+    <FileSize>13876</FileSize>
+    <FileTransfertTime>00:00:00.0237211</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (6).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4\Diagramme de séquence - Copie (6).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\4</DestPath>
+    <FileSize>13876</FileSize>
+    <FileTransfertTime>00:00:00.0291737</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie.pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4\Diagramme de séquence - Copie.pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\4</DestPath>
+    <FileSize>13876</FileSize>
+    <FileTransfertTime>00:00:00.0371269</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence.pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4\Diagramme de séquence.pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\4</DestPath>
+    <FileSize>13876</FileSize>
+    <FileTransfertTime>00:00:00.0459051</FileTransfertTime>
+    <Time>20/02/2023 17:37:39</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\exo_script_powershell_1 - Copie (2).ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\1\exo_script_powershell_1 - Copie (2).ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\1</DestPath>
+    <FileSize>161</FileSize>
+    <FileTransfertTime>00:00:00.0029519</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\exo_script_powershell_1 - Copie.ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\1\exo_script_powershell_1 - Copie.ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\1</DestPath>
+    <FileSize>161</FileSize>
+    <FileTransfertTime>00:00:00.0056292</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\exo_script_powershell_1.ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\1\exo_script_powershell_1.ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\1</DestPath>
+    <FileSize>161</FileSize>
+    <FileTransfertTime>00:00:00.0081385</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\aaa\exo_script_powershell_1 - Copie (2).ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\1\aaa\exo_script_powershell_1 - Copie (2).ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\1</DestPath>
+    <FileSize>161</FileSize>
+    <FileTransfertTime>00:00:00.0039841</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\aaa\exo_script_powershell_1 - Copie.ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\1\aaa\exo_script_powershell_1 - Copie.ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\1</DestPath>
+    <FileSize>161</FileSize>
+    <FileTransfertTime>00:00:00.0065486</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\aaa\exo_script_powershell_1.ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\1\aaa\exo_script_powershell_1.ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\1</DestPath>
+    <FileSize>161</FileSize>
+    <FileTransfertTime>00:00:00.0096689</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>2</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\exo_script_powershell_1 - Copie (2).ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2\exo_script_powershell_1 - Copie (2).ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\2</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0028628</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>2</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\exo_script_powershell_1 - Copie.ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2\exo_script_powershell_1 - Copie.ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\2</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0040280</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>2</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\exo_script_powershell_1.ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2\exo_script_powershell_1.ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\2</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0051775</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>2</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\aaa\exo_script_powershell_1 - Copie (2).ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2\aaa\exo_script_powershell_1 - Copie (2).ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\2</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0010386</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>2</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\aaa\exo_script_powershell_1 - Copie.ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2\aaa\exo_script_powershell_1 - Copie.ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\2</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0021025</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>2</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1\aaa\exo_script_powershell_1.ps1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2\aaa\exo_script_powershell_1.ps1</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\2</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0041032</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (2).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3\Diagramme de séquence - Copie (2).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\3</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0085548</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (3).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3\Diagramme de séquence - Copie (3).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\3</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0173003</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (4).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3\Diagramme de séquence - Copie (4).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\3</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0298372</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (5).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3\Diagramme de séquence - Copie (5).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\3</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0478224</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (6).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3\Diagramme de séquence - Copie (6).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\3</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0591063</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie.pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3\Diagramme de séquence - Copie.pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\3</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0675719</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence.pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3\Diagramme de séquence.pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\3</DestPath>
+    <FileSize>0</FileSize>
+    <FileTransfertTime>00:00:00.0733772</FileTransfertTime>
+    <Time>20/02/2023 17:38:56</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (2).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4\Diagramme de séquence - Copie (2).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\4</DestPath>
+    <FileSize>13876</FileSize>
+    <FileTransfertTime>00:00:00.0147796</FileTransfertTime>
+    <Time>20/02/2023 17:38:57</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (3).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4\Diagramme de séquence - Copie (3).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\4</DestPath>
+    <FileSize>13876</FileSize>
+    <FileTransfertTime>00:00:00.0247666</FileTransfertTime>
+    <Time>20/02/2023 17:38:57</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (4).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4\Diagramme de séquence - Copie (4).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\4</DestPath>
+    <FileSize>13876</FileSize>
+    <FileTransfertTime>00:00:00.0345999</FileTransfertTime>
+    <Time>20/02/2023 17:38:57</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (5).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4\Diagramme de séquence - Copie (5).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\4</DestPath>
+    <FileSize>13876</FileSize>
+    <FileTransfertTime>00:00:00.0439365</FileTransfertTime>
+    <Time>20/02/2023 17:38:57</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie (6).pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4\Diagramme de séquence - Copie (6).pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\4</DestPath>
+    <FileSize>13876</FileSize>
+    <FileTransfertTime>00:00:00.0505245</FileTransfertTime>
+    <Time>20/02/2023 17:38:57</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence - Copie.pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4\Diagramme de séquence - Copie.pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\4</DestPath>
+    <FileSize>13876</FileSize>
+    <FileTransfertTime>00:00:00.0569662</FileTransfertTime>
+    <Time>20/02/2023 17:38:57</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2\Diagramme de séquence.pdf</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4\Diagramme de séquence.pdf</FileTarget>
+    <DestPath>C:\Users\emiro\OneDrive\Documents\Bureau\4</DestPath>
+    <FileSize>13876</FileSize>
+    <FileTransfertTime>00:00:00.0648522</FileTransfertTime>
+    <Time>20/02/2023 17:38:57</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+</ArrayOfLogFile>
