@@ -17,11 +17,14 @@ namespace EasySave
         /// </summary>
         public void RepositorySave()
         {
+            GeneralTools.CreateLogsFiles();
             this.FilesSize = DirectorySize();
             if (this.SourcePath != null)
             {
                 this.TotalFiles = this.FilesToCopy = Directory.GetFiles(this.SourcePath, "*", SearchOption.AllDirectories).Length;
-                this.CreateDirectoriesOfADirectory();
+                CreateDirectoriesOfADirectory();
+                GeneralTools.CreateLogsFiles();
+                CreateState(GeneralTools.conf);
                 base.RepositorySave(this.SourcePath, this.TargetPath);
             }
         }
