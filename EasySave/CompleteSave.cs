@@ -1,4 +1,6 @@
-﻿namespace EasySave
+﻿using Microsoft.Extensions.Configuration;
+
+namespace EasySave
 {
     public class CompleteSave : Save, ISave
     {
@@ -21,6 +23,9 @@
             {
                 this.TotalFiles = this.FilesToCopy = Directory.GetFiles(this.SourcePath, "*", SearchOption.AllDirectories).Length;
                 CreateDirectoriesOfADirectory();
+                GeneralTools.CreateLogsFiles();
+                IConfiguration conf = new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: false, reloadOnChange: true).Build();
+                CreateState(conf);
                 base.RepositorySave(this.SourcePath, this.TargetPath);
             }
         }

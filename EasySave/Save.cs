@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using System.Xml.Serialization;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
@@ -133,7 +134,66 @@ namespace EasySave
         /// Function who update dynamically the state file
         /// </summary>
         /// <param name="status"></param>
-        public void UpdateState(string status, IConfiguration conf)
+        public void UpdateState(IConfiguration conf)
+        {
+            string xmlorjson = conf["JsonOrXml"];
+
+            if (xmlorjson == "json")
+            {
+                string filepath = GeneralTools.LogPath + "\\state.json";
+
+                // Parse the string into a JObject
+                List<StateFile>? jsonObjects = JsonConvert.DeserializeObject<List<StateFile>>(File.ReadAllText(filepath));
+
+                if (this.FilesToCopy == 0) jsonObjects[^1].State = "END";
+                jsonObjects[^1].TotalFilesToCopy = this.TotalFiles.ToString();
+                jsonObjects[^1].TotalFilesSize = this.FilesSize.ToString();
+                jsonObjects[^1].NbFilesLeftToDo = this.FilesToCopy.ToString();
+                jsonObjects[^1].Progression = 
+                    this.TotalFiles == 0 || this.FilesToCopy == 0
+                    ? 100 + "%"
+                    : (100 - ((double)this.FilesToCopy / this.TotalFiles) * 100).ToString("0.00") + "%";
+                
+                string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
+                File.WriteAllText(filepath, updatedJson);
+            }
+            else
+            {
+                string filepath = GeneralTools.LogPath + "\\state.xml";
+                
+                // Create a new serializer for our object
+                XmlSerializer serializer = new XmlSerializer(typeof(List<StateFile>));
+                
+                List<StateFile> xmlObjects;
+                // Try to open the file in a shared mode
+                using (var fileStream = new FileStream(filepath, FileMode.OpenOrCreate, FileAccess.ReadWrite,
+                           FileShare.ReadWrite))
+                {
+                    // Read the existing XML file content into a List of StateFile objects
+                    xmlObjects = (List<StateFile>)serializer.Deserialize(fileStream);
+                    
+                    // Permit to update our file values if occurence with same appellation found
+                    if (this.FilesToCopy == 0) xmlObjects[^1].State = "END";
+                    xmlObjects[^1].TotalFilesToCopy = this.TotalFiles.ToString();
+                    xmlObjects[^1].TotalFilesSize = this.FilesSize.ToString();
+                    xmlObjects[^1].NbFilesLeftToDo = this.FilesToCopy.ToString();
+                    xmlObjects[^1].Progression = this.TotalFiles == 0 || this.FilesToCopy == 0
+                        ? 100 + "%"
+                        : (100 - ((double)this.FilesToCopy / this.TotalFiles) * 100).ToString("0.00") + "%";
+
+                    // Serialize and write the updated List of StateFile objects to the XML file
+                    fileStream.Position = 0;
+                    serializer.Serialize(fileStream, xmlObjects);
+                    fileStream.Close();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Function who update dynamically the state file
+        /// </summary>
+        /// <param name="status"></param>
+        public void CreateState(IConfiguration conf)
         {
             string xmlorjson = conf["JsonOrXml"];
 
@@ -148,64 +208,41 @@ namespace EasySave
                 StateFile json = new StateFile(this.Appellation,
                     this.SourcePath,
                     this.TargetPath,
-                    status,
+                    "ACTIVE",
                     this.TotalFiles.ToString(),
                     this.FilesSize.ToString(),
-                    this.FilesToCopy != 0 && this.TotalFiles != 0
-                        ? (this.FilesToCopy / this.TotalFiles) * 100 + "%"
-                        : 0 + "%",
+                    0 + "%",
                     this.FilesToCopy.ToString()
                 );
 
                 // Transform our object into a JObject
                 JObject jobject = JObject.FromObject(json);
-
-                int i = 0;
+                
                 if (jsonObjects != null)
                 {
-                    foreach (JObject obj in jsonObjects)
-                    {
-                        if (i != 1 && obj["Name"]?.ToString() == this.Appellation)
-                        {
-                            // Permit to update our file values if occurence with same appellation found
-                            obj["State"] = status;
-                            obj["TotalFilesToCopy"] = this.TotalFiles;
-                            obj["TotalFilesSize"] = this.FilesSize;
-                            obj["NbFilesLeftToDo"] = this.FilesToCopy;
-                            obj["Progression"] = this.TotalFiles == 0 || this.FilesToCopy == 0
-                                ? 100 + "%"
-                                : (100 - ((double)this.FilesToCopy / this.TotalFiles) * 100).ToString("0.00") + "%";
-
-                            i = 1; // occurence found
-                        }
-                    }
-
-                    if (i != 1) jsonObjects.Add(jobject);
-
-                    string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
-                    File.WriteAllText(filepath, updatedJson);
+                    jsonObjects.Add(jobject);
                 }
                 else
                 {
                     // Initialize list and add objects to list
                     jsonObjects = new List<dynamic> { jobject };
-                    string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
-                    File.WriteAllText(filepath, updatedJson);
                 }
+                string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
+                File.WriteAllText(filepath, updatedJson);
             }
             else
             {
                 string filepath = GeneralTools.LogPath + "\\state.xml";
-
+                
                 // Create a new serializer for our object
                 XmlSerializer serializer = new XmlSerializer(typeof(List<StateFile>));
-
-                List<StateFile> xmlObjects;
+                
                 // Try to open the file in a shared mode
                 using (var fileStream = new FileStream(filepath, FileMode.OpenOrCreate, FileAccess.ReadWrite,
                            FileShare.ReadWrite))
                 {
-                    if (File.Exists(filepath) && fileStream.Length > 0)
+                    List<StateFile>? xmlObjects;
+                    if (fileStream.Length > 0)
                     {
                         // Read the existing XML file content into a List of StateFile objects
                         xmlObjects = (List<StateFile>)serializer.Deserialize(fileStream);
@@ -219,44 +256,20 @@ namespace EasySave
                     StateFile xmlStateFile = new StateFile(this.Appellation,
                         this.SourcePath,
                         this.TargetPath,
-                        status,
+                        "ACTIVE",
                         this.TotalFiles.ToString(),
                         this.FilesSize.ToString(),
-                        this.FilesToCopy != 0 && this.TotalFiles != 0
-                            ? (this.FilesToCopy / this.TotalFiles) * 100 + "%"
-                            : 0 + "%",
+                        0 + "%",
                         this.FilesToCopy.ToString()
                     );
-
-                    int i = 0;
-                    if (xmlObjects != null)
-                    {
-                        foreach (StateFile stateFile in xmlObjects)
-                        {
-                            if (i != 1 && stateFile.Name == this.Appellation)
-                            {
-                                // Permit to update our file values if occurence with same appellation found
-                                stateFile.State = status;
-                                stateFile.TotalFilesToCopy = this.TotalFiles.ToString();
-                                stateFile.TotalFilesSize = this.FilesSize.ToString();
-                                stateFile.NbFilesLeftToDo = this.FilesToCopy.ToString();
-                                stateFile.Progression = this.TotalFiles == 0 || this.FilesToCopy == 0
-                                    ? 100 + "%"
-                                    : (100 - ((double)this.FilesToCopy / this.TotalFiles) * 100).ToString("0.00") + "%";
-                        
-                                i = 1; // occurence found
-                            }
-                        }
-
-                        if (i != 1) xmlObjects.Add(xmlStateFile);
-
-                        // Serialize and write the updated List of StateFile objects to the XML file
-                        fileStream.Position = 0;
-                        serializer.Serialize(fileStream, xmlObjects);
-                    }
+                
+                    xmlObjects.Add(xmlStateFile);
+                
+                    // Serialize and write the updated List of StateFile objects to the XML file
+                    fileStream.Position = 0;
+                    serializer.Serialize(fileStream, xmlObjects);
                 }
             }
-            
         }
 
         /// <summary>
@@ -286,19 +299,15 @@ namespace EasySave
         /// <param name="targetDirectory">The target directory we want to add modifications</param>
         protected void RepositorySave(string? sourceDirectory, string? targetDirectory)
         {
-            GeneralTools.CreateLogsFiles();
-            
+
             // Global param
             string? path = null;
             Stopwatch stopwatch = new Stopwatch();
-            
             List<Process> pro = new List<Process>();
             
             IConfiguration conf = new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: false, reloadOnChange: true).Build();
             var businessList = conf.GetSection("Crypto_Ext").Get<List<string>>();
-
-            // Params only used for DiffSave
-            UpdateState("ACTIVE", conf);
+            
             if (sourceDirectory != null && targetDirectory != null ){
                 long fileSize;
                 if (this is CompleteSave)
@@ -341,9 +350,8 @@ namespace EasySave
                             }
                             this.FilesSize -= fileSize;
                             this.FilesToCopy--;
-                            UpdateState("ACTIVE", conf);
-                            stopwatch.Reset();
                         }
+                        UpdateState(conf);
                     }
                 }
                 else
@@ -397,12 +405,10 @@ namespace EasySave
                         fileSize = fi.Length;
                         this.FilesSize -= fileSize;
                         this.FilesToCopy--;
-
-                        // Update our logs
-                        UpdateState("ACTIVE", conf);
-                        stopwatch.Reset();
+                        UpdateState(conf);
                     }
                 }
+                stopwatch.Reset();
 
 
                 foreach (var directory in Directory.GetDirectories(sourceDirectory))
@@ -411,7 +417,6 @@ namespace EasySave
                     RepositorySave(directory, path);
                 }
             }
-            UpdateState("END", conf);
         }
 
         protected void CreateDirectoriesOfADirectory()
