@@ -86,7 +86,7 @@
                  Style="{StaticResource TBStyle}"
                  Margin="20 0 0 0"/>
 
-        <Button Grid.Row="2" Grid.Column="2" x:Name="source_Folder_Button" Content="..." HorizontalAlignment="Center"  VerticalAlignment="Center"  
+        <Button Grid.Row="2" Grid.Column="2" x:Name="source_Folder_Button" Content="..." HorizontalAlignment="Center"  VerticalAlignment="Center" Click="source_Folder_Button_Click"  
                 BorderThickness="0 0 0 1"
                 Background="{StaticResource BrushStyle}"
                 Margin="10 0 0 0"
@@ -102,7 +102,7 @@
                  Style="{StaticResource TBStyle}"
                  Margin="20 0 0 0"/>
 
-        <Button Grid.Row="4" Grid.Column="2" x:Name="target_Folder_Button" Content="..." HorizontalAlignment="Center"  VerticalAlignment="Center" 
+        <Button Grid.Row="4" Grid.Column="2" x:Name="target_Folder_Button" Content="..." HorizontalAlignment="Center"  VerticalAlignment="Center" Click="target_Folder_Button_Click" 
                 BorderThickness="0 0 0 1"
                 Background="{StaticResource BrushStyle}"
                 Margin="10 0 0 0"

@@ -62,19 +62,19 @@
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding ThirdViewCommand}"/>
 
-                <RadioButton Content="Encryption settings "
-                             Height="70"
-                             Foreground="White"
-                             FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding SettingsViewCommand}"/>
-
                 <RadioButton Content="Blacklist Software"
                              Height="70"
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding }"/>
+
+                <RadioButton Content="Settings "
+                             Height="70"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding SettingsViewCommand}"/>
 
                 <RadioButton Content="About Us"
                              Height="70"

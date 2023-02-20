@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:View.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
-             Background="Azure">
+             d:DesignHeight="600" d:DesignWidth="800"
+             Background="Transparent">
 
 
     <UserControl.Resources>
@@ -35,7 +35,7 @@
                                               Margin="10,0,0,0"
                                               Content="{TemplateBinding Content}"
                                               VerticalAlignment="Center">
-                                
+
                             </ContentPresenter>
                         </StackPanel>
                         <ControlTemplate.Resources>
@@ -45,12 +45,12 @@
                                                     Duration="0:0:0:2"
                                                     From="28,0,0,0"
                                                     To="0,0,0,0">
-                                    
+
                                     <ThicknessAnimation.EasingFunction>
                                         <CircleEase EasingMode="EaseOut">
                                         </CircleEase>
                                     </ThicknessAnimation.EasingFunction>
-                                    
+
                                 </ThicknessAnimation>
                             </Storyboard>
                             <Storyboard x:Key="right">
@@ -62,7 +62,7 @@
                                     <ThicknessAnimation.EasingFunction>
                                         <CircleEase EasingMode="EaseOut"/>
                                     </ThicknessAnimation.EasingFunction>
-                                    
+
                                 </ThicknessAnimation>
                             </Storyboard>
                         </ControlTemplate.Resources>
@@ -70,10 +70,10 @@
                             <Trigger Property="IsChecked" Value="False">
                                 <Trigger.ExitActions>
                                     <RemoveStoryboard BeginStoryboardName="leftt">
-                                        
+
                                     </RemoveStoryboard>
                                     <BeginStoryboard Storyboard="{StaticResource right}" x:Name="rightt">
-                                        
+
                                     </BeginStoryboard>
                                 </Trigger.ExitActions>
                                 <Setter TargetName="button"
@@ -103,12 +103,177 @@
             </Setter>
         </Style>
     </UserControl.Resources>
-    
+
     <Grid>
-        <CheckBox x:Name="ChekBox1"
+
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="Settingstitle"
+                   Text="Settings"
+                   FontSize="20" 
+                   Foreground="White" 
+                   HorizontalAlignment="left"
+                   VerticalAlignment="Top"/>
+
+
+        <TextBlock x:Name="SettingsLanguage"
+                   Text="Language"
+                   Grid.Row="1" 
+                   Grid.Column="0" 
+                   FontSize="14" 
+                   Foreground="White" 
+                   HorizontalAlignment="center"
+                   VerticalAlignment="Center"
+                   Margin="0 0 0 5"
+                   />
+
+
+
+
+        <Border Grid.Column="1" Grid.Row="1" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Margin="0 0 0 5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Français" 
+                   Grid.Column="0" 
+                   FontSize="18" 
+                   Foreground="White" 
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                   Margin="0 0 15 0"/>
+
+                <CheckBox Grid.Column="1"  x:Name="ChekBox1"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Center"
+                  IsChecked="{Binding option}"
+                  Click="ChekBox1_Click"/>
+
+
+
+                <TextBlock Text="English" 
+                   Grid.Column="2" 
+                   FontSize="18" 
+                   Foreground="White" 
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="15 0 0 0"/>
+                    
+            </Grid>
+        </Border>
+
+        <TextBlock x:Name="SettingsLogFiles"
+                   Text="Extension of Log Files"
+                   Grid.Row="2" 
+                   Grid.Column="0" 
+                   FontSize="14" 
+                   Foreground="White" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Margin="0 5 0 0"
+                   />
+
+
+        <Border Grid.Column="1" Grid.Row="2" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Margin="0 5 0 0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="XML" 
+                   Grid.Column="0" 
+                   FontSize="18" 
+                   Foreground="White" 
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                   Margin="0 0 15 0"/>
+
+                <CheckBox Grid.Column="1"  x:Name="ChekBox3"
                   HorizontalAlignment="Center"
                   VerticalAlignment="Center">
-            
-        </CheckBox>
+
+                </CheckBox>
+
+                <TextBlock Text="JSON" 
+                   Grid.Column="2" 
+                   FontSize="18" 
+                   Foreground="White" 
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="15 0 0 0"/>
+            </Grid>
+        </Border>
+
+        <TextBlock x:Name="SettingsEncryptingTitle"
+                   Text="Encrypting Settings"
+                   Grid.Row="3" 
+                   Grid.Column="0" 
+                   FontSize="20" 
+                   Foreground="White" 
+                   HorizontalAlignment="left"
+                   VerticalAlignment="Top"
+                   Margin="0 20 0 0"/>
+
+
+        <TextBlock x:Name="SettingsSizeSave"
+                   Text="Max Size of a Save"
+                   Grid.Row="4" 
+                   Grid.Column="0" 
+                   FontSize="14" 
+                   Foreground="White" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   />
+
+        <Border Grid.Column="1" Grid.Row="4" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="100 ko" 
+                   Grid.Column="0" 
+                   FontSize="18" 
+                   Foreground="White" 
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                   Margin="0 0 15 0"/>
+
+                <CheckBox Grid.Column="1"  x:Name="ChekBox2"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Center">
+
+                </CheckBox>
+
+                <TextBlock Text="500 ko" 
+                   Grid.Column="2" 
+                   FontSize="18" 
+                   Foreground="White" 
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="15 0 0 0"/>
+            </Grid>
+        </Border>
+
     </Grid>
 </UserControl>

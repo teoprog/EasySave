@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStateFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StateFile>
+    <Name>ee</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
+    <State>END</State>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>0</TotalFilesSize>
+    <Progression>100%</Progression>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>e</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileTarget>
+    <State>END</State>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>0</TotalFilesSize>
+    <Progression>100%</Progression>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+  </StateFile>
+</ArrayOfStateFile>

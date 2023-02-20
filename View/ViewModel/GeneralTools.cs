@@ -37,6 +37,12 @@ namespace EasySave
             
             if(!File.Exists(logPath + "/state.json"))
                 File.Create(logPath + "/state.json");
+            
+            if(!File.Exists(logPath + "/logs.xml"))
+                File.Create(logPath + "/logs.xml");
+            
+            if(!File.Exists(logPath + "/state.xml"))
+                File.Create(logPath + "/state.xml");
         }
         
         /// <summary>

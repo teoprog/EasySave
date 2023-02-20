@@ -101,33 +101,25 @@ namespace View.MVVM.View
 
         }
 
-        /*private void source_Folder_Button_Click(object sender, RoutedEventArgs e)
+       private void source_Folder_Button_Click(object sender, RoutedEventArgs e)
         {
-            var folderBrowserDialog = new Microsoft.Win32.OpenFileDialog();
-            folderBrowserDialog.ValidateNames = false;
-            folderBrowserDialog.CheckFileExists = false;
-            folderBrowserDialog.CheckPathExists = true;
-            folderBrowserDialog.FileName = "Folder Selection.";
+            var folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
 
-            if (folderBrowserDialog.ShowDialog() == true)
+            if (folderBrowserDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                SoucePathBox.Text = System.IO.Path.GetDirectoryName(folderBrowserDialog.FileName);
+                SoucePathBox.Text = folderBrowserDialog.SelectedPath;
             }
         }
 
         private void target_Folder_Button_Click(object sender, RoutedEventArgs e)
         {
-            var folderBrowserDialog = new Microsoft.Win32.OpenFileDialog();
-            folderBrowserDialog.ValidateNames = false;
-            folderBrowserDialog.CheckFileExists = false;
-            folderBrowserDialog.CheckPathExists = true;
-            folderBrowserDialog.FileName = "Folder Selection.";
+            var folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
 
-            if (folderBrowserDialog.ShowDialog() == true)
+            if (folderBrowserDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                TargetPathBox.Text = System.IO.Path.GetDirectoryName(folderBrowserDialog.FileName);
+                TargetPathBox.Text = folderBrowserDialog.SelectedPath;
             }
-        }*/
+        }
 
     }
 }
