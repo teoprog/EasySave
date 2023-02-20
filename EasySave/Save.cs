@@ -146,13 +146,13 @@ namespace EasySave
                 List<StateFile>? jsonObjects = JsonConvert.DeserializeObject<List<StateFile>>(File.ReadAllText(filepath));
 
                 if (this.FilesToCopy == 0) jsonObjects[^1].State = "END";
-                jsonObjects[^1].TotalFilesToCopy = this.TotalFiles.ToString();
-                jsonObjects[^1].TotalFilesSize = this.FilesSize.ToString();
-                jsonObjects[^1].NbFilesLeftToDo = this.FilesToCopy.ToString();
-                jsonObjects[^1].Progression = 
-                    this.TotalFiles == 0 || this.FilesToCopy == 0
-                    ? 100 + "%"
-                    : (100 - ((double)this.FilesToCopy / this.TotalFiles) * 100).ToString("0.00") + "%";
+                // jsonObjects[^1].TotalFilesToCopy = this.TotalFiles.ToString();
+                // jsonObjects[^1].TotalFilesSize = this.FilesSize.ToString();
+                // jsonObjects[^1].NbFilesLeftToDo = this.FilesToCopy.ToString();
+                // jsonObjects[^1].Progression = 
+                //     this.TotalFiles == 0 || this.FilesToCopy == 0
+                //     ? 100 + "%"
+                //     : (100 - ((double)this.FilesToCopy / this.TotalFiles) * 100).ToString("0.00") + "%";
                 
                 string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
                 File.WriteAllText(filepath, updatedJson);
@@ -160,31 +160,31 @@ namespace EasySave
             else
             {
                 string filepath = GeneralTools.LogPath + "\\state.xml";
-                
-                // Create a new serializer for our object
                 XmlSerializer serializer = new XmlSerializer(typeof(List<StateFile>));
-                
                 List<StateFile> xmlObjects;
-                // Try to open the file in a shared mode
-                using (var fileStream = new FileStream(filepath, FileMode.OpenOrCreate, FileAccess.ReadWrite,
-                           FileShare.ReadWrite))
+
+                using (var fileStream = new FileStream(filepath, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite))
                 {
-                    // Read the existing XML file content into a List of StateFile objects
                     xmlObjects = (List<StateFile>)serializer.Deserialize(fileStream);
-                    
-                    // Permit to update our file values if occurence with same appellation found
-                    if (this.FilesToCopy == 0) xmlObjects[^1].State = "END";
+
+                    if (this.FilesToCopy == 0)
+                    {
+                        xmlObjects[^1].State = "END";
+                    }
+
                     xmlObjects[^1].TotalFilesToCopy = this.TotalFiles.ToString();
                     xmlObjects[^1].TotalFilesSize = this.FilesSize.ToString();
                     xmlObjects[^1].NbFilesLeftToDo = this.FilesToCopy.ToString();
                     xmlObjects[^1].Progression = this.TotalFiles == 0 || this.FilesToCopy == 0
-                        ? 100 + "%"
-                        : (100 - ((double)this.FilesToCopy / this.TotalFiles) * 100).ToString("0.00") + "%";
+                        ? "100%"
+                        : ((100 - ((double)this.FilesToCopy / this.TotalFiles) * 100)).ToString("0.00") + "%";
 
-                    // Serialize and write the updated List of StateFile objects to the XML file
-                    fileStream.Position = 0;
+                    fileStream.SetLength(0); // Truncate the file before writing
+                }
+
+                using (var fileStream = new FileStream(filepath, FileMode.OpenOrCreate, FileAccess.Write, FileShare.ReadWrite))
+                {
                     serializer.Serialize(fileStream, xmlObjects);
-                    fileStream.Close();
                 }
             }
         }
