@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NNODsOalJMt/RW3CzWjw7Ix7+K6L3UNcQWXO5RNW5jq/nN+fu/83+52XEvrp7efMBoULe+qFGf/hWSxAijniTw==",
+  "dgSpecHash": "tKT+Gcp9/RcBFLQlZM5HUPxAz2Wh8UTvL0zIl/phw5xaixeF5sxDU+CuJ4OKJMuiB9rJgHp3aJi/SuEo3vFESA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emiro\\EasySave\\CryptoSoft\\CryptoSoft.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\bvict\\EasySave\\CryptoSoft\\CryptoSoft.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bvict\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "C:\\Users\\bvict\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\bvict\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\bvict\\.nuget\\packages\\newtonsoft.json\\13.0.3-beta1\\newtonsoft.json.13.0.3-beta1.nupkg.sha512"
+  ],
   "logs": []
 }

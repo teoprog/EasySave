@@ -6,27 +6,34 @@ namespace EasySave
     public class StateFile
     {
         [JsonProperty("Name"), XmlElement("Name")]
-        private string? Name  {get; set; }
+        public string? Name  {get; set; }
 
         [JsonProperty("FileSource"), XmlElement("FileSource")]
-        private string? FileSource  {get; set; }
+        public string? FileSource  {get; set; }
 
         [JsonProperty("FileTarget"), XmlElement("FileTarget")]
-        private string? FileTarget  {get; set; }
+        public string? FileTarget  {get; set; }
 
         [JsonProperty("State"), XmlElement("State")]
-        private string State  {get; set; }
+        public string State  {get; set; }
 
         [JsonProperty("TotalFilesToCopy"), XmlElement("TotalFilesToCopy")]
-        private string TotalFilesToCopy  {get; set; }
+        public string TotalFilesToCopy  {get; set; }
 
         [JsonProperty("TotalFilesSize"), XmlElement("TotalFilesSize")]
-        private string TotalFilesSize  {get; set; }
+        public string TotalFilesSize  {get; set; }
 
         [JsonProperty("Progression"), XmlElement("Progression")]
-        private string Progression  {get; set; }
+        public string Progression  {get; set; }
+        
+        [JsonProperty("NbFilesLeftToDo"), XmlElement("NbFilesLeftToDo")]
+        public string NbFilesLeftToDo  {get; set; }
 
-        public StateFile(string? name, string? fileSource, string? fileTarget, string state, string totalFilesToCopy, string totalFilesSize, string progression)
+        //Constructeur pas défaut
+        public StateFile() { }
+        
+        //Constructeur personnalisé
+        public StateFile(string? name, string? fileSource, string? fileTarget, string state, string totalFilesToCopy, string totalFilesSize, string progression, string nbFilesLeftToDo)
         {
             Name = name;
             FileSource = fileSource;
@@ -35,6 +42,7 @@ namespace EasySave
             TotalFilesToCopy = totalFilesToCopy;
             TotalFilesSize = totalFilesSize;
             Progression = progression;
+            NbFilesLeftToDo = nbFilesLeftToDo;
         }
     }
 }
