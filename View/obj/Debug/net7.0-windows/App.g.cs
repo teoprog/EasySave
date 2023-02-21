@@ -34,7 +34,7 @@ using System.Windows.Shell;
 using View;
 using View.MVVM.View;
 using View.MVVM.ViewModel;
-
+using System.Threading;
 
 namespace View {
     
@@ -50,7 +50,7 @@ namespace View {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.2.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.1.0")]
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
@@ -76,8 +76,16 @@ namespace View {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.2.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.1.0")]
         public static void Main() {
+
+            bool aIsNewInstance = false;
+            Mutex myMutex = new Mutex(true, "MyWPFApplication", out aIsNewInstance);  
+            if (!aIsNewInstance)
+            {
+                MessageBox.Show("Already an instance is running...");
+                App.Current.Shutdown();  
+            }
             View.App app = new View.App();
             app.InitializeComponent();
             app.Run();

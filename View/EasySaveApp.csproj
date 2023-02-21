@@ -49,6 +49,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.3" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="System.Threading" Version="4.3.0" />
     <PackageReference Include="System.Windows.Extensions" Version="7.0.0" />
   </ItemGroup>
 
@@ -57,7 +58,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="MVVM\Languages\" />
     <Folder Include="Save_logs" />
   </ItemGroup>
 
