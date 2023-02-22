@@ -10,6 +10,7 @@ namespace View.MVVM.View
     /// </summary>
     public partial class SettingsView : UserControl
     {
+        public long SizeValue;
 
         public static bool option = false;
         public SettingsView()
@@ -43,16 +44,9 @@ namespace View.MVVM.View
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            SizeValue = long.Parse(SizeSaveTextBox.Text);
 
-            if (int.TryParse(SizeSaveTextBox.Text, out _))
-            {
-
-            }
-            else
-            {
-                /*ErrorTargetLabel.Content = "Veuillez entrer un entier et non";
-                ErrorTargetLabel.Visibility = Visibility.Visible;*/
-            }
+            
         }
     }
 }
