@@ -1,4 +1,5 @@
 ﻿using EasySave;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,6 +30,9 @@ namespace View.MVVM.View
 
         public event PropertyChangedEventHandler? PropertyChanged;
         public static List<ISave> Saves { get; set; } = new List<ISave>();
+       
+        List<string> businessList =
+                           GeneralTools.conf.GetSection("Business_Software").Get<List<string>>();
 
         public static readonly DependencyProperty JobsNumberProperty = DependencyProperty.Register(
         "JobsNumber",
@@ -103,6 +107,11 @@ namespace View.MVVM.View
             for (int i = 0; i < JobsNumber; i++)
             {
                 ISave save = Saves[i];
+                if (GeneralTools.VerifyBusinessSoftwareRunning(businessList))
+                {
+                    MessageBox.Show("Un logiciel Metier est en cours d'execution, Veuillez le fermer pour finaliser la Sauvegarde");
+                }
+
                 if (save is CompleteSave)
                 {
                     threads[i] = new Thread(() =>
@@ -142,12 +151,15 @@ namespace View.MVVM.View
                     });
                 }
                 threads[i].Start();
+
+                
             }
 
             Dispatcher.Invoke(() =>
             {
                 ProgressBar.Value = 0;
             });
+
 
             // clear the List and set the jobs to 0
             Saves = new List<ISave>();

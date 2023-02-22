@@ -203,7 +203,6 @@
                         Click="BreakButton_Click"/>
 
 
-
                 <Button Grid.Column="4" VerticalAlignment="Center"  Content="{x:Static language:Lang.SendButton}" Click="JobsButton_Click"
                         BorderThickness="0 0 0 1"
                         Background="#1F1C2E"

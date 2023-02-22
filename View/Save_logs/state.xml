@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfStateFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <StateFile>
-    <Name>ee</Name>
+    <Name>a</Name>
     <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileTarget>
+    <State>END</State>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>0</TotalFilesSize>
+    <Progression>100%</Progression>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>aze</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1</FileTarget>
+    <State>END</State>
+    <TotalFilesToCopy>5</TotalFilesToCopy>
+    <TotalFilesSize>0</TotalFilesSize>
+    <Progression>100%</Progression>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>1030</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>10</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileTarget>
+    <State>END</State>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>0</TotalFilesSize>
+    <Progression>100%</Progression>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>2</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2</FileSource>
     <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
     <State>END</State>
     <TotalFilesToCopy>7</TotalFilesToCopy>
@@ -11,9 +51,9 @@
     <NbFilesLeftToDo>0</NbFilesLeftToDo>
   </StateFile>
   <StateFile>
-    <Name>e</Name>
-    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1</FileSource>
-    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileTarget>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3</FileTarget>
     <State>END</State>
     <TotalFilesToCopy>7</TotalFilesToCopy>
     <TotalFilesSize>0</TotalFilesSize>
@@ -21,9 +61,29 @@
     <NbFilesLeftToDo>0</NbFilesLeftToDo>
   </StateFile>
   <StateFile>
-    <Name>ze</Name>
+    <Name>4</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4</FileTarget>
+    <State>END</State>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>0</TotalFilesSize>
+    <Progression>100%</Progression>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>az</Name>
     <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
     <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>0</TotalFilesToCopy>
+    <TotalFilesSize>0</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>za</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileTarget>
     <State>END</State>
     <TotalFilesToCopy>5</TotalFilesToCopy>
     <TotalFilesSize>0</TotalFilesSize>
@@ -31,79 +91,9 @@
     <NbFilesLeftToDo>0</NbFilesLeftToDo>
   </StateFile>
   <StateFile>
-    <Name>ez</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>MACHIN</Name>
-    <FileSource>D:\1</FileSource>
-    <FileTarget>D:\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>1</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>machin</Name>
-    <FileSource>D:\1</FileSource>
-    <FileTarget>D:\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>azed</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>azsd</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>zd</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>sa</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>machin</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileTarget>
     <State>ACTIVE</State>
     <TotalFilesToCopy>5</TotalFilesToCopy>
     <TotalFilesSize>21723632</TotalFilesSize>
@@ -111,77 +101,27 @@
     <NbFilesLeftToDo>5</NbFilesLeftToDo>
   </StateFile>
   <StateFile>
-    <Name>azerez</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>zdsc</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>ZE</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>ze</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
+    <Name>za</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileTarget>
     <State>ACTIVE</State>
     <TotalFilesToCopy>5</TotalFilesToCopy>
     <TotalFilesSize>21723632</TotalFilesSize>
     <Progression>0%</Progression>
     <NbFilesLeftToDo>5</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>azedf</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>azef</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
   </StateFile>
   <StateFile>
     <Name>aze</Name>
     <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
     <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
+    <State>ACTIVE</State>
     <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+    <TotalFilesSize>21723632</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>5</NbFilesLeftToDo>
   </StateFile>
   <StateFile>
-    <Name>azer</Name>
+    <Name>azdef</Name>
     <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
     <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
     <State>END</State>
@@ -189,125 +129,5 @@
     <TotalFilesSize>0</TotalFilesSize>
     <Progression>100%</Progression>
     <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>azef</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>ACTIVE</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>21723632</TotalFilesSize>
-    <Progression>0%</Progression>
-    <NbFilesLeftToDo>5</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>azerfv</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>az</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>azerfg</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>az</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>ACTIVE</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>21723632</TotalFilesSize>
-    <Progression>0%</Progression>
-    <NbFilesLeftToDo>5</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>eza</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</FileTarget>
-    <State>END</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>0</TotalFilesSize>
-    <Progression>100%</Progression>
-    <NbFilesLeftToDo>0</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>eza</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileTarget>
-    <State>ACTIVE</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>21723632</TotalFilesSize>
-    <Progression>0%</Progression>
-    <NbFilesLeftToDo>5</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>é</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileTarget>
-    <State>ACTIVE</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>21723632</TotalFilesSize>
-    <Progression>0%</Progression>
-    <NbFilesLeftToDo>5</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>z</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileTarget>
-    <State>ACTIVE</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>21723632</TotalFilesSize>
-    <Progression>0%</Progression>
-    <NbFilesLeftToDo>5</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>z</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileTarget>
-    <State>ACTIVE</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>21723632</TotalFilesSize>
-    <Progression>0%</Progression>
-    <NbFilesLeftToDo>5</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>d</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileTarget>
-    <State>ACTIVE</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>21723632</TotalFilesSize>
-    <Progression>0%</Progression>
-    <NbFilesLeftToDo>5</NbFilesLeftToDo>
-  </StateFile>
-  <StateFile>
-    <Name>machin</Name>
-    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileSource>
-    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1</FileTarget>
-    <State>ACTIVE</State>
-    <TotalFilesToCopy>5</TotalFilesToCopy>
-    <TotalFilesSize>21723632</TotalFilesSize>
-    <Progression>0%</Progression>
-    <NbFilesLeftToDo>5</NbFilesLeftToDo>
   </StateFile>
 </ArrayOfStateFile>

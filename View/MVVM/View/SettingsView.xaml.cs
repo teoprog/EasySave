@@ -1,5 +1,7 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace View.MVVM.View
 {
@@ -28,6 +30,29 @@ namespace View.MVVM.View
             EasySaveApp.Properties.Settings.Default.languageCode = "en-US";
             EasySaveApp.Properties.Settings.Default.Save();
             MessageBox.Show("Redémarrer l'application pour que les changements prennent effet");
+        }
+
+        private bool IsNumber(string text)
+        {
+            return int.TryParse(text, out int result);
+        }
+
+        private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !IsNumber(e.Text);
+        }
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+            if (int.TryParse(SizeSaveTextBox.Text, out _))
+            {
+
+            }
+            else
+            {
+                /*ErrorTargetLabel.Content = "Veuillez entrer un entier et non";
+                ErrorTargetLabel.Visibility = Visibility.Visible;*/
+            }
         }
     }
 }

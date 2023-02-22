@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Net.NetworkInformation;
 using System.Threading;
 using System.Xml.Serialization;
+using EasySaveApp.ViewModel;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -43,11 +45,14 @@ namespace EasySave
         /// Files total to be copied
         /// </summary>
         internal long TotalFiles;
+
+        protected bool _prioFilesExt = true; 
         
-        private static object logsLock = new object();
-        private static object stateLock = new object();
+        private static object logsLockJson = new object();
+        private static object logsLockXml = new object();
         private static object fileSizeLock = new object();
-        private static object updStateLock = new object();
+        private static object stateLockJson = new object();
+        private static object stateLockXml = new object();
         
         private static long sizeParallelFiles = 0;
 
@@ -69,61 +74,22 @@ namespace EasySave
         private void UpdateLogs(string sourceFile, string? fileTarget, long fileSize, string stopwatch,
             string cryptTime)
         {
-            lock (logsLock)
-            {
-                string xmlorjson = GeneralTools.conf["JsonOrXml"];
+            string xmlorjson = GeneralTools.conf["JsonOrXml"];
 
                 if (xmlorjson == "json")
                 {
-                    string filepath = GeneralTools.conf["Log_Path"] + "\\logs.json";
-
-                    // Read the existing JSON file content into a string
-                    string jsonContent = File.ReadAllText(filepath);
-
-                    // Parse the string into a JObject
-                    List<dynamic> jsonObjects = JsonConvert.DeserializeObject<List<dynamic>>(jsonContent);
-
-                    // Create a new object
-                    LogFile jsonInfoSaveFile = new LogFile(this.Appellation,
-                        sourceFile,
-                        fileTarget,
-                        this.TargetPath,
-                        fileSize.ToString(),
-                        stopwatch,
-                        DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
-                        cryptTime);
-
-                    if (jsonObjects == null) jsonObjects = new List<dynamic>();
-                    jsonObjects.Add(jsonInfoSaveFile);
-
-                    // Serialize created object
-                    string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
-
-                    File.WriteAllText(filepath, updatedJson);
-                }
-                else
-                {
-                    string filepath = GeneralTools.conf["Log_Path"] + "\\logs.xml";
-
-                    List<LogFile> xmlObjects;
-                    XmlSerializer serializer = new XmlSerializer(typeof(List<LogFile>));
-
-                    // Try to open the file in a shared mode
-                    using (var fileStream = new FileStream(filepath, FileMode.OpenOrCreate, FileAccess.ReadWrite,
-                               FileShare.ReadWrite))
+                    lock (logsLockJson)
                     {
-                        if (fileStream.Length > 0)
-                        {
-                            // Read the existing XML file content into a List of LogFile objects
-                            xmlObjects = (List<LogFile>)serializer.Deserialize(fileStream);
-                        }
-                        else
-                        {
-                            xmlObjects = new List<LogFile>();
-                        }
+                        string filepath = GeneralTools.conf["Log_Path"] + "\\logs.json";
 
-                        // Create a new LogFile object
-                        LogFile xmlInfoSaveFile = new LogFile(this.Appellation,
+                        // Read the existing JSON file content into a string
+                        string jsonContent = File.ReadAllText(filepath);
+
+                        // Parse the string into a JObject
+                        List<dynamic> jsonObjects = JsonConvert.DeserializeObject<List<dynamic>>(jsonContent);
+
+                        // Create a new object
+                        LogFile jsonInfoSaveFile = new LogFile(this.Appellation,
                             sourceFile,
                             fileTarget,
                             this.TargetPath,
@@ -132,27 +98,70 @@ namespace EasySave
                             DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
                             cryptTime);
 
-                        xmlObjects.Add(xmlInfoSaveFile);
+                        if (jsonObjects == null) jsonObjects = new List<dynamic>();
+                        jsonObjects.Add(jsonInfoSaveFile);
 
-                        // Serialize and write the updated List of LogFile objects to the XML file
-                        fileStream.Position = 0;
-                        serializer.Serialize(fileStream, xmlObjects);
+                        // Serialize created object
+                        string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
+
+                        File.WriteAllText(filepath, updatedJson);
                     }
                 }
-            }
+                else
+                {
+                    lock (logsLockXml)
+                    {
+                        string filepath = GeneralTools.conf["Log_Path"] + "\\logs.xml";
+
+                        List<LogFile> xmlObjects;
+                        XmlSerializer serializer = new XmlSerializer(typeof(List<LogFile>));
+
+                        // Try to open the file in a shared mode
+                        using (var fileStream = new FileStream(filepath, FileMode.OpenOrCreate, FileAccess.ReadWrite,
+                                   FileShare.ReadWrite))
+                        {
+                            if (fileStream.Length > 0)
+                            {
+                                // Read the existing XML file content into a List of LogFile objects
+                                xmlObjects = (List<LogFile>)serializer.Deserialize(fileStream);
+                            }
+                            else
+                            {
+                                xmlObjects = new List<LogFile>();
+                            }
+
+                            // Create a new LogFile object
+                            LogFile xmlInfoSaveFile = new LogFile(this.Appellation,
+                                sourceFile,
+                                fileTarget,
+                                this.TargetPath,
+                                fileSize.ToString(),
+                                stopwatch,
+                                DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
+                                cryptTime);
+
+                            xmlObjects.Add(xmlInfoSaveFile);
+
+                            // Serialize and write the updated List of LogFile objects to the XML file
+                            fileStream.Position = 0;
+                            serializer.Serialize(fileStream, xmlObjects);
+                        }
+                    }
+                }
         }
 
-        /// <summary>
+         /// <summary>
         /// Function who update dynamically the state file
         /// </summary>
         /// <param name="status"></param>
         public void UpdateState()
         {
-            lock (updStateLock)
-            {
-                string xmlorjson = GeneralTools.conf["JsonOrXml"];
+   
+            string xmlorjson = GeneralTools.conf["JsonOrXml"];
 
-                if (xmlorjson == "json")
+            if (xmlorjson == "json")
+            {
+                lock (stateLockJson)
                 {
                     string filepath = GeneralTools.conf["Log_Path"] + "\\state.json";
 
@@ -161,7 +170,7 @@ namespace EasySave
                         JsonConvert.DeserializeObject<List<StateFile>>(File.ReadAllText(filepath));
 
                     if (this.FilesToCopy == 0) jsonObjects[^1].State = "END";
-              
+
                     for (int i = 0; i < jsonObjects.Count; i++)
                     {
                         if (jsonObjects[i].Name == this.Appellation)
@@ -169,21 +178,24 @@ namespace EasySave
                             jsonObjects[i].TotalFilesToCopy = this.TotalFiles.ToString();
                             jsonObjects[i].TotalFilesSize = this.FilesSize.ToString();
                             jsonObjects[i].NbFilesLeftToDo = this.FilesToCopy.ToString();
-                            jsonObjects[i].Progression = 
+                            jsonObjects[i].Progression =
                                 this.TotalFiles == 0 || this.FilesToCopy == 0
                                     ? 100 + "%"
-                                    : (100 - ((double)this.FilesToCopy / this.TotalFiles) * 100).ToString("0.00") + "%";
-                            
+                                    : (100 - ((double)this.FilesToCopy / this.TotalFiles) * 100).ToString("0.00") +
+                                      "%";
+
                             // For exit the loop
                             i = jsonObjects.Count;
                         }
                     }
-                    
 
                     string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
                     File.WriteAllText(filepath, updatedJson);
                 }
-                else
+            }
+            else
+            {
+                lock (stateLockXml)
                 {
                     string filepath = GeneralTools.conf["Log_Path"] + "\\state.xml";
                     XmlSerializer serializer = new XmlSerializer(typeof(List<StateFile>));
@@ -193,7 +205,7 @@ namespace EasySave
                                FileShare.ReadWrite))
                     {
                         xmlObjects = (List<StateFile>)serializer.Deserialize(fileStream);
-                        
+
 
                         for (int i = 0; i < xmlObjects.Count; i++)
                         {
@@ -201,18 +213,20 @@ namespace EasySave
                             {
                                 // No files left to copy sot it set to end
                                 if (this.FilesToCopy == 0) xmlObjects[i].State = "END";
-                                
+
                                 xmlObjects[i].TotalFilesToCopy = this.TotalFiles.ToString();
                                 xmlObjects[i].TotalFilesSize = this.FilesSize.ToString();
                                 xmlObjects[i].NbFilesLeftToDo = this.FilesToCopy.ToString();
                                 xmlObjects[i].Progression = this.TotalFiles == 0 || this.FilesToCopy == 0
                                     ? "100%"
-                                    : ((100 - ((double)this.FilesToCopy / this.TotalFiles) * 100)).ToString("0.00") + "%";
-                                
+                                    : ((100 - ((double)this.FilesToCopy / this.TotalFiles) * 100))
+                                    .ToString("0.00") + "%";
+
                                 // For exit the loop
                                 i = xmlObjects.Count;
                             }
                         }
+
                         fileStream.SetLength(0); // Truncate the file before writing
                     }
 
@@ -232,10 +246,9 @@ namespace EasySave
         public void CreateState(IConfiguration conf)
         {
             string xmlorjson = conf["JsonOrXml"];
-
-            lock (stateLock)
+            if (xmlorjson == "json")
             {
-                if (xmlorjson == "json")
+                lock (stateLockJson)
                 {
                     string filepath = GeneralTools.conf["Log_Path"] + "\\state.json";
 
@@ -270,8 +283,10 @@ namespace EasySave
                     string updatedJson = JsonConvert.SerializeObject(jsonObjects, Formatting.Indented);
                     File.WriteAllText(filepath, updatedJson);
                 }
-                else
-                {
+            }
+            else
+            {
+                lock(stateLockXml) {
                     string filepath = GeneralTools.conf["Log_Path"] + "\\state.xml";
 
                     // Create a new serializer for our object
@@ -354,26 +369,53 @@ namespace EasySave
             if (sourceDirectory != null && targetDirectory != null ){
                 foreach (var file in Directory.GetFiles(sourceDirectory))
                 {
-                    path = Path.Combine(targetDirectory, Path.GetFileName(file));
-                    var path2 = Path.Combine(sourceDirectory, Path.GetFileName(file));
-                    var targetInfo = new FileInfo(path);
-                    var sourceInfo = new FileInfo(path2);
-                    long fileSize = 0;
-                    stopwatch.Start();
                     FileInfo fi = new FileInfo(file);
-
-                    sizeParallelFiles += fi.Length; // For recuperate the size in Ko
-                          
-                    List<string> businessList = GeneralTools.conf.GetSection("Business_Software").Get<List<string>>();
-
-                    if (sizeParallelFiles > long.Parse(GeneralTools.conf["Limit_Parallel_Size"] ?? string.Empty) *1024)
+                    
+                    // Used for calculate perf
+                    var memory = new Microsoft.VisualBasic.Devices.ComputerInfo();
+                    if ((_prioFilesExt && GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>()!=null && GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>()
+                            .Contains(fi.Extension)) || (!_prioFilesExt && GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>()!=null 
+                                                                        && !GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>().Contains(fi.Extension)))
                     {
-                        lock (fileSizeLock)
+                        path = Path.Combine(targetDirectory, Path.GetFileName(file));
+                        var path2 = Path.Combine(sourceDirectory, Path.GetFileName(file));
+                        var targetInfo = new FileInfo(path);
+                        var sourceInfo = new FileInfo(path2);
+                        long fileSize = 0;
+                        stopwatch.Start();
+
+                        sizeParallelFiles += fi.Length; // For recuperate the size in Ko
+
+                        List<string> businessList =
+                            GeneralTools.conf.GetSection("Business_Software").Get<List<string>>();
+                        
+                        // Return the perf (network load)
+                        var usedMem = memory.TotalPhysicalMemory - memory.AvailablePhysicalMemory;
+                        if ((sizeParallelFiles >
+                             long.Parse(GeneralTools.conf["Limit_Parallel_Size"] ?? string.Empty) * 1024)) //|| (usedMem < float.Parse(GeneralTools.conf["Network_Load"] ?? string.Empty)))
                         {
-                            if ((sourceInfo.LastWriteTime > targetInfo.LastWriteTime && this is DiffSave) || this is CompleteSave)
+                            lock (fileSizeLock)
                             {
-                                // pause if business software is running
-                                while (VerifyBusinessSoftwareRunning(businessList)) Thread.Sleep(1000);
+                                if ((sourceInfo.LastWriteTime > targetInfo.LastWriteTime && this is DiffSave) ||
+                                    this is CompleteSave)
+                                {
+                                    // pause if business software is running
+                                    while (GeneralTools.VerifyBusinessSoftwareRunning(businessList)) Thread.Sleep(1000);
+                                    File.Copy(file, path, true);
+                                }
+                                else
+                                {
+                                    this.TotalFiles--;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            if ((sourceInfo.LastWriteTime > targetInfo.LastWriteTime && this is DiffSave) ||
+                                this is CompleteSave)
+                            {
+                                while (businessList != null && GeneralTools.VerifyBusinessSoftwareRunning(businessList))
+                                    Thread.Sleep(1000);
                                 File.Copy(file, path, true);
                             }
                             else
@@ -381,53 +423,46 @@ namespace EasySave
                                 this.TotalFiles--;
                             }
                         }
-                    }
-                    else
-                    {
-                        if ((sourceInfo.LastWriteTime > targetInfo.LastWriteTime && this is DiffSave) || this is CompleteSave)
+
+                        stopwatch.Stop(); // Copy done so stop stopwatch
+                        sizeParallelFiles -= fi.Length; // Save done so decrement
+
+                        // Recup list of ext in the config file
+                        fileSize = fi.Length;
+
+                        if (cryptoList != null && cryptoList.Contains(fi.Extension))
                         {
-                            while (businessList != null && VerifyBusinessSoftwareRunning(businessList)) Thread.Sleep(1000);
-                            File.Copy(file, path, true);
+                            pro.Add(new Process());
+
+                            pro[^1].StartInfo = new ProcessStartInfo
+                            {
+                                FileName = GeneralTools.conf["Crypto_Path"],
+                                Arguments = path + " " + GeneralTools.conf["Crypto_Path"] + " encrypt",
+                                CreateNoWindow = true
+                            };
+                            pro[pro.Count - 1].Start();
+
+                            // Create a Task for stop the stopwatch cause it need to wait the end of the process
+                            pro[pro.Count - 1].WaitForExit();
+
+                            // Different values we need for json
+                            UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString(),
+                                pro[pro.Count - 1].ExitCode == 0
+                                    ? (pro[pro.Count - 1].ExitTime - pro[pro.Count - 1].StartTime).ToString(
+                                        @"hh\:mm\:ss\.fffffff")
+                                    : "Error in encryption");
                         }
                         else
                         {
-                            this.TotalFiles--;
+                            UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString(), "Not encrypted");
                         }
-                    }
-                    stopwatch.Stop(); // Copy done so stop stopwatch
-                    sizeParallelFiles -= fi.Length; // Save done so decrement
 
-                    // Recup list of ext in the config file
-                    if (cryptoList != null && cryptoList.Contains(fi.Extension))
-                    {
-                        pro.Add(new Process());
-                                
-                        pro[pro.Count-1].StartInfo = new ProcessStartInfo
-                        {
-                            FileName = GeneralTools.conf["Crypto_Path"],
-                            Arguments = path + " " + GeneralTools.conf["Crypto_Path"] +" encrypt",
-                            CreateNoWindow = true
-                        };
-                        pro[pro.Count - 1].Start();
-
-                        // Create a Task for stop the stopwatch cause it need to wait the end of the process
-                        pro[pro.Count - 1].WaitForExit();
-            
-                        // Different values we need for json
-                        UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString(),
-                            pro[pro.Count - 1].ExitCode == 0 ? (pro[pro.Count - 1].ExitTime - pro[pro.Count - 1].StartTime).ToString(@"hh\:mm\:ss\.fffffff")
-                                : "Error in encryption");
+                        this.FilesSize -= fileSize;
+                        this.FilesToCopy--;
+                        // Update our logs
+                        UpdateState();
+                        stopwatch.Reset();
                     }
-                    else
-                    {
-                        UpdateLogs(file, path, fileSize, stopwatch.Elapsed.ToString(), "Not encrypted");
-                    }
-                    fileSize = fi.Length;
-                    this.FilesSize -= fileSize;
-                    this.FilesToCopy--;
-                    // Update our logs
-                    UpdateState();
-                    stopwatch.Reset();
                 }
             }
 
@@ -451,16 +486,6 @@ namespace EasySave
             }
         }
 
-        private bool VerifyBusinessSoftwareRunning(List<string> processes)
-        {
-            foreach (string process in processes)
-            {
-                if (Process.GetProcessesByName(process).Length > 0)
-                    return true;
-            }
-    
-            // No process is running, return false
-            return false;
-        }
+       
     }
 }

@@ -23,10 +23,12 @@ namespace EasySave
             if (this.SourcePath != null)
             {
                 this.TotalFiles = this.FilesToCopy = Directory.GetFiles(this.SourcePath, "*", SearchOption.AllDirectories).Length;
-                CreateDirectoriesOfADirectory();
+                this.CreateDirectoriesOfADirectory();
                 GeneralTools.CreateLogsFiles();
-                CreateState(GeneralTools.conf);
-                base.RepositorySave(this.SourcePath, this.TargetPath);
+                this.CreateState(GeneralTools.conf);
+                this.RepositorySave(this.SourcePath, this.TargetPath);
+                this._prioFilesExt = false;                
+                this.RepositorySave(this.SourcePath, this.TargetPath);
             }
         }
     }

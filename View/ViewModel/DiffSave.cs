@@ -26,6 +26,8 @@ namespace EasySave
                 GeneralTools.CreateLogsFiles();
                 CreateState(GeneralTools.conf);
                 base.RepositorySave(this.SourcePath, this.TargetPath);
+                this._prioFilesExt = false;                
+                this.RepositorySave(this.SourcePath, this.TargetPath);
             }
         }
     }

@@ -67,7 +67,7 @@
                         Background="#1F1C2E"
                         Foreground="White"
                          Margin="10 0 0 0"/>
-                    
+
             </Grid>
         </Border>
 
@@ -134,14 +134,16 @@
                     <ColumnDefinition Width="75"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBox  Grid.Column="0" Name="BackUpNameBox" 
+                <TextBox  Grid.Column="0" Name="SizeSaveTextBox" 
                  VerticalAlignment="Center"
-                 Style="{StaticResource TBStyle}"/>
+                 Style="{StaticResource TBStyle}"
+                 PreviewTextInput="TextBox_PreviewTextInput"/>
 
                 <Button Grid.Column="1"  Content="{x:Static language:Lang.SendButton}" 
                         BorderThickness="0 0 0 1"
                         Background="#1F1C2E"
-                        Foreground="White"/>
+                        Foreground="White"
+                        Click="Button_Click_2"/>
             </Grid>
         </Border>
 

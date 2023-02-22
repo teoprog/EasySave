@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 
 namespace EasySave
@@ -56,6 +58,20 @@ namespace EasySave
             if (path != null && !path.Contains(@"\") && !path.Contains("/")) return "";
             while (!Directory.Exists(path)) path = Path.GetDirectoryName(path);
             return path;
+        }
+
+
+        public static bool VerifyBusinessSoftwareRunning(List<string> processes)
+        {
+            if (processes == null) return false;
+            foreach (string process in processes)
+            {
+                if (Process.GetProcessesByName(process).Length > 0)
+                    return true;
+            }
+
+            // No process is running, return false
+            return false;
         }
     }
 }
