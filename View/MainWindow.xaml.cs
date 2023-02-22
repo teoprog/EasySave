@@ -11,14 +11,6 @@ namespace View
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static bool option = false;
-
-
-
-
-
-
-
         public MainWindow()
         {
             InitializeComponent();
@@ -47,6 +39,8 @@ namespace View
             }
 
         }
+
+
     }
 
 

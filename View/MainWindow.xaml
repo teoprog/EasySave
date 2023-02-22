@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         xmlns:viewModel="clr-namespace:View.MVVM.ViewModel"
+        xmlns:language="clr-namespace:EasySaveApp.Properties.Langs"
         mc:Ignorable="d"
         Height="700" Width="920"
         WindowStyle="None"
@@ -40,7 +41,7 @@
 
             <StackPanel Grid.Row="1">
 
-                <RadioButton Content="Home"
+                <RadioButton Content= "{x:Static language:Lang.MainHomeButton }"
                              Height="70"
                              Foreground="White"
                              FontSize="14"
@@ -48,40 +49,40 @@
                              IsChecked="True"
                              Command="{Binding HomeViewCommand}"/>
 
-                <RadioButton Content="Complete BackUp"
+                <RadioButton Content="{x:Static language:Lang.MainCompleteBackUpButton }"
                              Height="70"
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding SecondViewCommand}"/>
 
-                <RadioButton Content="Differential BackUP"
+                <RadioButton Content="{x:Static language:Lang.MainDifferentialButton }"
                              Height="70"
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding ThirdViewCommand}"/>
 
-                <RadioButton Content="Blacklist Software"
+                <RadioButton Content="{x:Static language:Lang.MainBusinessSoftwareButton }"
                              Height="70"
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding }"/>
+                             Command="{Binding BlackListViewCommand}"/>
 
-                <RadioButton Content="Settings "
+                <RadioButton Content="{x:Static language:Lang.MainSettingsButton}"
                              Height="70"
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding SettingsViewCommand}"/>
 
-                <RadioButton Content="About Us"
+                <RadioButton Content="{x:Static language:Lang.MainAboutUsButton }"
                              Height="70"
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding }"/>
+                             Command="{Binding AboutUsViewCommand}"/>
             </StackPanel>
 
 

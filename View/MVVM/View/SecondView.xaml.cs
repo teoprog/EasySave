@@ -60,12 +60,16 @@ namespace View.MVVM.View
                 return;
             }
 
-            HomeView.Jobs job = new HomeView.Jobs
+            Jobs job = new Jobs
             {
                 appellation = BackUpNameBox.Text,
                 sourcePath = SoucePathBox.Text,
                 targetPath = TargetPathBox.Text
             };
+
+            BackUpNameBox.Text = "";
+            SoucePathBox.Text = "";
+            TargetPathBox.Text = "";
 
             SuccesLabel.Content = "Les données ont été sauvegardées avec succès.";
             SuccesLabel.Visibility = Visibility.Visible;
@@ -74,7 +78,7 @@ namespace View.MVVM.View
             jobsProperties.Add(job);
 
             HomeView.Saves.Add(new CompleteSave(job.appellation, job.sourcePath, job.targetPath));
-            HomeView.CompleteSaveNumber = HomeView.CompleteSaveNumber + 1;
+            
 
         }
 

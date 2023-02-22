@@ -13,10 +13,14 @@ namespace View.MVVM.ViewModel
         public RelayCommand SecondViewCommand { get; set; }
         public RelayCommand ThirdViewCommand { get; set; }
         public RelayCommand SettingsViewCommand { get; set; }
+        public RelayCommand BlackListViewCommand { get; set; }
+        public RelayCommand AboutUsViewCommand { get; set; }
         public HomeViewModel HomeVM { get; set; }
         public SecondViewModel SecondVM { get; set; }
         public ThirdViewModel ThirdVM { get; set; }
         public SettingsViewModel SettingsVM { get; set; }
+        public BlackListSoftwareViewModel BlackListVM { get; set; }
+        public AboutUsViewModel AboutUsVM { get; set; }
 
         private object _currentView;
 
@@ -36,6 +40,8 @@ namespace View.MVVM.ViewModel
             SecondVM = new SecondViewModel();
             ThirdVM = new ThirdViewModel();
             SettingsVM = new SettingsViewModel();
+            BlackListVM = new BlackListSoftwareViewModel();
+            AboutUsVM = new AboutUsViewModel();
             CurrentView = HomeVM;
 
             HomeViewCommand = new RelayCommand(o =>
@@ -56,6 +62,16 @@ namespace View.MVVM.ViewModel
             SettingsViewCommand = new RelayCommand(o =>
             {
                 CurrentView = SettingsVM;
+            });
+
+            BlackListViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = BlackListVM;
+            });
+
+            AboutUsViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = AboutUsVM;
             });
         }
     }

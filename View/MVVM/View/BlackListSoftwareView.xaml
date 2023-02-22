@@ -5,11 +5,79 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:view="clr-namespace:View.MVVM.View"
              xmlns:viewModel="clr-namespace:View.MVVM.ViewModel"
+             xmlns:language="clr-namespace:EasySaveApp.Properties.Langs"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" Background="#1B1B1B">
+             d:DesignHeight="450" d:DesignWidth="800" Background="Transparent">
     
     
     <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="300"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+
+            <TextBlock x:Name="Settingstitle"
+                   Text="{x:Static language:Lang.BlackListTitle}"
+                   FontSize="20" 
+                   Foreground="White" 
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   />
+
+        </Grid>
+
+        <TextBlock Grid.Row="1"
+                   Text="{x:Static language:Lang.BlackListExtension}"
+                   FontSize="14" 
+                   Foreground="White"
+                   Margin="55 0 0 20"
+                   VerticalAlignment="Bottom"
+                   />
+        
+        
+        <Grid Grid.Row="2" HorizontalAlignment="Center">
+
+            <TextBox  Grid.Column="0" Name="BackUpNameBox" 
+                 VerticalAlignment="Center"
+                 Style="{StaticResource TBStyle}"
+                 Width="600"
+                 Margin="0 0 0 50"/>
+            
+            
+        </Grid>
+
+        <Grid Grid.Row="3">
+
+            <DataGrid  x:Name="JobsGrid"  AutoGenerateColumns="False" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" ItemsSource="{Binding }" Cursor="Hand"
+                                       Background="#1F1C2E" Margin="50 0 50 0" BorderThickness="0 0 0 0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="{x:Static language:Lang.BlackListTable}" Binding="{Binding }" IsReadOnly="True" Width="70" />
+
+                </DataGrid.Columns>
+
+                <DataGrid.Resources>
+
+                    <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Background" Value="#1F1C2E" />
+                        <Setter Property="BorderThickness" Value="0 0 1 1"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        <Setter Property="Foreground" Value="White"/>
+
+                    </Style>
+                    <Style BasedOn="{StaticResource {x:Type DataGridCell}}" TargetType="{x:Type DataGridCell}">
+                        <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                        <Setter Property="Background" Value="Transparent" />
+                    </Style>
+                </DataGrid.Resources>
+            </DataGrid>
+
+        </Grid>
 
     </Grid>
 </UserControl>

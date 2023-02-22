@@ -17,6 +17,11 @@
         },
         "runtime": {
           "EasySaveApp.dll": {}
+        },
+        "resources": {
+          "en/EasySaveApp.resources.dll": {
+            "locale": "en"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {

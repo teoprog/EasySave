@@ -53,7 +53,7 @@ namespace View.MVVM.View
                 return;
             }
 
-            HomeView.Jobs job = new HomeView.Jobs
+            Jobs job = new Jobs
             {
                 appellation = BackUpNameBox.Text,
                 sourcePath = SoucePathBox.Text,
@@ -70,7 +70,7 @@ namespace View.MVVM.View
 
 
            HomeView.Saves.Add(new DiffSave(job.appellation, job.sourcePath, job.targetPath));
-            HomeView.DiffSaveNumber = HomeView.DiffSaveNumber + 1;
+            
 
             
         }

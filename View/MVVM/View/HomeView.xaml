@@ -3,6 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:language="clr-namespace:EasySaveApp.Properties.Langs" 
+             xmlns:viewmodel="clr-namespace:View.MVVM.ViewModel" 
+             xmlns:view="clr-namespace:View.MVVM.View" d:DataContext="{d:DesignInstance Type=view:HomeView}"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="800">
 
@@ -13,10 +16,11 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="200"/>
-                <RowDefinition Height="250"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBlock Text="DashBoard"
+            <TextBlock Text="{x:Static language:Lang.HomeDashBoard}"
                    Foreground="#ccd7ff"
                    FontSize="26"
                    HorizontalAlignment="Left"
@@ -51,11 +55,11 @@
                             </Ellipse.Fill>
                         </Ellipse>
 
-                        <Image Source="C:\Users\ayman\source\repos\View\View\Images\BriefCase.png" Margin="0 0 25 55" Width="60" Height="60"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        <Image Source="C:\Users\ayman\source\repos\EasySave\View\Images\BriefCase.png" Margin="0 0 25 55" Width="60" Height="60"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
 
                         <StackPanel Margin="15 0 0 20" VerticalAlignment="Bottom">
-                            <TextBlock Text="Jobs" Foreground="#e9e9e9" FontSize="14" Width="188"/>
-                            <TextBlock x:Name="JobsnumberTextBlock" Text="" Foreground="#ffffff" FontSize="28" FontWeight="SemiBold"/>
+                            <TextBlock Text="{x:Static language:Lang.HomeJobs}" Foreground="#e9e9e9" FontSize="14" Width="188"/>
+                            <TextBlock Text="{Binding Path= JobsNumber, UpdateSourceTrigger=PropertyChanged}"  Foreground="#ffffff" FontSize="28" FontWeight="SemiBold"/>
                         </StackPanel>
                     </Grid>
                 </Border>
@@ -83,11 +87,11 @@
                             </Ellipse.Fill>
                         </Ellipse>
 
-                        <Image Source="C:\Users\ayman\source\repos\View\View\Images\CompleteSave.png" Margin="0 0 25 55" Width="60" Height="60"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        <Image Source="C:\Users\ayman\source\repos\EasySave\View\Images\CompleteSave.png" Margin="0 0 25 55" Width="60" Height="60"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
 
                         <StackPanel Margin="15 0 0 20" VerticalAlignment="Bottom">
-                            <TextBlock Text="Complete Saves" Foreground="#e9e9e9" FontSize="14" Width="188"/>
-                            <TextBlock Name ="CompleteSaveNumberTextBlock" Text="" Foreground="#ffffff" FontSize="28" FontWeight="SemiBold"/>
+                            <TextBlock Text="{x:Static language:Lang.MainCompleteBackUpButton}" Foreground="#e9e9e9" FontSize="14" Width="188"/>
+                            <TextBlock Text="{Binding Path = CompleteSaveNumber}" Foreground="#ffffff" FontSize="28" FontWeight="SemiBold"/>
                         </StackPanel>
                     </Grid>
                 </Border>
@@ -114,11 +118,11 @@
                             </Ellipse.Fill>
                         </Ellipse>
 
-                        <Image Source="C:\Users\ayman\source\repos\View\View\Images\Differential Save.png" Margin="0 0 25 55" Width="60" Height="60"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        <Image Source="C:\Users\ayman\source\repos\EasySave\View\Images\Differential Save.png" Margin="0 0 25 55" Width="60" Height="60"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
 
                         <StackPanel Margin="15 0 0 20" VerticalAlignment="Bottom">
-                            <TextBlock Text="Differential Saves" Foreground="#e9e9e9" FontSize="14" Width="188"/>
-                            <TextBlock Name="DiffSaveNumberTextBlock" Text="" Foreground="#ffffff" FontSize="28" FontWeight="SemiBold"/>
+                            <TextBlock Text="{x:Static language:Lang.MainDifferentialButton}" Foreground="#e9e9e9" FontSize="14" Width="188"/>
+                            <TextBlock  Text="{Binding Path=DiffSaveNumber}" Foreground="#ffffff" FontSize="28" FontWeight="SemiBold"/>
                         </StackPanel>
                     </Grid>
                 </Border>
@@ -133,9 +137,9 @@
                 <DataGrid Style="{DynamicResource DataGridStyle1}"  x:Name="JobsGrid"  AutoGenerateColumns="False" CanUserSortColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" ItemsSource="{Binding saves}" Cursor="Hand"
                                        Background="#1F1C2E" Margin="50 0 50 0" BorderThickness="0 0 0 0">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Nom" Binding="{Binding appellation}" IsReadOnly="True" Width="70" />
+                        <DataGridTextColumn Header="{x:Static language:Lang.HomeNameTable}" Binding="{Binding appellation}" IsReadOnly="True" Width="70" />
                         <DataGridTextColumn x:Name="PathFromColumn" Header="Source" Binding="{Binding sourcePath}" IsReadOnly="True" Width="auto"/>
-                        <DataGridTextColumn x:Name="PathToColumn" Header="Destination" Binding="{Binding targetPath}" IsReadOnly="True" Width="auto"/>
+                        <DataGridTextColumn x:Name="PathToColumn" Header="{x:Static language:Lang.HomeTargetTable}" Binding="{Binding targetPath}" IsReadOnly="True" Width="auto"/>
                     </DataGrid.Columns>
 
                     <DataGrid.Resources>
@@ -156,45 +160,59 @@
                 </DataGrid>
             </Grid>
 
-            <Grid Grid.Row="3" VerticalAlignment="Center" Margin="50 20 50 0" >
+            <ProgressBar Grid.Row="3" Minimum="0" Maximum="100" 
+                        Margin="50 20 50 0 "
+                        Height="40"
+                        VerticalAlignment="Center"
+                        x:Name="ProgressBar"
+                        Value="{Binding CurrentProgress}"
+                        />
+
+            <Grid Grid.Row="4" VerticalAlignment="Center" Margin="45 20 50 0" >
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
                     <ColumnDefinition Width="80"/>
                     <ColumnDefinition Width="80"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="80"/>
                 </Grid.ColumnDefinitions>
 
-                
-                <Button Grid.Column="0" VerticalAlignment="Center"  Content="Play"
+
+                <Button Grid.Column="0" VerticalAlignment="Center"  Content="{x:Static language:Lang.HomePlayButton}"
                         BorderThickness="0 0 0 1"
                         Background="#1F1C2E"
-                        Margin="0 0 5 0"
+                        Margin="5 0 5 0"
                         Padding="10"
-                        Foreground="White"/>
+                        Foreground="White"
+                        Click="PlayButton_Click"/>
 
-                <Button Grid.Column="1" VerticalAlignment="Center"  Content="Stop"
+                <Button Grid.Column="1" VerticalAlignment="Center"  Content="{x:Static language:Lang.HomeStopButton}"
+                        BorderThickness="0 0 0 1"
+                        Background="#1F1C2E"
+                        Margin="5 0 5 0"
+                        Padding="10"
+                        Foreground="White"
+                        Click="StopButton_Click"/>
+
+                <Button Grid.Column="2" VerticalAlignment="Center"  Content="{x:Static language:Lang.HomeBreakButton}"
+                        BorderThickness="0 0 0 1"
+                        Background="#1F1C2E"
+                        Margin="5 0 5 0"
+                        Padding="10"
+                        Foreground="White" 
+                        Click="BreakButton_Click"/>
+
+
+
+                <Button Grid.Column="4" VerticalAlignment="Center"  Content="{x:Static language:Lang.SendButton}" Click="JobsButton_Click"
                         BorderThickness="0 0 0 1"
                         Background="#1F1C2E"
                         Margin="5 0 0 0"
                         Padding="10"
                         Foreground="White"/>
 
-                <ProgressBar Grid.Column="2" Minimum="0" Maximum="100" 
-                             Margin="10 0 0 5"
-                             Height="40"
-                             VerticalAlignment="Center">
-                    
-                </ProgressBar>
-
-                <Button Grid.Column="3" VerticalAlignment="Center"  Content="Envoyer" Click="JobsButton_Click"
-                        BorderThickness="0 0 0 1"
-                        Background="#1F1C2E"
-                        Margin="5 0 0 0"
-                        Padding="10"
-                        Foreground="White"/>
-                
             </Grid>
-            
+
         </Grid>
     </StackPanel>
 

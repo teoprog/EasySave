@@ -4,106 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:View.MVVM.View"
+             xmlns:language="clr-namespace:EasySaveApp.Properties.Langs"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="800"
              Background="Transparent">
-
-
-    <UserControl.Resources>
-        <Style TargetType="CheckBox">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="CheckBox">
-                        <StackPanel>
-                            <Grid>
-                                <Border Width="45"
-                                    Height="20"
-                                    Background="LightBlue"
-                                    CornerRadius="10"
-                                    Margin="5,0">
-
-                                </Border>
-                                <Border x:Name="button"
-                                    Height="25"
-                                    Width="25"
-                                    CornerRadius="12.5"
-                                    HorizontalAlignment="Left">
-
-                                </Border>
-                            </Grid>
-                            <ContentPresenter x:Name="content"
-                                              Margin="10,0,0,0"
-                                              Content="{TemplateBinding Content}"
-                                              VerticalAlignment="Center">
-
-                            </ContentPresenter>
-                        </StackPanel>
-                        <ControlTemplate.Resources>
-                            <Storyboard x:Key="left">
-                                <ThicknessAnimation Storyboard.TargetProperty="Margin"
-                                                    Storyboard.TargetName="button"
-                                                    Duration="0:0:0:2"
-                                                    From="28,0,0,0"
-                                                    To="0,0,0,0">
-
-                                    <ThicknessAnimation.EasingFunction>
-                                        <CircleEase EasingMode="EaseOut">
-                                        </CircleEase>
-                                    </ThicknessAnimation.EasingFunction>
-
-                                </ThicknessAnimation>
-                            </Storyboard>
-                            <Storyboard x:Key="right">
-                                <ThicknessAnimation Storyboard.TargetProperty="Margin"
-                                                    Storyboard.TargetName="button"
-                                                    Duration="0:0:0:2"
-                                                    From="0,0,0,0"
-                                                    To="28,0,0,0">
-                                    <ThicknessAnimation.EasingFunction>
-                                        <CircleEase EasingMode="EaseOut"/>
-                                    </ThicknessAnimation.EasingFunction>
-
-                                </ThicknessAnimation>
-                            </Storyboard>
-                        </ControlTemplate.Resources>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsChecked" Value="False">
-                                <Trigger.ExitActions>
-                                    <RemoveStoryboard BeginStoryboardName="leftt">
-
-                                    </RemoveStoryboard>
-                                    <BeginStoryboard Storyboard="{StaticResource right}" x:Name="rightt">
-
-                                    </BeginStoryboard>
-                                </Trigger.ExitActions>
-                                <Setter TargetName="button"
-                                        Property="Background"
-                                        Value="#fff9f4f4">
-
-                                </Setter>
-                            </Trigger>
-                            <Trigger Property="IsChecked" Value="True">
-                                <Trigger.ExitActions>
-                                    <RemoveStoryboard BeginStoryboardName="rightt">
-
-                                    </RemoveStoryboard>
-                                    <BeginStoryboard Storyboard="{StaticResource left}" x:Name="leftt">
-
-                                    </BeginStoryboard>
-                                </Trigger.ExitActions>
-                                <Setter TargetName="button"
-                                        Property="Background"
-                                        Value="#ff060600">
-
-                                </Setter>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </UserControl.Resources>
-
     <Grid>
 
 
@@ -122,15 +26,16 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock x:Name="Settingstitle"
-                   Text="Settings"
+                   Text="{x:Static language:Lang.Settingstitle}"
                    FontSize="20" 
                    Foreground="White" 
                    HorizontalAlignment="left"
-                   VerticalAlignment="Top"/>
+                   VerticalAlignment="Top"
+                   />
 
 
         <TextBlock x:Name="SettingsLanguage"
-                   Text="Language"
+                   Text="{x:Static language:Lang.SettingsLanguage}"
                    Grid.Row="1" 
                    Grid.Column="0" 
                    FontSize="14" 
@@ -143,43 +48,31 @@
 
 
 
-        <Border Grid.Column="1" Grid.Row="1" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Margin="0 0 0 5">
+        <Border Grid.Column="1" Grid.Row="1" Padding="10" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Margin="0 0 0 5">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="75"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Text="Français" 
-                   Grid.Column="0" 
-                   FontSize="18" 
-                   Foreground="White" 
-                   HorizontalAlignment="Right"
-                   VerticalAlignment="Center"
-                   Margin="0 0 15 0"/>
-
-                <CheckBox Grid.Column="1"  x:Name="ChekBox1"
-                  HorizontalAlignment="Center"
-                  VerticalAlignment="Center"
-                  IsChecked="{Binding option}"
-                  Click="ChekBox1_Click"/>
+                <Button Grid.Column="0"  Content="{x:Static language:Lang.SettingsFrenchButton}" Click="Button_Click" 
+                        BorderThickness="0 0 0 1"
+                        Background="#1F1C2E"
+                        Foreground="White"
+                        Margin="0 0 10 0"/>
 
 
-
-                <TextBlock Text="English" 
-                   Grid.Column="2" 
-                   FontSize="18" 
-                   Foreground="White" 
-                   HorizontalAlignment="Left"
-                   VerticalAlignment="Center"
-                   Margin="15 0 0 0"/>
+                <Button Grid.Column="1"  Content="{x:Static language:Lang.SettingsEnglishButton}" Click="Button_Click_1"
+                        BorderThickness="0 0 0 1"
+                        Background="#1F1C2E"
+                        Foreground="White"
+                         Margin="10 0 0 0"/>
                     
             </Grid>
         </Border>
 
         <TextBlock x:Name="SettingsLogFiles"
-                   Text="Extension of Log Files"
+                   Text="{x:Static language:Lang.SettingsExtention}"
                    Grid.Row="2" 
                    Grid.Column="0" 
                    FontSize="14" 
@@ -190,40 +83,31 @@
                    />
 
 
-        <Border Grid.Column="1" Grid.Row="2" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Margin="0 5 0 0">
+        <Border Grid.Column="1" Grid.Row="2"  Padding="10" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Margin="0 5 0 0">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="75"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Text="XML" 
-                   Grid.Column="0" 
-                   FontSize="18" 
-                   Foreground="White" 
-                   HorizontalAlignment="Right"
-                   VerticalAlignment="Center"
-                   Margin="0 0 15 0"/>
+                <Button Grid.Column="0"  Content="XML" 
+                        BorderThickness="0 0 0 1"
+                        Background="#1F1C2E"
+                        Foreground="White"
+                        Margin="0 0 10 0"/>
 
-                <CheckBox Grid.Column="1"  x:Name="ChekBox3"
-                  HorizontalAlignment="Center"
-                  VerticalAlignment="Center">
 
-                </CheckBox>
+                <Button Grid.Column="1"  Content="JSON" 
+                        BorderThickness="0 0 0 1"
+                        Background="#1F1C2E"
+                        Foreground="White"
+                         Margin="10 0 0 0"/>
 
-                <TextBlock Text="JSON" 
-                   Grid.Column="2" 
-                   FontSize="18" 
-                   Foreground="White" 
-                   HorizontalAlignment="Left"
-                   VerticalAlignment="Center"
-                   Margin="15 0 0 0"/>
             </Grid>
         </Border>
 
         <TextBlock x:Name="SettingsEncryptingTitle"
-                   Text="Encrypting Settings"
+                   Text="{x:Static language:Lang.SettingsEncryptions}"
                    Grid.Row="3" 
                    Grid.Column="0" 
                    FontSize="20" 
@@ -234,7 +118,7 @@
 
 
         <TextBlock x:Name="SettingsSizeSave"
-                   Text="Max Size of a Save"
+                   Text="{x:Static language:Lang.SettingsMaxSize}"
                    Grid.Row="4" 
                    Grid.Column="0" 
                    FontSize="14" 
@@ -243,35 +127,21 @@
                    VerticalAlignment="Center"
                    />
 
-        <Border Grid.Column="1" Grid.Row="4" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10">
+        <Border Grid.Column="1" Grid.Row="4" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Padding="10">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="75"/>
-                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Text="100 ko" 
-                   Grid.Column="0" 
-                   FontSize="18" 
-                   Foreground="White" 
-                   HorizontalAlignment="Right"
-                   VerticalAlignment="Center"
-                   Margin="0 0 15 0"/>
+                <TextBox  Grid.Column="0" Name="BackUpNameBox" 
+                 VerticalAlignment="Center"
+                 Style="{StaticResource TBStyle}"/>
 
-                <CheckBox Grid.Column="1"  x:Name="ChekBox2"
-                  HorizontalAlignment="Center"
-                  VerticalAlignment="Center">
-
-                </CheckBox>
-
-                <TextBlock Text="500 ko" 
-                   Grid.Column="2" 
-                   FontSize="18" 
-                   Foreground="White" 
-                   HorizontalAlignment="Left"
-                   VerticalAlignment="Center"
-                   Margin="15 0 0 0"/>
+                <Button Grid.Column="1"  Content="{x:Static language:Lang.SendButton}" 
+                        BorderThickness="0 0 0 1"
+                        Background="#1F1C2E"
+                        Foreground="White"/>
             </Grid>
         </Border>
 
