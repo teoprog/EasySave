@@ -660,4 +660,354 @@
     <Time>22/02/2023 11:16:49</Time>
     <EncryptTime>Not encrypted</EncryptTime>
   </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\attestation_domicile_230216_192510.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\attestation_domicile_230216_192510.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>107025</FileSize>
+    <FileTransfertTime>00:00:00.0013237</FileTransfertTime>
+    <Time>22/02/2023 13:51:03</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CCTL.xlsx</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CCTL.xlsx</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>20976</FileSize>
+    <FileTransfertTime>00:00:00.0002599</FileTransfertTime>
+    <Time>22/02/2023 13:51:03</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\Prosit 6 Synchronisation Aymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\Prosit 6 Synchronisation Aymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>2456142</FileSize>
+    <FileTransfertTime>00:00:00.0002615</FileTransfertTime>
+    <Time>22/02/2023 13:51:03</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CER Programmation Systeme\CER Prosit 1 Burnout Aymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CER Programmation Systeme\CER Prosit 1 Burnout Aymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>10739455</FileSize>
+    <FileTransfertTime>00:00:00.0003319</FileTransfertTime>
+    <Time>22/02/2023 13:51:03</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CER Programmation Systeme\CER Prosit 2 Restructuration oAymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CER Programmation Systeme\CER Prosit 2 Restructuration oAymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>8400034</FileSize>
+    <FileTransfertTime>00:00:00.0003239</FileTransfertTime>
+    <Time>22/02/2023 13:51:03</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\attestation_domicile_230216_192510.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\attestation_domicile_230216_192510.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>107025</FileSize>
+    <FileTransfertTime>00:00:00.0051725</FileTransfertTime>
+    <Time>22/02/2023 13:53:46</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CCTL.xlsx</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CCTL.xlsx</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>20976</FileSize>
+    <FileTransfertTime>00:00:00.0038988</FileTransfertTime>
+    <Time>22/02/2023 13:53:46</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\Prosit 6 Synchronisation Aymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\Prosit 6 Synchronisation Aymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>2456142</FileSize>
+    <FileTransfertTime>00:00:00.0066788</FileTransfertTime>
+    <Time>22/02/2023 13:53:46</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CER Programmation Systeme\CER Prosit 1 Burnout Aymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CER Programmation Systeme\CER Prosit 1 Burnout Aymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>10739455</FileSize>
+    <FileTransfertTime>00:00:00.0127060</FileTransfertTime>
+    <Time>22/02/2023 13:53:46</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CER Programmation Systeme\CER Prosit 2 Restructuration oAymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CER Programmation Systeme\CER Prosit 2 Restructuration oAymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>8400034</FileSize>
+    <FileTransfertTime>00:00:00.0110539</FileTransfertTime>
+    <Time>22/02/2023 13:53:46</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>ZA</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\attestation_domicile_230216_192510.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\attestation_domicile_230216_192510.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>107025</FileSize>
+    <FileTransfertTime>00:00:00.0060994</FileTransfertTime>
+    <Time>22/02/2023 13:54:17</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\attestation_domicile_230216_192510.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\attestation_domicile_230216_192510.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>107025</FileSize>
+    <FileTransfertTime>00:00:00.0156850</FileTransfertTime>
+    <Time>22/02/2023 13:54:17</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>ZA</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CCTL.xlsx</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CCTL.xlsx</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>20976</FileSize>
+    <FileTransfertTime>00:00:00.0052426</FileTransfertTime>
+    <Time>22/02/2023 13:54:17</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CCTL.xlsx</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CCTL.xlsx</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>20976</FileSize>
+    <FileTransfertTime>00:00:00.0050669</FileTransfertTime>
+    <Time>22/02/2023 13:54:17</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>ZA</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\Prosit 6 Synchronisation Aymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\Prosit 6 Synchronisation Aymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>2456142</FileSize>
+    <FileTransfertTime>00:00:00.0074178</FileTransfertTime>
+    <Time>22/02/2023 13:54:17</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\Prosit 6 Synchronisation Aymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\Prosit 6 Synchronisation Aymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>2456142</FileSize>
+    <FileTransfertTime>00:00:00.0061798</FileTransfertTime>
+    <Time>22/02/2023 13:54:17</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>ZA</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CER Programmation Systeme\CER Prosit 1 Burnout Aymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CER Programmation Systeme\CER Prosit 1 Burnout Aymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>10739455</FileSize>
+    <FileTransfertTime>00:00:00.0176655</FileTransfertTime>
+    <Time>22/02/2023 13:54:17</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CER Programmation Systeme\CER Prosit 1 Burnout Aymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CER Programmation Systeme\CER Prosit 1 Burnout Aymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>10739455</FileSize>
+    <FileTransfertTime>00:00:00.0133622</FileTransfertTime>
+    <Time>22/02/2023 13:54:17</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>ZA</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CER Programmation Systeme\CER Prosit 2 Restructuration oAymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CER Programmation Systeme\CER Prosit 2 Restructuration oAymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>8400034</FileSize>
+    <FileTransfertTime>00:00:00.0191452</FileTransfertTime>
+    <Time>22/02/2023 13:54:17</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>az</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CER Programmation Systeme\CER Prosit 2 Restructuration oAymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CER Programmation Systeme\CER Prosit 2 Restructuration oAymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>8400034</FileSize>
+    <FileTransfertTime>00:00:00.0221857</FileTransfertTime>
+    <Time>22/02/2023 13:54:17</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>DFGFD</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\attestation_domicile_230216_192510.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\attestation_domicile_230216_192510.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>107025</FileSize>
+    <FileTransfertTime>00:00:00.0139722</FileTransfertTime>
+    <Time>22/02/2023 14:40:08</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>DFGFD</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CCTL.xlsx</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CCTL.xlsx</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>20976</FileSize>
+    <FileTransfertTime>00:00:00.0192187</FileTransfertTime>
+    <Time>22/02/2023 14:40:08</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>DFGFD</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\Prosit 6 Synchronisation Aymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\Prosit 6 Synchronisation Aymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>2456142</FileSize>
+    <FileTransfertTime>00:00:00.0112624</FileTransfertTime>
+    <Time>22/02/2023 14:40:08</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>DFGFD</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CER Programmation Systeme\CER Prosit 1 Burnout Aymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CER Programmation Systeme\CER Prosit 1 Burnout Aymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>10739455</FileSize>
+    <FileTransfertTime>00:00:00.0203101</FileTransfertTime>
+    <Time>22/02/2023 14:40:08</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>DFGFD</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CER Programmation Systeme\CER Prosit 2 Restructuration oAymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CER Programmation Systeme\CER Prosit 2 Restructuration oAymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>8400034</FileSize>
+    <FileTransfertTime>00:00:00.0183365</FileTransfertTime>
+    <Time>22/02/2023 14:40:08</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>1AZSD</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\attestation_domicile_230216_192510.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\attestation_domicile_230216_192510.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>107025</FileSize>
+    <FileTransfertTime>00:00:00.0064783</FileTransfertTime>
+    <Time>22/02/2023 15:21:41</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>DEZ</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\attestation_domicile_230216_192510.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\attestation_domicile_230216_192510.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>107025</FileSize>
+    <FileTransfertTime>00:00:00.0174224</FileTransfertTime>
+    <Time>22/02/2023 15:21:41</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>1AZSD</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CCTL.xlsx</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CCTL.xlsx</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>20976</FileSize>
+    <FileTransfertTime>00:00:00.0047300</FileTransfertTime>
+    <Time>22/02/2023 15:21:41</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>DEZ</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CCTL.xlsx</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CCTL.xlsx</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>20976</FileSize>
+    <FileTransfertTime>00:00:00.0042532</FileTransfertTime>
+    <Time>22/02/2023 15:21:41</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>1AZSD</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\Prosit 6 Synchronisation Aymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\Prosit 6 Synchronisation Aymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>2456142</FileSize>
+    <FileTransfertTime>00:00:00.0076066</FileTransfertTime>
+    <Time>22/02/2023 15:21:41</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>DEZ</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\Prosit 6 Synchronisation Aymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\Prosit 6 Synchronisation Aymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>2456142</FileSize>
+    <FileTransfertTime>00:00:00.0100679</FileTransfertTime>
+    <Time>22/02/2023 15:21:41</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>1AZSD</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CER Programmation Systeme\CER Prosit 1 Burnout Aymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CER Programmation Systeme\CER Prosit 1 Burnout Aymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>10739455</FileSize>
+    <FileTransfertTime>00:00:00.0144097</FileTransfertTime>
+    <Time>22/02/2023 15:21:41</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>DEZ</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CER Programmation Systeme\CER Prosit 1 Burnout Aymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CER Programmation Systeme\CER Prosit 1 Burnout Aymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>10739455</FileSize>
+    <FileTransfertTime>00:00:00.0202240</FileTransfertTime>
+    <Time>22/02/2023 15:21:41</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>1AZSD</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CER Programmation Systeme\CER Prosit 2 Restructuration oAymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CER Programmation Systeme\CER Prosit 2 Restructuration oAymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>8400034</FileSize>
+    <FileTransfertTime>00:00:00.0214283</FileTransfertTime>
+    <Time>22/02/2023 15:21:41</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
+  <LogFile>
+    <Name>DEZ</Name>
+    <FileSource>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\1\CER Programmation Systeme\CER Prosit 2 Restructuration oAymane.pdf</FileSource>
+    <FileTarget>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2\CER Programmation Systeme\CER Prosit 2 Restructuration oAymane.pdf</FileTarget>
+    <DestPath>C:\Users\ayman\OneDrive - Association Cesi Viacesi mail\Bureau\2</DestPath>
+    <FileSize>8400034</FileSize>
+    <FileTransfertTime>00:00:00.0211213</FileTransfertTime>
+    <Time>22/02/2023 15:21:41</Time>
+    <EncryptTime>Not encrypted</EncryptTime>
+  </LogFile>
 </ArrayOfLogFile>

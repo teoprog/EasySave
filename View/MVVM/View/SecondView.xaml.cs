@@ -15,8 +15,7 @@ namespace View.MVVM.View
     /// </summary>
     public partial class SecondView : UserControl
     {
-        private static List<Jobs> jobsProperties  = new List<Jobs>();
-        public static List<Jobs> JobsProperties { get => jobsProperties; set => jobsProperties = value; }
+        
 
         public SecondView()
         {
@@ -75,7 +74,7 @@ namespace View.MVVM.View
             SuccesLabel.Visibility = Visibility.Visible;
 
 
-            jobsProperties.Add(job);
+            HomeView.jobsProperties.Add(job);
 
             HomeView.Saves.Add(new CompleteSave(job.appellation, job.sourcePath, job.targetPath));
             

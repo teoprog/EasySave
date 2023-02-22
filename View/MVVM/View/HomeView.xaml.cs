@@ -28,6 +28,9 @@ namespace View.MVVM.View
         private static Mutex Complete = new Mutex();
         private static Mutex Diff = new Mutex();
 
+        public static List<Jobs> jobsProperties = new List<Jobs>();
+        public static List<Jobs> JobsProperties { get => jobsProperties; set => jobsProperties = value; }
+
         public event PropertyChangedEventHandler? PropertyChanged;
         public static List<ISave> Saves { get; set; } = new List<ISave>();
        
@@ -89,7 +92,7 @@ namespace View.MVVM.View
         {
             InitializeComponent();
             DataContext = this;
-            JobsGrid.ItemsSource = SecondView.JobsProperties;
+            JobsGrid.ItemsSource = JobsProperties;
             JobsNumber = Saves.Count;
             CompleteSaveNumber = 0;
             DiffSaveNumber = 0;
@@ -155,13 +158,9 @@ namespace View.MVVM.View
                 
             }
 
-            Dispatcher.Invoke(() =>
-            {
-                ProgressBar.Value = 0;
-            });
+ 
+            // clear the List and set the jobs,Completesavenumber,diffsavenumber to 0
 
-
-            // clear the List and set the jobs to 0
             Saves = new List<ISave>();
             CompleteSaveNumber = 0;
             DiffSaveNumber = 0;

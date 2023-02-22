@@ -6,25 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32a69582-e693-44a4-b5cf-c02dacddb2ac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.vs/View/FileContentIndex/ce6655cc-1eec-4bb0-b89f-7895dd03b48b.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/View/FileContentIndex/e9896b1b-0069-4e94-b7a0-2f23e0cb8ac4.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoSoft/obj/Debug/net7.0/CryptoSoft.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoSoft/obj/Debug/net7.0/CryptoSoft.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/App.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/App.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.csproj.ResolveComReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.csproj.ResolveComReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.designer.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.designer.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.designer.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.designer.runtimeconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/GeneratedInternalTypeHelper.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/GeneratedInternalTypeHelper.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/Interop.DXTMSFTLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/Interop.DXTMSFTLib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/Interop.DXTRANSLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/Interop.DXTRANSLib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/Interop.Microsoft.Vbe.Interop.Forms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/Interop.Microsoft.Vbe.Interop.Forms.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/AboutUsView.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/AboutUsView.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/BlackListSoftwareView.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/BlackListSoftwareView.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/HomeView.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/HomeView.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SettingsView.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SettingsView.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MainWindow.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MainWindow.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CryptoSoft/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoSoft/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/App.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp_MarkupCompile.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/AboutUsView.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/BlackListSoftwareView.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/HomeView.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SettingsView.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MainWindow.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677055776275</updated>
       <workItem from="1677055777418" duration="722000" />
+      <workItem from="1677067944459" duration="655000" />
     </task>
     <servers />
   </component>
@@ -116,4 +109,15 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
 </project>

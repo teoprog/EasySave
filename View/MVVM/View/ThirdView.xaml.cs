@@ -1,5 +1,6 @@
 ﻿
 using EasySave;
+using System.Collections.Generic;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
@@ -67,9 +68,9 @@ namespace View.MVVM.View
             SuccesLabel.Content = "Les données ont été sauvegardées avec succès.";
             SuccesLabel.Visibility = Visibility.Visible;
 
+            HomeView.jobsProperties.Add(job);
 
-
-           HomeView.Saves.Add(new DiffSave(job.appellation, job.sourcePath, job.targetPath));
+            HomeView.Saves.Add(new DiffSave(job.appellation, job.sourcePath, job.targetPath));
             
 
             

@@ -16,8 +16,12 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="60"/>
             <RowDefinition Height="60"/>
-            <RowDefinition Height="80"/>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -71,6 +75,8 @@
             </Grid>
         </Border>
 
+
+
         <TextBlock x:Name="SettingsLogFiles"
                    Text="{x:Static language:Lang.SettingsExtention}"
                    Grid.Row="2" 
@@ -94,21 +100,26 @@
                         BorderThickness="0 0 0 1"
                         Background="#1F1C2E"
                         Foreground="White"
-                        Margin="0 0 10 0"/>
+                        Margin="0 0 10 0"
+                        Click="Button_Click_4"/>
 
 
                 <Button Grid.Column="1"  Content="JSON" 
                         BorderThickness="0 0 0 1"
                         Background="#1F1C2E"
                         Foreground="White"
-                         Margin="10 0 0 0"/>
+                         Margin="10 0 0 0"
+                        Click="Button_Click_5"/>
 
             </Grid>
         </Border>
 
-        <TextBlock x:Name="SettingsEncryptingTitle"
+        <Label x:Name="SuccesLabel3" Grid.Row="3" Grid.Column="1" Foreground="Green" VerticalAlignment="Center" Visibility="Collapsed" />
+
+
+        <TextBlock
                    Text="{x:Static language:Lang.SettingsEncryptions}"
-                   Grid.Row="3" 
+                   Grid.Row="4" 
                    Grid.Column="0" 
                    FontSize="20" 
                    Foreground="White" 
@@ -117,9 +128,9 @@
                    Margin="0 20 0 0"/>
 
 
-        <TextBlock x:Name="SettingsSizeSave"
+        <TextBlock 
                    Text="{x:Static language:Lang.SettingsMaxSize}"
-                   Grid.Row="4" 
+                   Grid.Row="5" 
                    Grid.Column="0" 
                    FontSize="14" 
                    Foreground="White" 
@@ -127,7 +138,7 @@
                    VerticalAlignment="Center"
                    />
 
-        <Border Grid.Column="1" Grid.Row="4" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Padding="10">
+        <Border Grid.Column="1" Grid.Row="5" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Padding="10">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -146,6 +157,44 @@
                         Click="Button_Click_2"/>
             </Grid>
         </Border>
+
+        <Label x:Name="SuccesLabel6" Grid.Row="6" Grid.Column="1" Foreground="Green" VerticalAlignment="Center" Visibility="Collapsed" />
+        <Label x:Name="SuccesLabel6bis" Grid.Row="6" Grid.Column="1" Foreground="Red" VerticalAlignment="Center" Visibility="Collapsed" />
+
+
+        <TextBlock 
+                   Text="Surcharge Reseau/Network Load"
+                   Grid.Row="7" 
+                   Grid.Column="0" 
+                   FontSize="14" 
+                   Foreground="White" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   />
+        
+        <Border Grid.Column="1" Grid.Row="7" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="75"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox x:Name="NetworkLoadBox" Grid.Column="0" 
+                 VerticalAlignment="Center"
+                 Style="{StaticResource TBStyle}"
+                 PreviewTextInput="TextBox_PreviewTextInput"/>
+
+                <Button Grid.Column="1"  Content="{x:Static language:Lang.SendButton}" 
+                        BorderThickness="0 0 0 1"
+                        Background="#1F1C2E"
+                        Foreground="White"
+                        Click="Button_Click_3"/>
+            </Grid>
+            
+        </Border>
+
+        <Label x:Name="SuccesLabel8" Grid.Row="8" Grid.Column="1" Foreground="Green" VerticalAlignment="Center" Visibility="Collapsed"/>
+        <Label x:Name="SuccesLabel8bis" Grid.Row="8" Grid.Column="1" Foreground="Red" VerticalAlignment="Center" Visibility="Collapsed"/>
 
     </Grid>
 </UserControl>
