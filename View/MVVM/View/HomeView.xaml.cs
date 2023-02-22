@@ -100,21 +100,41 @@ namespace View.MVVM.View
         }
 
 
-
+        public static int GlobalSize = 0;
 
         public void JobsButton_Click(object sender, RoutedEventArgs e)
         {
             Thread[] threads = new Thread[Saves.Count];
             HomeView.isStopped = false;
 
+            // Nb de fichiers restants
+            while (GeneralTools.VerifyBusinessSoftwareRunning(businessList))
+            {
+                MessageBox.Show(
+                    "Un logiciel Metier est en cours d'execution, Veuillez le fermer pour finaliser la Sauvegarde");   
+            }
+            Thread prog = new Thread(() =>
+            {
+                Dispatcher.Invoke(() =>
+                {
+                    do
+                    {
+                        ProgressBar.Value = Save.globalProgression;
+                        while (GeneralTools.VerifyBusinessSoftwareRunning(businessList))
+                        {
+                            MessageBox.Show(
+                                "Un logiciel Metier est en cours d'execution, Veuillez le fermer pour finaliser la Sauvegarde");   
+                        }
+                    } while (Save.globalProgression != 100);
+                    ProgressBar.Value = Save.globalProgression;
+                    
+                });
+            });
+            prog.Start();
+
             for (int i = 0; i < JobsNumber; i++)
             {
                 ISave save = Saves[i];
-                if (GeneralTools.VerifyBusinessSoftwareRunning(businessList))
-                {
-                    MessageBox.Show("Un logiciel Metier est en cours d'execution, Veuillez le fermer pour finaliser la Sauvegarde");
-                }
-
                 if (save is CompleteSave)
                 {
                     threads[i] = new Thread(() =>
@@ -124,13 +144,6 @@ namespace View.MVVM.View
                         Dispatcher.Invoke(() =>
                         {
                             CompleteSaveNumber = CompleteSaveNumber + 1;
-                        });
-
-                        // Mettez à jour la valeur de la ProgressBar
-                        Dispatcher.Invoke(() =>
-                        {
-                            if (JobsNumber > 0)
-                                ProgressBar.Value = ((double)i / JobsNumber) * 100;
                         });
                     });
                 }
@@ -143,13 +156,6 @@ namespace View.MVVM.View
                         Dispatcher.Invoke(() =>
                         {
                             DiffSaveNumber = DiffSaveNumber + 1;
-                        });
-
-                        // Mettez à jour la valeur de la ProgressBar
-                        Dispatcher.Invoke(() =>
-                        {
-                            if (JobsNumber > 0)
-                                ProgressBar.Value = ((double)i / JobsNumber) * 100;
                         });
                     });
                 }

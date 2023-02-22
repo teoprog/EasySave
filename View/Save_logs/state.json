@@ -1,0 +1,152 @@
+[
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "0",
+    "Progression": "100%",
+    "NbFilesLeftToDo": "0"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "1030",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "10"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "1030",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "10"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "1030",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "10"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "1030",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "10"
+  },
+  {
+    "Name": "2",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\3",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "1030",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "10"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "1030",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "10"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "1030",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "10"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "1030",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "10"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "1030",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "10"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "1030",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "10"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "1030",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "10"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "1030",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "10"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "1030",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "10"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "1030",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "10"
+  }
+]

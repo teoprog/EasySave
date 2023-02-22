@@ -9,6 +9,7 @@ using EasySaveApp.ViewModel;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using View.MVVM.View;
 
 namespace EasySave
 {
@@ -24,7 +25,7 @@ namespace EasySave
         /// <summary>
         /// What you want to save
         /// </summary>
-        internal readonly string? SourcePath;
+        public readonly string? SourcePath;
 
         /// <summary>
         /// Where you want to save
@@ -45,7 +46,7 @@ namespace EasySave
         /// Files total to be copied
         /// </summary>
         internal long TotalFiles;
-
+        
         protected bool _prioFilesExt = true; 
         
         private static object logsLockJson = new object();
@@ -55,6 +56,10 @@ namespace EasySave
         private static object stateLockXml = new object();
         
         private static long sizeParallelFiles = 0;
+
+        public static int globalFilesLeftToDo = HomeView.GlobalSize;
+        public static double globalProgression = 0;
+
 
         protected Save(string? appellation, string? sourcePath, string? targetPath)
         {
@@ -400,7 +405,7 @@ namespace EasySave
                                     this is CompleteSave)
                                 {
                                     // pause if business software is running
-                                    while (GeneralTools.VerifyBusinessSoftwareRunning(businessList)) Thread.Sleep(1000);
+                                    while (VerifyBusinessSoftwareRunning(businessList)) Thread.Sleep(1000);
                                     File.Copy(file, path, true);
                                 }
                                 else
@@ -414,7 +419,7 @@ namespace EasySave
                             if ((sourceInfo.LastWriteTime > targetInfo.LastWriteTime && this is DiffSave) ||
                                 this is CompleteSave)
                             {
-                                while (businessList != null && GeneralTools.VerifyBusinessSoftwareRunning(businessList))
+                                while (businessList != null && VerifyBusinessSoftwareRunning(businessList))
                                     Thread.Sleep(1000);
                                 File.Copy(file, path, true);
                             }
@@ -459,6 +464,9 @@ namespace EasySave
 
                         this.FilesSize -= fileSize;
                         this.FilesToCopy--;
+                        globalFilesLeftToDo--;
+                        globalProgression = (1 - ((double)globalFilesLeftToDo / HomeView.GlobalSize)) * 100;
+
                         // Update our logs
                         UpdateState();
                         stopwatch.Reset();
@@ -486,6 +494,17 @@ namespace EasySave
             }
         }
 
-       
+        private bool VerifyBusinessSoftwareRunning(List<string> processes)
+        {
+            if (processes == null) return false;
+            foreach (string process in processes)
+            {
+                if (Process.GetProcessesByName(process).Length > 0)
+                    return true;
+            }
+    
+            // No process is running, return false
+            return false;
+        }
     }
 }
