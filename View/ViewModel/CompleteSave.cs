@@ -21,12 +21,11 @@ namespace EasySave
         public void RepositorySave()
         {
             GeneralTools.CreateLogsFiles();
-            this.FilesSize = DirectorySize();
+            this.FilesSize = GeneralTools.DirectorySize(SourcePath, TargetPath);
             if (this.SourcePath != null)
             {
                 this.TotalFiles = this.FilesToCopy = Directory.GetFiles(this.SourcePath, "*", SearchOption.AllDirectories).Length;
                 this.CreateDirectoriesOfADirectory();
-                GeneralTools.CreateLogsFiles();
                 this.CreateState(GeneralTools.conf);
                 this.RepositorySave(this.SourcePath, this.TargetPath);
                 if (GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>() != null)

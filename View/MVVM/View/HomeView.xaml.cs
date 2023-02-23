@@ -27,7 +27,6 @@ namespace View.MVVM.View
     {
         private static Mutex Complete = new Mutex();
         private static Mutex Diff = new Mutex();
-        private ManualResetEvent pauseEvent = new ManualResetEvent(true);
 
         public static List<Jobs> jobsProperties = new List<Jobs>();
         public static List<Jobs> JobsProperties { get => jobsProperties; set => jobsProperties = value; }
@@ -101,7 +100,7 @@ namespace View.MVVM.View
         }
 
 
-        public static int GlobalSize = 0;
+        public static long GlobalSize = 0;
 
         public void JobsButton_Click(object sender, RoutedEventArgs e)
         {
@@ -139,7 +138,6 @@ namespace View.MVVM.View
                 {
                     tasks[i] = Task.Run(() =>
                     {
-                        pauseEvent.WaitOne(); // Attend que pauseEvent soit défini avant de poursuivre l'exécution du thread
                         (save as CompleteSave)?.RepositorySave();
 
                         Dispatcher.Invoke(() =>
@@ -152,7 +150,6 @@ namespace View.MVVM.View
                 {
                     tasks[i] = Task.Run(() =>
                     {
-                        pauseEvent.WaitOne(); // Attend que pauseEvent soit défini avant de poursuivre l'exécution du thread
                         (save as DiffSave)?.RepositorySave();
 
                         Dispatcher.Invoke(() =>
@@ -173,12 +170,12 @@ namespace View.MVVM.View
 
         public void StopButton_Click(object sender, RoutedEventArgs e)
         {
-            pauseEvent.Reset();
+            Save._paused = true;
         }
 
         private void PlayButton_Click(object sender, RoutedEventArgs e)
         {
-            pauseEvent.Set();
+            Save._paused = false;
         }
 
         private void BreakButton_Click(object sender, RoutedEventArgs e)

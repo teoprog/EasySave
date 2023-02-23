@@ -4,10 +4,10 @@
     "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
     "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
     "State": "ACTIVE",
-    "TotalFilesToCopy": "14",
-    "TotalFilesSize": "2461938604",
-    "Progression": "35,71%",
-    "NbFilesLeftToDo": "9"
+    "TotalFilesToCopy": "18",
+    "TotalFilesSize": "0",
+    "Progression": "100%",
+    "NbFilesLeftToDo": "0"
   },
   {
     "Name": "1",
@@ -598,5 +598,145 @@
     "TotalFilesSize": "2461938990",
     "Progression": "0%",
     "NbFilesLeftToDo": "14"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": "14",
+    "TotalFilesSize": "2461938990",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "14"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": "14",
+    "TotalFilesSize": "2461938990",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "14"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": "14",
+    "TotalFilesSize": "2461938990",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "14"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "18",
+    "TotalFilesSize": "4923876950",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "18"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "18",
+    "TotalFilesSize": "4923876950",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "18"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": "18",
+    "TotalFilesSize": "4923876950",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "18"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "18",
+    "TotalFilesSize": "4923876950",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "18"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "18",
+    "TotalFilesSize": "4923876950",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "18"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "18",
+    "TotalFilesSize": "4923876950",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "18"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "18",
+    "TotalFilesSize": "4923876950",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "18"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "18",
+    "TotalFilesSize": "4923876950",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "18"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "18",
+    "TotalFilesSize": "4923876950",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "18"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": "18",
+    "TotalFilesSize": "4923876950",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "18"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": "18",
+    "TotalFilesSize": "4923876950",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "18"
   }
 ]

@@ -89,8 +89,7 @@ namespace View.MVVM.View
 
             HomeView.Saves.Add(new DiffSave(job.appellation, job.sourcePath, job.targetPath));
             
-            HomeView.GlobalSize += Directory.GetFiles(job.sourcePath, "*", SearchOption.AllDirectories).Length;
-
+            HomeView.GlobalSize +=  GeneralTools.DirectorySize(job.sourcePath, job.targetPath);
         }
 
         private void BackUpNameBox_TextChanged(object sender, TextChangedEventArgs e)

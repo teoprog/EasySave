@@ -9,6 +9,25 @@ namespace EasySave
     public static class GeneralTools
     {
         /// <summary>
+        /// Calculate the size of a directory
+        /// </summary>+
+        /// <returns>The size of the directory</returns>
+        public static long DirectorySize(string sourcePath, string targerPath) 
+        {
+            long size = 0;
+
+            if (sourcePath != null && targerPath != null)
+            {
+                DirectoryInfo sourceDirectory = new DirectoryInfo(sourcePath);
+                
+                foreach (FileInfo file in sourceDirectory.EnumerateFiles("*", SearchOption.AllDirectories))
+                    size += file.Length;
+            }
+
+            return size;
+        }
+        
+        /// <summary>
         /// Var who stock the path to the logs directory
         /// </summary>
         public static IConfiguration conf = new ConfigurationBuilder().AddJsonFile(Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\ViewModel\appsettings.json"), optional: false, reloadOnChange: true).Build();

@@ -4,7 +4,9 @@ using System.Diagnostics;
 using System.IO;
 using System.Net.NetworkInformation;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Threading;
 using System.Xml.Serialization;
 using EasySaveApp.ViewModel;
 using Microsoft.Extensions.Configuration;
@@ -58,14 +60,15 @@ namespace EasySave
         
         private static long sizeParallelFiles = 0;
 
-        public static int globalFilesLeftToDo = HomeView.GlobalSize;
+        public static long globalFilesLeftToDo = HomeView.GlobalSize;
         public static double globalProgression = 0;
         
         /// <summary>
         /// Handle the stop button in our app
         /// </summary>
         public static bool _stopped = false;
-        private CancellationTokenSource cts;
+
+        public static bool _paused = false;
 
         protected Save(string? appellation, string? sourcePath, string? targetPath)
         {
@@ -340,25 +343,6 @@ namespace EasySave
         }
 
         /// <summary>
-        /// Calculate the size of a directory
-        /// </summary>+
-        /// <returns>The size of the directory</returns>
-        protected long DirectorySize() 
-        {
-            long size = 0;
-
-            if (SourcePath != null && TargetPath != null)
-            {
-                DirectoryInfo sourceDirectory = new DirectoryInfo(SourcePath);
-                
-                foreach (FileInfo file in sourceDirectory.EnumerateFiles("*", SearchOption.AllDirectories))
-                    size += file.Length;
-            }
-
-            return size;
-        }
-
-        /// <summary>
         /// Function who save a repository (completeSave and diffSave)
         /// </summary>
         /// <param name="sourceDirectory">The source directory we actually browse</param>
@@ -404,6 +388,11 @@ namespace EasySave
                         
                         // Return the perf (network load)
                         var usedMem = memory.TotalPhysicalMemory - memory.AvailablePhysicalMemory;
+                        
+                        while (_paused)
+                        {
+                            Task.Delay(100);
+                        }
                         if ((sizeParallelFiles >
                              long.Parse(GeneralTools.conf["Limit_Parallel_Size"] ?? string.Empty) * 1024)) //|| (usedMem < float.Parse(GeneralTools.conf["Network_Load"] ?? string.Empty)))
                         {
@@ -474,13 +463,13 @@ namespace EasySave
 
                         this.FilesSize -= fileSize;
                         this.FilesToCopy--;
-                        globalFilesLeftToDo--;
+                        globalFilesLeftToDo -= fi.Length;
                         globalProgression = (1 - ((double)globalFilesLeftToDo / HomeView.GlobalSize)) * 100;
 
                         // Update our logs
                         UpdateState();
                         stopwatch.Reset();
-                    }
+                     }
                 }
             }
 
