@@ -27,6 +27,7 @@ namespace View.MVVM.View
     {
         private static Mutex Complete = new Mutex();
         private static Mutex Diff = new Mutex();
+        private ManualResetEvent pauseEvent = new ManualResetEvent(true);
 
         public static List<Jobs> jobsProperties = new List<Jobs>();
         public static List<Jobs> JobsProperties { get => jobsProperties; set => jobsProperties = value; }
@@ -104,6 +105,7 @@ namespace View.MVVM.View
 
         public void JobsButton_Click(object sender, RoutedEventArgs e)
         {
+            Save._stopped = true;
             Thread[] threads = new Thread[Saves.Count];
             HomeView.isStopped = false;
 
@@ -120,11 +122,6 @@ namespace View.MVVM.View
                     do
                     {
                         ProgressBar.Value = Save.globalProgression;
-                        while (GeneralTools.VerifyBusinessSoftwareRunning(businessList))
-                        {
-                            MessageBox.Show(
-                                "Un logiciel Metier est en cours d'execution, Veuillez le fermer pour finaliser la Sauvegarde");   
-                        }
                     } while (Save.globalProgression != 100);
                     ProgressBar.Value = Save.globalProgression;
                     
@@ -139,6 +136,7 @@ namespace View.MVVM.View
                 {
                     threads[i] = new Thread(() =>
                     {
+                        pauseEvent.WaitOne(); // Attend que pauseEvent soit défini avant de poursuivre l'exécution du thread
                         (save as CompleteSave)?.RepositorySave();
 
                         Dispatcher.Invoke(() =>
@@ -151,6 +149,7 @@ namespace View.MVVM.View
                 {
                     threads[i] = new Thread(() =>
                     {
+                        pauseEvent.WaitOne(); // Attend que pauseEvent soit défini avant de poursuivre l'exécution du thread
                         (save as DiffSave)?.RepositorySave();
 
                         Dispatcher.Invoke(() =>
@@ -160,8 +159,6 @@ namespace View.MVVM.View
                     });
                 }
                 threads[i].Start();
-
-                
             }
 
  
@@ -171,30 +168,21 @@ namespace View.MVVM.View
             CompleteSaveNumber = 0;
             DiffSaveNumber = 0;
             JobsNumber = 0;
-
-
-
-            for (int i = 0; i < JobsNumber; i++)
-            {
-                while (isStopped)
-                { 
-                }
-
-            }
         }
 
         public void StopButton_Click(object sender, RoutedEventArgs e)
         {
-            isStopped = true;
+            pauseEvent.Reset();
         }
 
         private void PlayButton_Click(object sender, RoutedEventArgs e)
         {
-            isStopped = false;
+            pauseEvent.Set();
         }
 
         private void BreakButton_Click(object sender, RoutedEventArgs e)
         {
+            Save._stopped = true;
             return;
         }
 

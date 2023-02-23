@@ -58,6 +58,22 @@ namespace View.MVVM.View
                 ErrorTargetLabel.Visibility = Visibility.Visible;
                 return;
             }
+            else if (SoucePathBox.Text == TargetPathBox.Text)
+            {
+                TargetPathBox.Text = "";
+                ErrorTargetLabel.Content = "Le répertoire de destination ne peux pas etre égal au repertoire Source";
+                ErrorTargetLabel.Visibility = Visibility.Visible;
+                
+                return;
+            }
+            else if(SoucePathBox.Text.StartsWith(TargetPathBox.Text) || TargetPathBox.Text.StartsWith(SoucePathBox.Text))
+            {
+                TargetPathBox.Text = "";
+                ErrorTargetLabel.Content = "Le répertoire de Destination ne peux pas etre inclus dans le repertoire Source ";
+                ErrorTargetLabel.Visibility = Visibility.Visible;
+                return;
+            }
+
 
             Jobs job = new Jobs
             {

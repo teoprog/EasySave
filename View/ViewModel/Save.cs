@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Net.NetworkInformation;
 using System.Threading;
+using System.Windows.Forms;
 using System.Xml.Serialization;
 using EasySaveApp.ViewModel;
 using Microsoft.Extensions.Configuration;
@@ -59,7 +60,12 @@ namespace EasySave
 
         public static int globalFilesLeftToDo = HomeView.GlobalSize;
         public static double globalProgression = 0;
-
+        
+        /// <summary>
+        /// Handle the stop button in our app
+        /// </summary>
+        public static bool _stopped = false;
+        private CancellationTokenSource cts;
 
         protected Save(string? appellation, string? sourcePath, string? targetPath)
         {
@@ -378,10 +384,12 @@ namespace EasySave
                     
                     // Used for calculate perf
                     var memory = new Microsoft.VisualBasic.Devices.ComputerInfo();
-                    if ((_prioFilesExt && GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>()!=null && GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>()
-                            .Contains(fi.Extension)) || (!_prioFilesExt && GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>()!=null 
-                                                                        && !GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>().Contains(fi.Extension)))
-                    {
+                    if (((_prioFilesExt && GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>()!=null 
+                                        && GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>().Contains(fi.Extension)) 
+                         || (!_prioFilesExt && GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>()!=null 
+                                            && !GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>().Contains(fi.Extension))
+                         || GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>() == null) && !_stopped)
+                     {
                         path = Path.Combine(targetDirectory, Path.GetFileName(file));
                         var path2 = Path.Combine(sourceDirectory, Path.GetFileName(file));
                         var targetInfo = new FileInfo(path);
@@ -405,7 +413,9 @@ namespace EasySave
                                     this is CompleteSave)
                                 {
                                     // pause if business software is running
-                                    while (VerifyBusinessSoftwareRunning(businessList)) Thread.Sleep(1000);
+                                    while (VerifyBusinessSoftwareRunning(businessList))
+                                        MessageBox.Show("Un logiciel Metier est en cours d'execution, Veuillez le fermer pour finaliser la Sauvegarde");
+
                                     File.Copy(file, path, true);
                                 }
                                 else
@@ -420,7 +430,7 @@ namespace EasySave
                                 this is CompleteSave)
                             {
                                 while (businessList != null && VerifyBusinessSoftwareRunning(businessList))
-                                    Thread.Sleep(1000);
+                                    MessageBox.Show("Un logiciel Metier est en cours d'execution, Veuillez le fermer pour finaliser la Sauvegarde");
                                 File.Copy(file, path, true);
                             }
                             else

@@ -7,68 +7,35 @@
   <component name="ChangeListManager">
     <list default="true" id="32a69582-e693-44a4-b5cf-c02dacddb2ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.View/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.View/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoSoft/obj/CryptoSoft.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoSoft/obj/CryptoSoft.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoSoft/obj/CryptoSoft.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoSoft/obj/CryptoSoft.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoSoft/obj/Debug/net7.0/CryptoSoft.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoSoft/obj/Debug/net7.0/CryptoSoft.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoSoft/obj/Debug/net7.0/CryptoSoft.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoSoft/obj/Debug/net7.0/CryptoSoft.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoSoft/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoSoft/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoSoft/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoSoft/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoSoft/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoSoft/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/MVVM/View/HomeView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/View/MVVM/View/HomeView.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/View/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/View/v17/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/MVVM/View/HomeView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/MVVM/View/HomeView.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/MVVM/View/SecondView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/View/MVVM/View/SecondView.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/MVVM/View/SecondView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/MVVM/View/SecondView.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/MVVM/View/SettingsView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/MVVM/View/SettingsView.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/MVVM/View/ThirdView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/View/MVVM/View/ThirdView.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/MVVM/View/ThirdView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/MVVM/View/ThirdView.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/MainWindow.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/Save_logs/logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/Save_logs/logs.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/Save_logs/state.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/Save_logs/state.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/ViewModel/CompleteSave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/ViewModel/CompleteSave.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/ViewModel/DiffSave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/ViewModel/DiffSave.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/ViewModel/Save.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/ViewModel/Save.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/ViewModel/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/ViewModel/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/bin/Debug/net7.0-windows/EasySaveApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/net7.0-windows/EasySaveApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/bin/Debug/net7.0-windows/EasySaveApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/net7.0-windows/EasySaveApp.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/bin/Debug/net7.0-windows/EasySaveApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/net7.0-windows/EasySaveApp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/bin/Debug/net7.0-windows/en/EasySaveApp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/net7.0-windows/en/EasySaveApp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/App.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/App.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/App.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/App.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.csproj.ResolveComReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.csproj.ResolveComReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.g.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp_MarkupCompile.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp_MarkupCompile.lref" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp_MarkupCompile.lref" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/GeneratedInternalTypeHelper.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/GeneratedInternalTypeHelper.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/GeneratedInternalTypeHelper.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/GeneratedInternalTypeHelper.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/Interop.DXTMSFTLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/Interop.DXTMSFTLib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/Interop.DXTRANSLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/Interop.DXTRANSLib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/Interop.Microsoft.Vbe.Interop.Forms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/Interop.Microsoft.Vbe.Interop.Forms.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/AboutUsView.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/AboutUsView.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/AboutUsView.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/AboutUsView.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/BlackListSoftwareView.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/BlackListSoftwareView.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/BlackListSoftwareView.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/BlackListSoftwareView.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/HomeView.baml" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/HomeView.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/HomeView.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/HomeView.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/HomeView.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/HomeView.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.baml" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.baml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SettingsView.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SettingsView.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SettingsView.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SettingsView.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.baml" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.baml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MainWindow.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MainWindow.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MainWindow.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/en/EasySaveApp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/en/EasySaveApp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/ref/EasySaveApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/ref/EasySaveApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/refint/EasySaveApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/refint/EasySaveApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/EasySaveApp.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/EasySaveApp.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/EasySaveApp.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/EasySaveApp.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,33 +48,15 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/758d0749f34c4c60ab9581dc082b5fd1f77880/85/86b6a5d6/MessageBox.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CryptoSoft/obj/Release/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/MVVM/View/HomeView.xaml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/MVVM/View/HomeView.xaml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/MVVM/View/HomeView.xaml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/MVVM/View/HomeView.xaml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/MVVM/View/HomeView.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/MVVM/View/HomeView.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/MVVM/View/HomeView.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/MVVM/View/SecondView.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/MVVM/View/ThirdView.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/MainWindow.xaml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/ViewModel/Save.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/obj/Debug/net7.0-windows/App.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/obj/Debug/net7.0-windows/App.g.i.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/obj/Debug/net7.0-windows/MVVM/View/AboutUsView.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/AboutUsView.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/AboutUsView.g.i.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/BlackListSoftwareView.g.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/obj/Debug/net7.0-windows/MVVM/View/HomeView.g.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/obj/Debug/net7.0-windows/MVVM/View/HomeView.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/HomeView.g.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.g.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.g.i.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.g.i.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/obj/Debug/net7.0-windows/MVVM/View/SettingsView.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SettingsView.g.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/emiro/EasySave/View/obj/Debug/net7.0-windows/MVVM/View/SettingsView.g.i.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SettingsView.g.i.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.g.i.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MainWindow.g.cs" root0="SKIP_HIGHLIGHTING" />
@@ -184,6 +133,8 @@
       <updated>1677055776275</updated>
       <workItem from="1677055777418" duration="722000" />
       <workItem from="1677067944459" duration="655000" />
+      <workItem from="1677157447308" duration="2316000" />
+      <workItem from="1677161234526" duration="1387000" />
     </task>
     <servers />
   </component>
@@ -202,5 +153,24 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/View/ViewModel/Save.cs</url>
+          <line>480</line>
+          <properties documentPath="C:\Users\emiro\EasySave\View\ViewModel\Save.cs" initialLine="480" containingFunctionPresentation="method 'RepositorySave'">
+            <startOffsets>
+              <option value="21043" />
+            </startOffsets>
+            <endOffsets>
+              <option value="21057" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -55,7 +55,7 @@ namespace View.MVVM.View
                 SuccesLabel6bis.Visibility = Visibility.Collapsed;
                 SuccesLabel8bis.Visibility = Visibility.Collapsed;
 
-                SuccesLabel6bis.Content = "Veuillez entrer une valeur Non Nulle";
+                SuccesLabel6bis.Content = "Veuillez entrer une Valeur";
                 SuccesLabel6bis.Visibility = Visibility.Visible;
 
                 
@@ -92,7 +92,7 @@ namespace View.MVVM.View
                 SuccesLabel8bis.Visibility = Visibility.Collapsed;
 
 
-                SuccesLabel8bis.Content = "Veuillez entrer une valeur Non Nulle";
+                SuccesLabel8bis.Content = "Veuillez entrer une Valeur";
                 SuccesLabel8bis.Visibility = Visibility.Visible;
 
 

@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
+using Microsoft.Extensions.Configuration;
 
 namespace EasySave
 {
@@ -27,8 +29,11 @@ namespace EasySave
                 GeneralTools.CreateLogsFiles();
                 this.CreateState(GeneralTools.conf);
                 this.RepositorySave(this.SourcePath, this.TargetPath);
-                this._prioFilesExt = false;                
-                this.RepositorySave(this.SourcePath, this.TargetPath);
+                if (GeneralTools.conf.GetSection("Priority_Ext").Get<List<string>>() != null)
+                {
+                    this._prioFilesExt = false;                
+                    this.RepositorySave(this.SourcePath, this.TargetPath);
+                }
             }
         }
     }
