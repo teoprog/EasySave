@@ -270,3 +270,8 @@ C:\Users\emiro\EasySave\View\obj\Debug\net7.0-windows\EasySaveApp.Properties.Lan
 C:\Users\emiro\EasySave\View\obj\Debug\net7.0-windows\EasySaveApp.Properties.Langs.Lang.en.resources
 C:\Users\emiro\EasySave\View\obj\Debug\net7.0-windows\EasySaveApp.csproj.GenerateResource.cache
 C:\Users\emiro\EasySave\View\obj\Debug\net7.0-windows\en\EasySaveApp.resources.dll
+C:\Users\emiro\EasySave\View\bin\Debug\net7.0-windows\ServeurClient.deps.json
+C:\Users\emiro\EasySave\View\bin\Debug\net7.0-windows\ServeurClient.runtimeconfig.json
+C:\Users\emiro\EasySave\View\bin\Debug\net7.0-windows\ServeurClient.exe
+C:\Users\emiro\EasySave\View\bin\Debug\net7.0-windows\ServeurClient.dll
+C:\Users\emiro\EasySave\View\bin\Debug\net7.0-windows\ServeurClient.pdb

@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using View;
 
 namespace View.MVVM.View
 {
@@ -110,10 +111,11 @@ namespace View.MVVM.View
             Task[] tasks = new Task[Saves.Count];
 
             // Nb de fichiers restants
-            
-            if(GeneralTools.VerifyBusinessSoftwareRunning(businessList))
-                MessageBox.Show("Un logiciel Metier est en cours d'execution, Veuillez le fermer pour finaliser la Sauvegarde");
-            
+
+            if (GeneralTools.VerifyBusinessSoftwareRunning(businessList))
+                MessageBox.Show(
+                    "Un logiciel Metier est en cours d'execution, Veuillez le fermer pour finaliser la Sauvegarde");
+
             Task prog = new Task(async () =>
             {
                 while (Save.globalProgression != 100)

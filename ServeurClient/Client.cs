@@ -10,34 +10,35 @@ namespace ServeurClient
 {
     public class Client
     {
-        private TcpClient _client;
+        public TcpClient client;
 
+        public NetworkStream _stream;
+        
         public Client(string serverIp, int port)
         {
-            _client = new TcpClient(serverIp, port);
+            client = new TcpClient(serverIp, port);
+            _stream = client.GetStream();
         }
 
-        public void SendData(string data)
+        public string ReceiveData()
         {
-            var stream = _client.GetStream();
-            var buffer = Encoding.UTF8.GetBytes(data);
-            stream.Write(buffer, 0, buffer.Length);
-
-            buffer = new byte[1024];
-            var response = new StringBuilder();
-            int bytes;
-
-            while ((bytes = stream.Read(buffer, 0, buffer.Length)) != 0)
-            {
-                response.Append(Encoding.UTF8.GetString(buffer, 0, bytes));
-            }
-
-            MessageBox.Show("Réponse du serveur : " + response.ToString());
+            byte[] buffer = new byte[1024];
+            int bytesRead = _stream.Read(buffer, 0, buffer.Length);
+            string data = Encoding.ASCII.GetString(buffer, 0, bytesRead);
+            return data;
         }
 
         public void Close()
         {
-            _client.Close();
+            client.Close();
         }
+        
+        public double GetProgress()
+        {
+            byte[] buffer = new byte[8];
+            _stream.Read(buffer, 0, 8);
+            return BitConverter.ToDouble(buffer, 0);
+        }
+
     }
 }

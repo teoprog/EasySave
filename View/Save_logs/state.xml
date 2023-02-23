@@ -35,7 +35,7 @@
     <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-1</FileSource>
     <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileTarget>
     <State>END</State>
-    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
     <TotalFilesSize>0</TotalFilesSize>
     <Progression>100%</Progression>
     <NbFilesLeftToDo>0</NbFilesLeftToDo>
@@ -55,7 +55,7 @@
     <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\prosit-2</FileSource>
     <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3</FileTarget>
     <State>END</State>
-    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesToCopy>11</TotalFilesToCopy>
     <TotalFilesSize>0</TotalFilesSize>
     <Progression>100%</Progression>
     <NbFilesLeftToDo>0</NbFilesLeftToDo>
@@ -249,5 +249,165 @@
     <TotalFilesSize>0</TotalFilesSize>
     <Progression>100%</Progression>
     <NbFilesLeftToDo>0</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>A</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>483</TotalFilesSize>
+    <Progression>83,33%</Progression>
+    <NbFilesLeftToDo>3</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>4923876950</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\3</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>4923876950</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>3</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>11</TotalFilesToCopy>
+    <TotalFilesSize>2461938587</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>11</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>4923876950</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>4923876950</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>4923876950</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>4923876950</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>4923876950</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\4</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>4923876950</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>4923876950</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>4923876950</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>4923876950</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>4923876950</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>4923876950</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+  </StateFile>
+  <StateFile>
+    <Name>1</Name>
+    <FileSource>C:\Users\emiro\OneDrive\Documents\Bureau\1</FileSource>
+    <FileTarget>C:\Users\emiro\OneDrive\Documents\Bureau\2</FileTarget>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>18</TotalFilesToCopy>
+    <TotalFilesSize>4923876950</TotalFilesSize>
+    <Progression>0%</Progression>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
   </StateFile>
 </ArrayOfStateFile>

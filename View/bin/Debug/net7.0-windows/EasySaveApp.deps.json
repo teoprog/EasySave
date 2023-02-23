@@ -12,6 +12,7 @@
           "Microsoft.Extensions.Configuration.Binder": "7.0.3",
           "Microsoft.Extensions.Configuration.Json": "7.0.0",
           "Newtonsoft.Json": "13.0.2",
+          "ServeurClient": "1.0.0",
           "System.Threading": "4.3.0",
           "System.Windows.Extensions": "7.0.0"
         },
@@ -173,6 +174,11 @@
         "dependencies": {
           "System.Drawing.Common": "7.0.0"
         }
+      },
+      "ServeurClient/1.0.0": {
+        "runtime": {
+          "ServeurClient.dll": {}
+        }
       }
     }
   },
@@ -321,6 +327,11 @@
       "sha512": "sha512-bR4qdCmssMMbo9Fatci49An5B1UaVJZHKNq70PRgzoLYIlitb8Tj7ns/Xt5Pz1CkERiTjcVBDU2y1AVrPBYkaw==",
       "path": "system.windows.extensions/7.0.0",
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
+    },
+    "ServeurClient/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
