@@ -7648,5 +7648,2895 @@
     "FileTransferTime": "00:00:00.0050344",
     "Time": "23/02/2023 16:08:43",
     "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0128488",
+    "Time": "23/02/2023 16:39:46",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0111223",
+    "Time": "23/02/2023 16:40:16",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0123718",
+    "Time": "23/02/2023 16:41:02",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0081593",
+    "Time": "23/02/2023 16:41:32",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0041581",
+    "Time": "23/02/2023 16:41:32",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0127784",
+    "Time": "23/02/2023 16:43:14",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0045268",
+    "Time": "23/02/2023 16:43:14",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0064560",
+    "Time": "23/02/2023 16:43:14",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0049683",
+    "Time": "23/02/2023 16:43:14",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0053247",
+    "Time": "23/02/2023 16:43:15",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0046674",
+    "Time": "23/02/2023 16:43:15",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0047380",
+    "Time": "23/02/2023 16:43:15",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:01.7122142",
+    "Time": "23/02/2023 16:43:17",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0049720",
+    "Time": "23/02/2023 16:43:17",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0053840",
+    "Time": "23/02/2023 16:43:17",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0089614",
+    "Time": "23/02/2023 16:43:18",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0083533",
+    "Time": "23/02/2023 16:43:48",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0042793",
+    "Time": "23/02/2023 16:43:48",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0070570",
+    "Time": "23/02/2023 16:43:48",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0066011",
+    "Time": "23/02/2023 16:43:48",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0045965",
+    "Time": "23/02/2023 16:43:49",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0045305",
+    "Time": "23/02/2023 16:43:49",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0044956",
+    "Time": "23/02/2023 16:43:49",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.4700509",
+    "Time": "23/02/2023 16:43:50",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0044159",
+    "Time": "23/02/2023 16:43:50",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0045023",
+    "Time": "23/02/2023 16:43:50",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0056945",
+    "Time": "23/02/2023 16:43:51",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0070705",
+    "Time": "23/02/2023 16:44:21",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0046229",
+    "Time": "23/02/2023 16:44:21",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0063262",
+    "Time": "23/02/2023 16:44:21",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0043711",
+    "Time": "23/02/2023 16:44:21",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0044138",
+    "Time": "23/02/2023 16:44:22",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0044288",
+    "Time": "23/02/2023 16:44:22",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0042902",
+    "Time": "23/02/2023 16:44:22",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.5525779",
+    "Time": "23/02/2023 16:44:23",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0042496",
+    "Time": "23/02/2023 16:44:23",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0050192",
+    "Time": "23/02/2023 16:44:23",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0062088",
+    "Time": "23/02/2023 16:44:23",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0103035",
+    "Time": "23/02/2023 16:45:31",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0041693",
+    "Time": "23/02/2023 16:45:32",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0112070",
+    "Time": "23/02/2023 16:45:32",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0046653",
+    "Time": "23/02/2023 16:45:32",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0039334",
+    "Time": "23/02/2023 16:45:32",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0042917",
+    "Time": "23/02/2023 16:45:32",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0051341",
+    "Time": "23/02/2023 16:45:33",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.5202658",
+    "Time": "23/02/2023 16:45:33",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0045393",
+    "Time": "23/02/2023 16:45:34",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0044942",
+    "Time": "23/02/2023 16:45:34",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0041799",
+    "Time": "23/02/2023 16:45:34",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-2\\Diagramme de séquence - Copie (2).pdf",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Diagramme de séquence - Copie (2).pdf",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "13876",
+    "FileTransferTime": "00:00:00.0221674",
+    "Time": "23/02/2023 16:46:59",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-2\\Diagramme de séquence - Copie (3).pdf",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Diagramme de séquence - Copie (3).pdf",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "13876",
+    "FileTransferTime": "00:00:00.0234862",
+    "Time": "23/02/2023 16:47:00",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-2\\Diagramme de séquence - Copie (4).pdf",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Diagramme de séquence - Copie (4).pdf",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "13876",
+    "FileTransferTime": "00:00:00.0199223",
+    "Time": "23/02/2023 16:47:00",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-2\\Diagramme de séquence - Copie (5).pdf",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Diagramme de séquence - Copie (5).pdf",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "13876",
+    "FileTransferTime": "00:00:00.0225123",
+    "Time": "23/02/2023 16:47:00",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-2\\Diagramme de séquence - Copie (6).pdf",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Diagramme de séquence - Copie (6).pdf",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "13876",
+    "FileTransferTime": "00:00:00.0211226",
+    "Time": "23/02/2023 16:47:00",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-2\\Diagramme de séquence - Copie.pdf",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Diagramme de séquence - Copie.pdf",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "13876",
+    "FileTransferTime": "00:00:00.0225108",
+    "Time": "23/02/2023 16:47:01",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-2\\Diagramme de séquence.pdf",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Diagramme de séquence.pdf",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "13876",
+    "FileTransferTime": "00:00:00.0200184",
+    "Time": "23/02/2023 16:47:01",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-2\\Diagramme de séquence - Copie (2).pdf",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Diagramme de séquence - Copie (2).pdf",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "13876",
+    "FileTransferTime": "00:00:00.0212631",
+    "Time": "23/02/2023 16:49:21",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-2\\Diagramme de séquence - Copie (3).pdf",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Diagramme de séquence - Copie (3).pdf",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "13876",
+    "FileTransferTime": "00:00:00.0130424",
+    "Time": "23/02/2023 16:49:21",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-2\\Diagramme de séquence - Copie (4).pdf",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Diagramme de séquence - Copie (4).pdf",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "13876",
+    "FileTransferTime": "00:00:00.0148292",
+    "Time": "23/02/2023 16:49:22",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-2\\Diagramme de séquence - Copie (5).pdf",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Diagramme de séquence - Copie (5).pdf",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "13876",
+    "FileTransferTime": "00:00:00.0144600",
+    "Time": "23/02/2023 16:49:22",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-2\\Diagramme de séquence - Copie (6).pdf",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Diagramme de séquence - Copie (6).pdf",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "13876",
+    "FileTransferTime": "00:00:00.0164045",
+    "Time": "23/02/2023 16:49:22",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-2\\Diagramme de séquence - Copie.pdf",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Diagramme de séquence - Copie.pdf",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "13876",
+    "FileTransferTime": "00:00:00.0336500",
+    "Time": "23/02/2023 16:49:22",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\prosit-2\\Diagramme de séquence.pdf",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Diagramme de séquence.pdf",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "13876",
+    "FileTransferTime": "00:00:00.0144340",
+    "Time": "23/02/2023 16:49:23",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0105396",
+    "Time": "23/02/2023 16:58:18",
+    "EncryptTime": "00:00:00.3083589"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0055923",
+    "Time": "23/02/2023 16:58:20",
+    "EncryptTime": "00:00:00.2255076"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0079185",
+    "Time": "23/02/2023 16:58:24",
+    "EncryptTime": "00:00:00.2581013"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0055682",
+    "Time": "23/02/2023 16:58:26",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0068389",
+    "Time": "23/02/2023 16:58:27",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0063222",
+    "Time": "23/02/2023 16:58:27",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0055460",
+    "Time": "23/02/2023 16:58:27",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.6292362",
+    "Time": "23/02/2023 16:58:28",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0056406",
+    "Time": "23/02/2023 16:58:28",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0054086",
+    "Time": "23/02/2023 16:58:29",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0067564",
+    "Time": "23/02/2023 16:58:29",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0077390",
+    "Time": "23/02/2023 16:59:41",
+    "EncryptTime": "00:00:00.1556921"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0040992",
+    "Time": "23/02/2023 16:59:42",
+    "EncryptTime": "00:00:00.1440517"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0079261",
+    "Time": "23/02/2023 16:59:42",
+    "EncryptTime": "00:00:00.1532757"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0059071",
+    "Time": "23/02/2023 16:59:42",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0051333",
+    "Time": "23/02/2023 16:59:43",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0044225",
+    "Time": "23/02/2023 16:59:43",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0043079",
+    "Time": "23/02/2023 16:59:43",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:01.2123130",
+    "Time": "23/02/2023 16:59:45",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:04.8983396",
+    "Time": "23/02/2023 16:59:50",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.6852139",
+    "Time": "23/02/2023 16:59:50",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:06.6636242",
+    "Time": "23/02/2023 16:59:57",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0053826",
+    "Time": "23/02/2023 16:59:57",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0054818",
+    "Time": "23/02/2023 16:59:58",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0154891",
+    "Time": "23/02/2023 16:59:58",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0077087",
+    "Time": "23/02/2023 17:04:04",
+    "EncryptTime": "00:00:00.1557552"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0042426",
+    "Time": "23/02/2023 17:04:04",
+    "EncryptTime": "00:00:00.1460233"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0061709",
+    "Time": "23/02/2023 17:04:04",
+    "EncryptTime": "00:00:00.1513606"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0051434",
+    "Time": "23/02/2023 17:04:05",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0046194",
+    "Time": "23/02/2023 17:04:05",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0044557",
+    "Time": "23/02/2023 17:04:05",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0043563",
+    "Time": "23/02/2023 17:04:05",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.5000970",
+    "Time": "23/02/2023 17:04:06",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.7060209",
+    "Time": "23/02/2023 17:04:07",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:05.9231226",
+    "Time": "23/02/2023 17:04:13",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:04.9048544",
+    "Time": "23/02/2023 17:04:18",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0052065",
+    "Time": "23/02/2023 17:04:19",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0068373",
+    "Time": "23/02/2023 17:04:19",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0045386",
+    "Time": "23/02/2023 17:04:19",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0083743",
+    "Time": "23/02/2023 17:09:53",
+    "EncryptTime": "00:00:00.1558584"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0042995",
+    "Time": "23/02/2023 17:09:54",
+    "EncryptTime": "00:00:00.1470976"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0063759",
+    "Time": "23/02/2023 17:09:54",
+    "EncryptTime": "00:00:00.1533008"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0043532",
+    "Time": "23/02/2023 17:09:54",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0043522",
+    "Time": "23/02/2023 17:09:55",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0044045",
+    "Time": "23/02/2023 17:09:55",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0043378",
+    "Time": "23/02/2023 17:09:55",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:02.4000416",
+    "Time": "23/02/2023 17:09:58",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:03.2607840",
+    "Time": "23/02/2023 17:10:01",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.7008798",
+    "Time": "23/02/2023 17:10:02",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:05.5070985",
+    "Time": "23/02/2023 17:10:08",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0048440",
+    "Time": "23/02/2023 17:10:08",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0047140",
+    "Time": "23/02/2023 17:10:08",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0057364",
+    "Time": "23/02/2023 17:10:08",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0081651",
+    "Time": "23/02/2023 17:12:36",
+    "EncryptTime": "00:00:00.1354311"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0059934",
+    "Time": "23/02/2023 17:12:36",
+    "EncryptTime": "00:00:00.1454560"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0055416",
+    "Time": "23/02/2023 17:12:37",
+    "EncryptTime": "00:00:00.1566078"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0043726",
+    "Time": "23/02/2023 17:12:37",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0040176",
+    "Time": "23/02/2023 17:12:37",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0049347",
+    "Time": "23/02/2023 17:12:37",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0056531",
+    "Time": "23/02/2023 17:12:38",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.4456591",
+    "Time": "23/02/2023 17:12:38",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:01.2922163",
+    "Time": "23/02/2023 17:12:40",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:09.4044040",
+    "Time": "23/02/2023 17:12:49",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.7325935",
+    "Time": "23/02/2023 17:12:50",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0055720",
+    "Time": "23/02/2023 17:12:50",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0055479",
+    "Time": "23/02/2023 17:12:50",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0068765",
+    "Time": "23/02/2023 17:12:51",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0072363",
+    "Time": "23/02/2023 17:15:55",
+    "EncryptTime": "00:00:00.1355751"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0039855",
+    "Time": "23/02/2023 17:15:55",
+    "EncryptTime": "00:00:00.1486569"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0058757",
+    "Time": "23/02/2023 17:15:56",
+    "EncryptTime": "00:00:00.1491579"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0044866",
+    "Time": "23/02/2023 17:15:56",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0042921",
+    "Time": "23/02/2023 17:15:56",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0058354",
+    "Time": "23/02/2023 17:15:57",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0050632",
+    "Time": "23/02/2023 17:15:57",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.4483652",
+    "Time": "23/02/2023 17:15:58",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:01.3368105",
+    "Time": "23/02/2023 17:15:59",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:08.2732169",
+    "Time": "23/02/2023 17:16:08",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:01.6301138",
+    "Time": "23/02/2023 17:16:09",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0054877",
+    "Time": "23/02/2023 17:16:10",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0067891",
+    "Time": "23/02/2023 17:16:10",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0065511",
+    "Time": "23/02/2023 17:16:10",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0067804",
+    "Time": "23/02/2023 17:16:49",
+    "EncryptTime": "00:00:00.1404597"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0041987",
+    "Time": "23/02/2023 17:16:50",
+    "EncryptTime": "00:00:00.1362374"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0072193",
+    "Time": "23/02/2023 17:16:50",
+    "EncryptTime": "00:00:00.1603588"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0046773",
+    "Time": "23/02/2023 17:16:50",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0043879",
+    "Time": "23/02/2023 17:16:51",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0053085",
+    "Time": "23/02/2023 17:16:51",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0043560",
+    "Time": "23/02/2023 17:16:51",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:01.7717309",
+    "Time": "23/02/2023 17:16:53",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:03.9815636",
+    "Time": "23/02/2023 17:16:57",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.6755218",
+    "Time": "23/02/2023 17:16:58",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:07.2011772",
+    "Time": "23/02/2023 17:17:06",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0053950",
+    "Time": "23/02/2023 17:17:06",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0056655",
+    "Time": "23/02/2023 17:17:06",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0227002",
+    "Time": "23/02/2023 17:17:06",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0128687",
+    "Time": "23/02/2023 17:25:21",
+    "EncryptTime": "00:00:00.2114871"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0049522",
+    "Time": "23/02/2023 17:25:22",
+    "EncryptTime": "00:00:00.1942787"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0074756",
+    "Time": "23/02/2023 17:25:22",
+    "EncryptTime": "00:00:00.2100564"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0043794",
+    "Time": "23/02/2023 17:25:23",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0052075",
+    "Time": "23/02/2023 17:25:23",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0046147",
+    "Time": "23/02/2023 17:25:23",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0059462",
+    "Time": "23/02/2023 17:25:24",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.4464706",
+    "Time": "23/02/2023 17:25:24",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.7255530",
+    "Time": "23/02/2023 17:25:25",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.6690223",
+    "Time": "23/02/2023 17:25:26",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:07.2428542",
+    "Time": "23/02/2023 17:25:34",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0048289",
+    "Time": "23/02/2023 17:25:34",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0049608",
+    "Time": "23/02/2023 17:25:34",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0190182",
+    "Time": "23/02/2023 17:25:34",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0084764",
+    "Time": "23/02/2023 17:27:02",
+    "EncryptTime": "00:00:00.1692304"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0053483",
+    "Time": "23/02/2023 17:27:02",
+    "EncryptTime": "00:00:00.1563497"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0072007",
+    "Time": "23/02/2023 17:27:03",
+    "EncryptTime": "00:00:00.1611056"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0044130",
+    "Time": "23/02/2023 17:27:03",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0053371",
+    "Time": "23/02/2023 17:27:03",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0043181",
+    "Time": "23/02/2023 17:27:03",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0047569",
+    "Time": "23/02/2023 17:27:04",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.4613876",
+    "Time": "23/02/2023 17:27:04",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.7618954",
+    "Time": "23/02/2023 17:27:05",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.6807372",
+    "Time": "23/02/2023 17:27:06",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:09.0579860",
+    "Time": "23/02/2023 17:27:16",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0062111",
+    "Time": "23/02/2023 17:27:16",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0058716",
+    "Time": "23/02/2023 17:27:16",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0329545",
+    "Time": "23/02/2023 17:27:16",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0077898",
+    "Time": "23/02/2023 17:34:23",
+    "EncryptTime": "00:00:00.1511672"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0042838",
+    "Time": "23/02/2023 17:34:23",
+    "EncryptTime": "00:00:00.1439515"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0059481",
+    "Time": "23/02/2023 17:34:24",
+    "EncryptTime": "00:00:00.1538928"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0045871",
+    "Time": "23/02/2023 17:34:24",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0047400",
+    "Time": "23/02/2023 17:34:24",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0042490",
+    "Time": "23/02/2023 17:34:24",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0048796",
+    "Time": "23/02/2023 17:34:25",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.4381285",
+    "Time": "23/02/2023 17:34:25",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.7082557",
+    "Time": "23/02/2023 17:34:26",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:06.9887593",
+    "Time": "23/02/2023 17:34:34",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:03.9708546",
+    "Time": "23/02/2023 17:34:38",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0044369",
+    "Time": "23/02/2023 17:34:38",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0045949",
+    "Time": "23/02/2023 17:34:38",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0059049",
+    "Time": "23/02/2023 17:34:38",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0068358",
+    "Time": "23/02/2023 17:35:36",
+    "EncryptTime": "00:00:00.1344494"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0040033",
+    "Time": "23/02/2023 17:35:36",
+    "EncryptTime": "00:00:00.1353790"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0067826",
+    "Time": "23/02/2023 17:35:37",
+    "EncryptTime": "00:00:00.1492789"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0044191",
+    "Time": "23/02/2023 17:35:37",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0048895",
+    "Time": "23/02/2023 17:35:37",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0042752",
+    "Time": "23/02/2023 17:35:38",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0047492",
+    "Time": "23/02/2023 17:35:38",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.4455089",
+    "Time": "23/02/2023 17:35:39",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:04.4804405",
+    "Time": "23/02/2023 17:35:43",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:08.5709174",
+    "Time": "23/02/2023 17:35:52",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:03.1876289",
+    "Time": "23/02/2023 17:35:55",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0042627",
+    "Time": "23/02/2023 17:35:56",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0048244",
+    "Time": "23/02/2023 17:35:56",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0057289",
+    "Time": "23/02/2023 17:35:56",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0075862",
+    "Time": "23/02/2023 17:39:26",
+    "EncryptTime": "00:00:00.1486370"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0046365",
+    "Time": "23/02/2023 17:39:26",
+    "EncryptTime": "00:00:00.1454126"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0062961",
+    "Time": "23/02/2023 17:39:27",
+    "EncryptTime": "00:00:00.1527028"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0084988",
+    "Time": "23/02/2023 17:39:27",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0045583",
+    "Time": "23/02/2023 17:39:27",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0055039",
+    "Time": "23/02/2023 17:39:28",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0055542",
+    "Time": "23/02/2023 17:39:28",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.3888448",
+    "Time": "23/02/2023 17:39:29",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:08.1692899",
+    "Time": "23/02/2023 17:39:37",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:07.4029006",
+    "Time": "23/02/2023 17:39:44",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.6194928",
+    "Time": "23/02/2023 17:39:45",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0059092",
+    "Time": "23/02/2023 17:39:45",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0051966",
+    "Time": "23/02/2023 17:39:46",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0046218",
+    "Time": "23/02/2023 17:39:46",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0134295",
+    "Time": "23/02/2023 17:52:16",
+    "EncryptTime": "00:00:00.1126588"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0077886",
+    "Time": "23/02/2023 17:52:16",
+    "EncryptTime": "00:00:00.1137754"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0111586",
+    "Time": "23/02/2023 17:52:16",
+    "EncryptTime": "00:00:00.1245522"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0042210",
+    "Time": "23/02/2023 17:52:17",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0043400",
+    "Time": "23/02/2023 17:52:17",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0095423",
+    "Time": "23/02/2023 17:52:17",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0043817",
+    "Time": "23/02/2023 17:52:18",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.4415883",
+    "Time": "23/02/2023 17:52:18",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.6517417",
+    "Time": "23/02/2023 17:52:19",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:03.5402714",
+    "Time": "23/02/2023 17:52:23",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:02.4780246",
+    "Time": "23/02/2023 17:52:26",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0042300",
+    "Time": "23/02/2023 17:52:26",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0040881",
+    "Time": "23/02/2023 17:52:26",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0046883",
+    "Time": "23/02/2023 17:52:26",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0066896",
+    "Time": "23/02/2023 17:54:59",
+    "EncryptTime": "00:00:00.1371994"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0040624",
+    "Time": "23/02/2023 17:54:59",
+    "EncryptTime": "00:00:00.1247658"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0071404",
+    "Time": "23/02/2023 17:55:00",
+    "EncryptTime": "00:00:00.1510463"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0039468",
+    "Time": "23/02/2023 17:55:00",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0045341",
+    "Time": "23/02/2023 17:55:00",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0046005",
+    "Time": "23/02/2023 17:55:01",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0041857",
+    "Time": "23/02/2023 17:55:01",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.4242073",
+    "Time": "23/02/2023 17:55:01",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.6468807",
+    "Time": "23/02/2023 17:55:02",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:08.4184342",
+    "Time": "23/02/2023 17:55:11",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:02.2163104",
+    "Time": "23/02/2023 17:55:14",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0039001",
+    "Time": "23/02/2023 17:55:14",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0046912",
+    "Time": "23/02/2023 17:55:14",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0057330",
+    "Time": "23/02/2023 17:55:14",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0100549",
+    "Time": "23/02/2023 17:56:09",
+    "EncryptTime": "00:00:00.1697163"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0124998",
+    "Time": "23/02/2023 17:56:09",
+    "EncryptTime": "Error in encryption"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0044719",
+    "Time": "23/02/2023 17:56:09",
+    "EncryptTime": "00:00:00.1453842"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0084142",
+    "Time": "23/02/2023 17:56:10",
+    "EncryptTime": "00:00:00.1543230"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0064881",
+    "Time": "23/02/2023 17:56:10",
+    "EncryptTime": "00:00:00.1600928"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0074652",
+    "Time": "23/02/2023 17:56:10",
+    "EncryptTime": "00:00:00.1507511"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0048605",
+    "Time": "23/02/2023 17:56:11",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0042038",
+    "Time": "23/02/2023 17:56:11",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0048049",
+    "Time": "23/02/2023 17:56:11",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.2570247",
+    "Time": "23/02/2023 17:56:11",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0041402",
+    "Time": "23/02/2023 17:56:12",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0085105",
+    "Time": "23/02/2023 17:56:12",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0044988",
+    "Time": "23/02/2023 17:56:12",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Nouveau Document Microsoft Word.docx",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Nouveau Document Microsoft Word.docx",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0048662",
+    "Time": "23/02/2023 17:56:12",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.4654160",
+    "Time": "23/02/2023 17:56:13",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:00.6491842",
+    "Time": "23/02/2023 17:56:14",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:09.4405744",
+    "Time": "23/02/2023 17:56:22",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (4) - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:13.4924579",
+    "Time": "23/02/2023 17:56:27",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:07.1938526",
+    "Time": "23/02/2023 17:56:30",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (5) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:02.6719165",
+    "Time": "23/02/2023 17:56:30",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:04.0427648",
+    "Time": "23/02/2023 17:56:34",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\Workshop 11-12-33 - Copie (6) - Copie - Copie.mkv",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "615484490",
+    "FileTransferTime": "00:00:05.5531534",
+    "Time": "23/02/2023 17:56:36",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:02.1997296",
+    "Time": "23/02/2023 17:56:36",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0040007",
+    "Time": "23/02/2023 17:56:36",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0049160",
+    "Time": "23/02/2023 17:56:36",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0037225",
+    "Time": "23/02/2023 17:56:36",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0055077",
+    "Time": "23/02/2023 17:56:37",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\exo_script_powershell_1.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\exo_script_powershell_1.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0040726",
+    "Time": "23/02/2023 17:56:37",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0078553",
+    "Time": "23/02/2023 17:57:07",
+    "EncryptTime": "00:00:00.1442394"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\uuuu.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\uuuu.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.0040704",
+    "Time": "23/02/2023 17:57:08",
+    "EncryptTime": "00:00:00.1298232"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\aaa\\aa.txt",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\aaa\\aa.txt",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "32",
+    "FileTransferTime": "00:00:00.0055104",
+    "Time": "23/02/2023 17:57:08",
+    "EncryptTime": "00:00:00.1444105"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie (2).ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie (2).ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0039503",
+    "Time": "23/02/2023 17:57:09",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1\\exo_script_powershell_1 - Copie.ps1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2\\exo_script_powershell_1 - Copie.ps1",
+    "DestPath": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "FileSize": "161",
+    "FileTransferTime": "00:00:00.0041629",
+    "Time": "23/02/2023 17:57:09",
+    "EncryptTime": "Not encrypted"
   }
 ]

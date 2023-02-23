@@ -5,7 +5,7 @@
     <projectFile>View/EasySaveApp.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32a69582-e693-44a4-b5cf-c02dacddb2ac" name="Changes" comment="sleep deleted and upgrade view">
+    <list default="true" id="32a69582-e693-44a4-b5cf-c02dacddb2ac" name="Changes" comment="stopped problem fixed">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.View/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.View/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/MVVM/View/HomeView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/MVVM/View/HomeView.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/Save_logs/logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/Save_logs/logs.json" afterDir="false" />
@@ -28,6 +28,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/758d0749f34c4c60ab9581dc082b5fd1f77880/85/86b6a5d6/MessageBox.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2fef1eec7ac6873f34ed1f433adae86b7276573fc7eb040a240776b5913b16/RangeBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CryptoSoft/obj/Release/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/obj/Debug/net7.0-windows/App.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/obj/Debug/net7.0-windows/App.g.i.cs" root0="SKIP_HIGHLIGHTING" />
@@ -56,6 +57,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -115,7 +117,9 @@
       <workItem from="1677055777418" duration="722000" />
       <workItem from="1677067944459" duration="655000" />
       <workItem from="1677157447308" duration="2316000" />
-      <workItem from="1677161234526" duration="3634000" />
+      <workItem from="1677161234526" duration="5250000" />
+      <workItem from="1677166526552" duration="42000" />
+      <workItem from="1677166609942" duration="4502000" />
     </task>
     <task id="LOCAL-00001" summary="sleep deleted and upgrade view">
       <created>1677162892808</created>
@@ -124,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677162892808</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="stopped problem fixed">
+      <created>1677165584317</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677165584317</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,46 +156,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sleep deleted and upgrade view" />
-    <option name="LAST_COMMIT_MESSAGE" value="sleep deleted and upgrade view" />
+    <MESSAGE value="stopped problem fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="stopped problem fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/View/ViewModel/Save.cs</url>
-          <line>480</line>
-          <properties documentPath="C:\Users\emiro\EasySave\View\ViewModel\Save.cs" initialLine="480" containingFunctionPresentation="method 'RepositorySave'">
+          <line>491</line>
+          <properties documentPath="C:\Users\emiro\EasySave\View\ViewModel\Save.cs" initialLine="491" containingFunctionPresentation="method 'RepositorySave'">
             <startOffsets>
-              <option value="21043" />
+              <option value="21434" />
             </startOffsets>
             <endOffsets>
-              <option value="21057" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/View/ViewModel/Save.cs</url>
-          <line>392</line>
-          <properties documentPath="C:\Users\emiro\EasySave\View\ViewModel\Save.cs" initialLine="392" containingFunctionPresentation="method 'RepositorySave'">
-            <startOffsets>
-              <option value="16288" />
-            </startOffsets>
-            <endOffsets>
-              <option value="16349" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/View/ViewModel/Save.cs</url>
-          <line>386</line>
-          <properties documentPath="C:\Users\emiro\EasySave\View\ViewModel\Save.cs" initialLine="386" containingFunctionPresentation="method 'RepositorySave'">
-            <startOffsets>
-              <option value="15641" />
-            </startOffsets>
-            <endOffsets>
-              <option value="16240" />
+              <option value="21435" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />

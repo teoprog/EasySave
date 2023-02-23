@@ -108,22 +108,26 @@ namespace View.MVVM.View
             Save._stopped = false;
             Thread[] threads = new Thread[Saves.Count];
             HomeView.isStopped = false;
+            Task[] tasks = new Task[Saves.Count];
 
             // Nb de fichiers restants
             
             if(GeneralTools.VerifyBusinessSoftwareRunning(businessList))
                 MessageBox.Show("Un logiciel Metier est en cours d'execution, Veuillez le fermer pour finaliser la Sauvegarde");
             
-            Thread prog = new Thread(() =>
+            Task prog = new Task(async () =>
             {
-                Dispatcher.Invoke(() =>
+                while (Save.globalProgression != 100)
                 {
-                    do
+                    Dispatcher.Invoke(() =>
                     {
                         ProgressBar.Value = Save.globalProgression;
-                    } while (Save.globalProgression != 100);
+                    });
+                    await Task.Delay(100); // Pause de 100ms pour éviter de surcharger le processeur
+                }
+                Dispatcher.Invoke(() =>
+                {
                     ProgressBar.Value = Save.globalProgression;
-                    
                 });
             });
             prog.Start();
@@ -133,7 +137,7 @@ namespace View.MVVM.View
                 ISave save = Saves[i];
                 if (save is CompleteSave)
                 {
-                    Task.Run(() =>
+                    tasks[i] = Task.Run(() =>
                     {
                         pauseEvent.WaitOne(); // Attend que pauseEvent soit défini avant de poursuivre l'exécution du thread
                         (save as CompleteSave)?.RepositorySave();
@@ -146,7 +150,7 @@ namespace View.MVVM.View
                 }
                 else if (save is DiffSave)
                 {
-                    Task.Run(() =>
+                    tasks[i] = Task.Run(() =>
                     {
                         pauseEvent.WaitOne(); // Attend que pauseEvent soit défini avant de poursuivre l'exécution du thread
                         (save as DiffSave)?.RepositorySave();
@@ -157,9 +161,7 @@ namespace View.MVVM.View
                         });
                     });
                 }
-                threads[i].Start();
             }
-
  
             // clear the List and set the jobs,Completesavenumber,diffsavenumber to 0
 
