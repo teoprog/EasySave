@@ -11998,5 +11998,85 @@
     "FileTransferTime": "00:00:00.0145677",
     "Time": "23/02/2023 19:49:37",
     "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "Film Harry Potter",
+    "FileSource": "D:\\1\\Harry Potter 1.mkv",
+    "FileTarget": "D:\\2\\Harry Potter 1.mkv",
+    "DestPath": "D:\\2",
+    "FileSize": "5481673327",
+    "FileTransferTime": "00:00:15.7353387",
+    "Time": "23/02/2023 20:04:02",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "Film Harry Potter",
+    "FileSource": "D:\\1\\Harry Potter 2.mkv",
+    "FileTarget": "D:\\2\\Harry Potter 2.mkv",
+    "DestPath": "D:\\2",
+    "FileSize": "5790722295",
+    "FileTransferTime": "00:00:08.5546529",
+    "Time": "23/02/2023 20:04:11",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "Film Harry Potter",
+    "FileSource": "D:\\1\\Harry Potter 3.mkv",
+    "FileTarget": "D:\\2\\Harry Potter 3.mkv",
+    "DestPath": "D:\\2",
+    "FileSize": "5099239044",
+    "FileTransferTime": "00:00:07.7782581",
+    "Time": "23/02/2023 20:04:19",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "Film Harry Potter",
+    "FileSource": "D:\\1\\Harry Potter 4.mkv",
+    "FileTarget": "D:\\2\\Harry Potter 4.mkv",
+    "DestPath": "D:\\2",
+    "FileSize": "5652609904",
+    "FileTransferTime": "00:00:08.5827123",
+    "Time": "23/02/2023 20:04:27",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "Film Harry Potter",
+    "FileSource": "D:\\1\\Harry Potter 5.mkv",
+    "FileTarget": "D:\\2\\Harry Potter 5.mkv",
+    "DestPath": "D:\\2",
+    "FileSize": "4973639319",
+    "FileTransferTime": "00:00:31.3584631",
+    "Time": "23/02/2023 20:04:59",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "Film Harry Potter",
+    "FileSource": "D:\\1\\Harry Potter 6.mkv",
+    "FileTarget": "D:\\2\\Harry Potter 6.mkv",
+    "DestPath": "D:\\2",
+    "FileSize": "5523964933",
+    "FileTransferTime": "00:00:07.6292370",
+    "Time": "23/02/2023 20:05:06",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "Film Harry Potter",
+    "FileSource": "D:\\1\\Harry Potter 7.mkv",
+    "FileTarget": "D:\\2\\Harry Potter 7.mkv",
+    "DestPath": "D:\\2",
+    "FileSize": "5257374067",
+    "FileTransferTime": "00:00:07.8222591",
+    "Time": "23/02/2023 20:05:14",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "Film Harry Potter",
+    "FileSource": "D:\\1\\Harry Potter 8.mkv",
+    "FileTarget": "D:\\2\\Harry Potter 8.mkv",
+    "DestPath": "D:\\2",
+    "FileSize": "4694682299",
+    "FileTransferTime": "00:00:07.0175795",
+    "Time": "23/02/2023 20:05:21",
+    "EncryptTime": "Not encrypted"
   }
 ]

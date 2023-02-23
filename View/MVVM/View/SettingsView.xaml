@@ -18,10 +18,12 @@
             <RowDefinition Height="60"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="60"/>
             <RowDefinition Height="30"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -117,20 +119,12 @@
         <Label x:Name="SuccesLabel3" Grid.Row="3" Grid.Column="1" Foreground="Green" VerticalAlignment="Center" Visibility="Collapsed" />
 
 
-        <TextBlock
-                   Text="{x:Static language:Lang.SettingsEncryptions}"
-                   Grid.Row="4" 
-                   Grid.Column="0" 
-                   FontSize="20" 
-                   Foreground="White" 
-                   HorizontalAlignment="left"
-                   VerticalAlignment="Top"
-                   Margin="0 20 0 0"/>
+     
 
 
         <TextBlock 
                    Text="{x:Static language:Lang.SettingsMaxSize}"
-                   Grid.Row="5" 
+                   Grid.Row="4" 
                    Grid.Column="0" 
                    FontSize="14" 
                    Foreground="White" 
@@ -138,7 +132,7 @@
                    VerticalAlignment="Center"
                    />
 
-        <Border Grid.Column="1" Grid.Row="5" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Padding="10">
+        <Border Grid.Column="1" Grid.Row="4" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Padding="10">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -158,21 +152,21 @@
             </Grid>
         </Border>
 
-        <Label x:Name="SuccesLabel6" Grid.Row="6" Grid.Column="1" Foreground="Green" VerticalAlignment="Center" Visibility="Collapsed" />
-        <Label x:Name="SuccesLabel6bis" Grid.Row="6" Grid.Column="1" Foreground="Red" VerticalAlignment="Center" Visibility="Collapsed" />
+        <Label x:Name="SuccesLabel6" Grid.Row="5" Grid.Column="1" Foreground="Green" VerticalAlignment="Center" Visibility="Collapsed" />
+        <Label x:Name="SuccesLabel6bis" Grid.Row="5" Grid.Column="1" Foreground="Red" VerticalAlignment="Center" Visibility="Collapsed" />
 
 
         <TextBlock 
                    Text="Surcharge Reseau/Network Load"
-                   Grid.Row="7" 
+                   Grid.Row="6" 
                    Grid.Column="0" 
                    FontSize="14" 
                    Foreground="White" 
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    />
-        
-        <Border Grid.Column="1" Grid.Row="7" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Padding="10">
+
+        <Border Grid.Column="1" Grid.Row="6" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Padding="10">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -190,11 +184,43 @@
                         Foreground="White"
                         Click="Button_Click_3"/>
             </Grid>
-            
+
         </Border>
 
-        <Label x:Name="SuccesLabel8" Grid.Row="8" Grid.Column="1" Foreground="Green" VerticalAlignment="Center" Visibility="Collapsed"/>
-        <Label x:Name="SuccesLabel8bis" Grid.Row="8" Grid.Column="1" Foreground="Red" VerticalAlignment="Center" Visibility="Collapsed"/>
+        <TextBlock 
+                   Text="Priority file"
+                   Grid.Row="8" 
+                   Grid.Column="0" 
+                   FontSize="14" 
+                   Foreground="White" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   />
+
+        <Border Grid.Column="1" Grid.Row="8" BorderThickness="0 0 0 1" Background="#1F1C2E" CornerRadius="10" Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="75"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox x:Name="PrioritaryFilesExtension" Grid.Column="0" 
+                 VerticalAlignment="Center"
+                 Style="{StaticResource TBStyle}"
+                 />
+
+                <Button Grid.Column="1"  Content="{x:Static language:Lang.SendButton}" 
+                        BorderThickness="0 0 0 1"
+                        Background="#1F1C2E"
+                        Foreground="White"
+                        Click="Button_Click_6"/>
+            </Grid>
+
+        </Border>
+        <Label x:Name="SuccesLabel10" Grid.Row="2" Grid.Column="1" Foreground="Red" VerticalAlignment="Center" Visibility="Collapsed" />
+
+        <Label x:Name="SuccesLabel8" Grid.Row="7" Grid.Column="1" Foreground="Green" VerticalAlignment="Center" Visibility="Collapsed"/>
+        <Label x:Name="SuccesLabel8bis" Grid.Row="7" Grid.Column="1" Foreground="Red" VerticalAlignment="Center" Visibility="Collapsed"/>
 
     </Grid>
 </UserControl>

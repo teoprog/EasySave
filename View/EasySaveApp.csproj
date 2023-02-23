@@ -62,6 +62,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ServeurClient\ServeurClient.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Langs\Lang.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

@@ -738,5 +738,15 @@
     "TotalFilesSize": "4923876950",
     "Progression": "0%",
     "NbFilesLeftToDo": "18"
+  },
+  {
+    "Name": "Film Harry Potter",
+    "FileSource": "D:\\1",
+    "FileTarget": "D:\\2",
+    "State": "END",
+    "TotalFilesToCopy": "8",
+    "TotalFilesSize": "0",
+    "Progression": "100%",
+    "NbFilesLeftToDo": "0"
   }
 ]

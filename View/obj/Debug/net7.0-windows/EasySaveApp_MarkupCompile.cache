@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\emiro\EasySave\View\obj\Debug\net7.0-windows\
+C:\Users\ayman\source\repos\EasySave\View\obj\Debug\net7.0-windows\
 EasySaveApp
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\emiro\EasySave\View\App.xaml
+C:\Users\ayman\source\repos\EasySave\View\App.xaml
 9969977369
 
-341787614700
-2201352248054
+35-32362373
+2211513766297
 MainWindow.xaml;MVVM\View\AboutUsView.xaml;MVVM\View\BlackListSoftwareView.xaml;MVVM\View\HomeView.xaml;MVVM\View\SecondView.xaml;MVVM\View\SettingsView.xaml;MVVM\View\ThirdView.xaml;Theme\DataGridTheme.xaml;Theme\MenuButtonTheme.xaml;
 
-False
+True
 
