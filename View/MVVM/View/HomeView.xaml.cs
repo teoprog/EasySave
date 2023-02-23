@@ -105,16 +105,15 @@ namespace View.MVVM.View
 
         public void JobsButton_Click(object sender, RoutedEventArgs e)
         {
-            Save._stopped = true;
+            Save._stopped = false;
             Thread[] threads = new Thread[Saves.Count];
             HomeView.isStopped = false;
 
             // Nb de fichiers restants
-            while (GeneralTools.VerifyBusinessSoftwareRunning(businessList))
-            {
-                MessageBox.Show(
-                    "Un logiciel Metier est en cours d'execution, Veuillez le fermer pour finaliser la Sauvegarde");   
-            }
+            
+            if(GeneralTools.VerifyBusinessSoftwareRunning(businessList))
+                MessageBox.Show("Un logiciel Metier est en cours d'execution, Veuillez le fermer pour finaliser la Sauvegarde");
+            
             Thread prog = new Thread(() =>
             {
                 Dispatcher.Invoke(() =>
@@ -134,7 +133,7 @@ namespace View.MVVM.View
                 ISave save = Saves[i];
                 if (save is CompleteSave)
                 {
-                    threads[i] = new Thread(() =>
+                    Task.Run(() =>
                     {
                         pauseEvent.WaitOne(); // Attend que pauseEvent soit défini avant de poursuivre l'exécution du thread
                         (save as CompleteSave)?.RepositorySave();
@@ -147,7 +146,7 @@ namespace View.MVVM.View
                 }
                 else if (save is DiffSave)
                 {
-                    threads[i] = new Thread(() =>
+                    Task.Run(() =>
                     {
                         pauseEvent.WaitOne(); // Attend que pauseEvent soit défini avant de poursuivre l'exécution du thread
                         (save as DiffSave)?.RepositorySave();
@@ -164,7 +163,7 @@ namespace View.MVVM.View
  
             // clear the List and set the jobs,Completesavenumber,diffsavenumber to 0
 
-            Saves = new List<ISave>();
+            Saves.Clear();
             CompleteSaveNumber = 0;
             DiffSaveNumber = 0;
             JobsNumber = 0;

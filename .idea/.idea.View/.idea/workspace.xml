@@ -5,37 +5,18 @@
     <projectFile>View/EasySaveApp.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32a69582-e693-44a4-b5cf-c02dacddb2ac" name="Changes" comment="">
+    <list default="true" id="32a69582-e693-44a4-b5cf-c02dacddb2ac" name="Changes" comment="sleep deleted and upgrade view">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.View/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.View/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/View/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/View/v17/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/MVVM/View/HomeView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/MVVM/View/HomeView.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/MVVM/View/SecondView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/View/MVVM/View/SecondView.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/MVVM/View/SecondView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/MVVM/View/SecondView.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/MVVM/View/SettingsView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/MVVM/View/SettingsView.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/MVVM/View/ThirdView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/View/MVVM/View/ThirdView.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/MVVM/View/ThirdView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/MVVM/View/ThirdView.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/MainWindow.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/Save_logs/logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/Save_logs/logs.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/Save_logs/state.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/Save_logs/state.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/ViewModel/CompleteSave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/ViewModel/CompleteSave.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/ViewModel/DiffSave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/ViewModel/DiffSave.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/ViewModel/Save.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/ViewModel/Save.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/ViewModel/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/View/ViewModel/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/bin/Debug/net7.0-windows/EasySaveApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/net7.0-windows/EasySaveApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/bin/Debug/net7.0-windows/EasySaveApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/net7.0-windows/EasySaveApp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/bin/Debug/net7.0-windows/en/EasySaveApp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/bin/Debug/net7.0-windows/en/EasySaveApp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.g.resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/EasySaveApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.baml" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/SecondView.g.i.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.baml" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/MVVM/View/ThirdView.g.i.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/en/EasySaveApp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/en/EasySaveApp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/ref/EasySaveApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/ref/EasySaveApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/refint/EasySaveApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/View/obj/Debug/net7.0-windows/refint/EasySaveApp.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,8 +115,16 @@
       <workItem from="1677055777418" duration="722000" />
       <workItem from="1677067944459" duration="655000" />
       <workItem from="1677157447308" duration="2316000" />
-      <workItem from="1677161234526" duration="1387000" />
+      <workItem from="1677161234526" duration="3634000" />
     </task>
+    <task id="LOCAL-00001" summary="sleep deleted and upgrade view">
+      <created>1677162892808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677162892808</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +143,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sleep deleted and upgrade view" />
+    <option name="LAST_COMMIT_MESSAGE" value="sleep deleted and upgrade view" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -169,6 +162,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/View/ViewModel/Save.cs</url>
+          <line>392</line>
+          <properties documentPath="C:\Users\emiro\EasySave\View\ViewModel\Save.cs" initialLine="392" containingFunctionPresentation="method 'RepositorySave'">
+            <startOffsets>
+              <option value="16288" />
+            </startOffsets>
+            <endOffsets>
+              <option value="16349" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/View/ViewModel/Save.cs</url>
+          <line>386</line>
+          <properties documentPath="C:\Users\emiro\EasySave\View\ViewModel\Save.cs" initialLine="386" containingFunctionPresentation="method 'RepositorySave'">
+            <startOffsets>
+              <option value="15641" />
+            </startOffsets>
+            <endOffsets>
+              <option value="16240" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
