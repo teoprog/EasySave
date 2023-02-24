@@ -94,9 +94,7 @@ namespace View.MVVM.View
 
             HomeView.Saves.Add(new CompleteSave(job.appellation, job.sourcePath, job.targetPath));
             
-            
             HomeView.GlobalSize +=  GeneralTools.DirectorySize(job.sourcePath, job.targetPath);
-
         }
 
         private void BackUpNameBox_TextChanged(object sender, TextChangedEventArgs e)
