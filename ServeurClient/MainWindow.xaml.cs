@@ -40,7 +40,6 @@ namespace ServeurClient
                     {
                         ProgressBar.Value = progress;
                     });
-                    MessageBox.Show(_client.GetProgress().ToString());
                     await Task.Delay(100);
                 }
             });
