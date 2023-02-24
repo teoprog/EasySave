@@ -61,6 +61,15 @@ namespace EasySaveApp.Properties.Langs {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ajouter.
+        /// </summary>
+        public static string AddButton {
+            get {
+                return ResourceManager.GetString("AddButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Extention du Logiciel.
         /// </summary>
         public static string BlackListExtension {
@@ -84,6 +93,15 @@ namespace EasySaveApp.Properties.Langs {
         public static string BlackListTitle {
             get {
                 return ResourceManager.GetString("BlackListTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Supprimer.
+        /// </summary>
+        public static string DeleteButton {
+            get {
+                return ResourceManager.GetString("DeleteButton", resourceCulture);
             }
         }
         
@@ -201,6 +219,15 @@ namespace EasySaveApp.Properties.Langs {
         public static string MainSettingsButton {
             get {
                 return ResourceManager.GetString("MainSettingsButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Surcharge Reseau.
+        /// </summary>
+        public static string NetworkLoad {
+            get {
+                return ResourceManager.GetString("NetworkLoad", resourceCulture);
             }
         }
         

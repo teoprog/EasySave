@@ -12078,5 +12078,55 @@
     "FileTransferTime": "00:00:07.0175795",
     "Time": "23/02/2023 20:05:21",
     "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "az",
+    "FileSource": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\1\\attestation_domicile_230216_192510.pdf",
+    "FileTarget": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2\\attestation_domicile_230216_192510.pdf",
+    "DestPath": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2",
+    "FileSize": "107025",
+    "FileTransferTime": "00:00:00.0261630",
+    "Time": "24/02/2023 01:43:07",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "az",
+    "FileSource": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\1\\CCTL.xlsx",
+    "FileTarget": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2\\CCTL.xlsx",
+    "DestPath": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2",
+    "FileSize": "20976",
+    "FileTransferTime": "00:00:00.0014558",
+    "Time": "24/02/2023 01:43:07",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "az",
+    "FileSource": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\1\\Prosit 6 Synchronisation Aymane.pdf",
+    "FileTarget": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2\\Prosit 6 Synchronisation Aymane.pdf",
+    "DestPath": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2",
+    "FileSize": "2456142",
+    "FileTransferTime": "00:00:00.0036570",
+    "Time": "24/02/2023 01:43:07",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "az",
+    "FileSource": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\1\\CER Programmation Systeme\\CER Prosit 1 Burnout Aymane.pdf",
+    "FileTarget": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2\\CER Programmation Systeme\\CER Prosit 1 Burnout Aymane.pdf",
+    "DestPath": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2",
+    "FileSize": "10739455",
+    "FileTransferTime": "00:00:00.0093405",
+    "Time": "24/02/2023 01:43:07",
+    "EncryptTime": "Not encrypted"
+  },
+  {
+    "Name": "az",
+    "FileSource": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\1\\CER Programmation Systeme\\CER Prosit 2 Restructuration oAymane.pdf",
+    "FileTarget": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2\\CER Programmation Systeme\\CER Prosit 2 Restructuration oAymane.pdf",
+    "DestPath": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2",
+    "FileSize": "8400034",
+    "FileTransferTime": "00:00:00.0080434",
+    "Time": "24/02/2023 01:43:07",
+    "EncryptTime": "Not encrypted"
   }
 ]

@@ -748,5 +748,25 @@
     "TotalFilesSize": "0",
     "Progression": "100%",
     "NbFilesLeftToDo": "0"
+  },
+  {
+    "Name": "zef",
+    "FileSource": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\1",
+    "FileTarget": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "5",
+    "TotalFilesSize": "21723632",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "5"
+  },
+  {
+    "Name": "az",
+    "FileSource": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\1",
+    "FileTarget": "C:\\Users\\ayman\\OneDrive - Association Cesi Viacesi mail\\Bureau\\2",
+    "State": "END",
+    "TotalFilesToCopy": "5",
+    "TotalFilesSize": "0",
+    "Progression": "100%",
+    "NbFilesLeftToDo": "0"
   }
 ]

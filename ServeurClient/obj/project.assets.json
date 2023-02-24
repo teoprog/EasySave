@@ -8,24 +8,19 @@
     "net7.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\emiro\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ayman\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emiro\\EasySave\\ServeurClient\\ServeurClient.csproj",
+      "projectUniqueName": "C:\\Users\\ayman\\Source\\Repos\\teoprog\\EasySave\\ServeurClient\\ServeurClient.csproj",
       "projectName": "ServeurClient",
-      "projectPath": "C:\\Users\\emiro\\EasySave\\ServeurClient\\ServeurClient.csproj",
-      "packagesPath": "C:\\Users\\emiro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emiro\\EasySave\\ServeurClient\\obj\\",
+      "projectPath": "C:\\Users\\ayman\\Source\\Repos\\teoprog\\EasySave\\ServeurClient\\ServeurClient.csproj",
+      "packagesPath": "C:\\Users\\ayman\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ayman\\Source\\Repos\\teoprog\\EasySave\\ServeurClient\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\emiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ayman\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -69,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\emiro\\.dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

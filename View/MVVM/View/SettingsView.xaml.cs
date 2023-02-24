@@ -1,5 +1,7 @@
 ﻿using EasySaveApp.ViewModel;
 using System;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -54,11 +56,13 @@ namespace View.MVVM.View
                 SuccesLabel3.Visibility = Visibility.Collapsed;
                 SuccesLabel6bis.Visibility = Visibility.Collapsed;
                 SuccesLabel8bis.Visibility = Visibility.Collapsed;
+                SuccesLabel9.Visibility = Visibility.Collapsed;
+                SuccesLabel9bis.Visibility = Visibility.Collapsed;
 
                 SuccesLabel6bis.Content = "Veuillez entrer une Valeur";
                 SuccesLabel6bis.Visibility = Visibility.Visible;
 
-                
+
                 return;
             }
             else
@@ -71,13 +75,15 @@ namespace View.MVVM.View
                 SuccesLabel3.Visibility = Visibility.Collapsed;
                 SuccesLabel6bis.Visibility = Visibility.Collapsed;
                 SuccesLabel8bis.Visibility = Visibility.Collapsed;
+                SuccesLabel9.Visibility = Visibility.Collapsed;
+                SuccesLabel9bis.Visibility = Visibility.Collapsed;
 
                 SuccesLabel6.Content = "La taille maximale de sauvegarde a bien été modifiée";
                 SuccesLabel6.Visibility = Visibility.Visible;
 
                 SizeSaveTextBox.Text = "";
             }
-            
+
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
@@ -90,6 +96,8 @@ namespace View.MVVM.View
                 SuccesLabel3.Visibility = Visibility.Collapsed;
                 SuccesLabel6bis.Visibility = Visibility.Collapsed;
                 SuccesLabel8bis.Visibility = Visibility.Collapsed;
+                SuccesLabel9.Visibility = Visibility.Collapsed;
+                SuccesLabel9bis.Visibility = Visibility.Collapsed;
 
 
                 SuccesLabel8bis.Content = "Veuillez entrer une Valeur";
@@ -108,6 +116,8 @@ namespace View.MVVM.View
                 SuccesLabel3.Visibility = Visibility.Collapsed;
                 SuccesLabel6bis.Visibility = Visibility.Collapsed;
                 SuccesLabel8bis.Visibility = Visibility.Collapsed;
+                SuccesLabel9bis.Visibility = Visibility.Collapsed;
+                SuccesLabel9.Visibility = Visibility.Collapsed;
 
                 SuccesLabel8.Content = "Les Modification de surcharge Reseau on bien été pris en compte";
                 SuccesLabel8.Visibility = Visibility.Visible;
@@ -115,7 +125,7 @@ namespace View.MVVM.View
                 NetworkLoadBox.Text = "";
             }
 
-            
+
 
         }
 
@@ -129,6 +139,8 @@ namespace View.MVVM.View
             SuccesLabel3.Visibility = Visibility.Collapsed;
             SuccesLabel6bis.Visibility = Visibility.Collapsed;
             SuccesLabel8bis.Visibility = Visibility.Collapsed;
+            SuccesLabel9bis.Visibility = Visibility.Collapsed;
+            SuccesLabel9.Visibility = Visibility.Collapsed;
 
             SuccesLabel3.Content = "Les log files ont bien ete changer en type XML";
             SuccesLabel3.Visibility = Visibility.Visible;
@@ -144,6 +156,8 @@ namespace View.MVVM.View
             SuccesLabel3.Visibility = Visibility.Collapsed;
             SuccesLabel6bis.Visibility = Visibility.Collapsed;
             SuccesLabel8bis.Visibility = Visibility.Collapsed;
+            SuccesLabel9.Visibility = Visibility.Collapsed;
+            SuccesLabel9bis.Visibility = Visibility.Collapsed;
 
             SuccesLabel3.Content = "Les log files ont bien ete changer en type JSON";
             SuccesLabel3.Visibility = Visibility.Visible;
@@ -151,8 +165,150 @@ namespace View.MVVM.View
 
         }
 
+        public ObservableCollection<string> ExtensionList { get; set; } = new ObservableCollection<string>();
+        public PriorityExt Extension = new PriorityExt();
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
+            string extensionprio = PrioritaryFilesExtension.Text;
+            PriorityExt prioritytext = new PriorityExt();
+
+            if (string.IsNullOrEmpty(extensionprio))
+            {
+                SuccesLabel6.Visibility = Visibility.Collapsed;
+                SuccesLabel8.Visibility = Visibility.Collapsed;
+                SuccesLabel3.Visibility = Visibility.Collapsed;
+                SuccesLabel6bis.Visibility = Visibility.Collapsed;
+                SuccesLabel8bis.Visibility = Visibility.Collapsed;
+                SuccesLabel9.Visibility = Visibility.Collapsed;
+                SuccesLabel9bis.Visibility = Visibility.Collapsed;
+
+
+                SuccesLabel9.Content = "Veuillez entrer une Valeur";
+                SuccesLabel9.Visibility = Visibility.Visible;
+
+
+                return;
+            }
+            else if (!extensionprio.StartsWith("."))
+            {
+                extensionprio = "." + extensionprio;
+            }
+
+
+
+            if (!prioritytext.Add(extensionprio))
+            {
+                SuccesLabel6.Visibility = Visibility.Collapsed;
+                SuccesLabel8.Visibility = Visibility.Collapsed;
+                SuccesLabel3.Visibility = Visibility.Collapsed;
+                SuccesLabel6bis.Visibility = Visibility.Collapsed;
+                SuccesLabel8bis.Visibility = Visibility.Collapsed;
+                SuccesLabel9.Visibility = Visibility.Collapsed;
+                SuccesLabel9bis.Visibility = Visibility.Collapsed;
+
+                PrioritaryFilesExtension.Text = "";
+
+                SuccesLabel9.Content = "Fichier Prioritaire déja Existant";
+                SuccesLabel9.Visibility = Visibility.Visible;
+                return;
+            }
+
+            prioritytext.Add(extensionprio);
+
+            SuccesLabel6.Visibility = Visibility.Collapsed;
+            SuccesLabel8.Visibility = Visibility.Collapsed;
+            SuccesLabel3.Visibility = Visibility.Collapsed;
+            SuccesLabel6bis.Visibility = Visibility.Collapsed;
+            SuccesLabel8bis.Visibility = Visibility.Collapsed;
+            SuccesLabel9.Visibility = Visibility.Collapsed;
+            SuccesLabel9bis.Visibility = Visibility.Collapsed;
+
+            PrioritaryFilesExtension.Text = "";
+
+            SuccesLabel9bis.Content = "Le fichier prioritaire a bien été ajouté";
+            SuccesLabel9bis.Visibility = Visibility.Visible;
+
+
+
+
+            ExtensionGrid.Items.Clear();
+
+            foreach (var extension in Extension.Name)
+            {
+                var extensionList = new { ExtensionList = extension };
+                ExtensionGrid.Items.Add(extensionList);
+            }
+
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            string extensionprio = PrioritaryFilesExtension.Text;
+            PriorityExt prioritytext = new PriorityExt();
+
+            if (string.IsNullOrEmpty(extensionprio))
+            {
+                SuccesLabel6.Visibility = Visibility.Collapsed;
+                SuccesLabel8.Visibility = Visibility.Collapsed;
+                SuccesLabel3.Visibility = Visibility.Collapsed;
+                SuccesLabel6bis.Visibility = Visibility.Collapsed;
+                SuccesLabel8bis.Visibility = Visibility.Collapsed;
+                SuccesLabel9.Visibility = Visibility.Collapsed;
+                SuccesLabel9bis.Visibility = Visibility.Collapsed;
+
+
+                SuccesLabel9.Content = "Veuillez entrer une Valeur";
+                SuccesLabel9.Visibility = Visibility.Visible;
+
+
+                return;
+            }
+            else if (!extensionprio.StartsWith("."))
+            {
+                extensionprio = "." + extensionprio;
+            }
+
+
+
+            if (!prioritytext.Delete(extensionprio))
+            {
+                SuccesLabel6.Visibility = Visibility.Collapsed;
+                SuccesLabel8.Visibility = Visibility.Collapsed;
+                SuccesLabel3.Visibility = Visibility.Collapsed;
+                SuccesLabel6bis.Visibility = Visibility.Collapsed;
+                SuccesLabel8bis.Visibility = Visibility.Collapsed;
+                SuccesLabel9.Visibility = Visibility.Collapsed;
+                SuccesLabel9bis.Visibility = Visibility.Collapsed;
+
+                PrioritaryFilesExtension.Text = "";
+
+                SuccesLabel9.Content = "Fichier Prioritaire Inexistant";
+                SuccesLabel9.Visibility = Visibility.Visible;
+                return;
+            }
+
+            prioritytext.Delete(PrioritaryFilesExtension.Text);
+
+            SuccesLabel6.Visibility = Visibility.Collapsed;
+            SuccesLabel8.Visibility = Visibility.Collapsed;
+            SuccesLabel3.Visibility = Visibility.Collapsed;
+            SuccesLabel6bis.Visibility = Visibility.Collapsed;
+            SuccesLabel8bis.Visibility = Visibility.Collapsed;
+            SuccesLabel9.Visibility = Visibility.Collapsed;
+            SuccesLabel9bis.Visibility = Visibility.Collapsed;
+
+            PrioritaryFilesExtension.Text = "";
+
+            SuccesLabel9bis.Content = "Le fichier prioritaire a bien été supprimé";
+            SuccesLabel9bis.Visibility = Visibility.Visible;
+
+            ExtensionGrid.Items.Clear();
+
+            foreach (var Extension in Extension.Name)
+            {
+                var ExtensionList = new { ExtensionList = Extension };
+                ExtensionGrid.Items.Add(ExtensionList);
+            }
 
         }
     }

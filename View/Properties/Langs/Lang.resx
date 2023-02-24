@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddButton" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
   <data name="BlackListExtension" xml:space="preserve">
     <value>Extention du Logiciel</value>
   </data>
@@ -125,6 +128,9 @@
   </data>
   <data name="BlackListTitle" xml:space="preserve">
     <value>Logiciels Metier</value>
+  </data>
+  <data name="DeleteButton" xml:space="preserve">
+    <value>Supprimer</value>
   </data>
   <data name="HomeBreakButton" xml:space="preserve">
     <value>Stop</value>
@@ -164,6 +170,9 @@
   </data>
   <data name="MainSettingsButton" xml:space="preserve">
     <value>Paramètres</value>
+  </data>
+  <data name="NetworkLoad" xml:space="preserve">
+    <value>Surcharge Reseau</value>
   </data>
   <data name="SendButton" xml:space="preserve">
     <value>Envoyer</value>
