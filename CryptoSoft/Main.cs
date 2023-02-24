@@ -37,7 +37,8 @@ namespace EasySave
                     return -1;
                 }
 
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 return -1;
             }

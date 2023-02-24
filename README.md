@@ -2,6 +2,16 @@
 # CryptoSoft
 Our application to help you to encrypt and decrypt different type files.
 
+#Important
+For run you need the following NuGet added to EasySave :
+- Microsoft.Extensions.Configuration
+- Microsoft.Extensions.Configuration.Binder
+- Microsoft.Extensions.Configuration.Json
+- Newtonsoft.Json
+- System.Windows.Extensions
+- System.Threading
+### Care some package aren't avaible on Visual, you need to install them on Rider
+
 # EasySave - Save Software for 2F Roaming
 
 ## The link to the executable is the following :
