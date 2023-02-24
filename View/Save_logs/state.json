@@ -4,10 +4,10 @@
     "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
     "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
     "State": "ACTIVE",
-    "TotalFilesToCopy": "18",
-    "TotalFilesSize": "0",
-    "Progression": "100%",
-    "NbFilesLeftToDo": "0"
+    "TotalFilesToCopy": "26",
+    "TotalFilesSize": "8616783375",
+    "Progression": "30,77%",
+    "NbFilesLeftToDo": "18"
   },
   {
     "Name": "1",
@@ -768,5 +768,55 @@
     "TotalFilesSize": "0",
     "Progression": "100%",
     "NbFilesLeftToDo": "0"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "26",
+    "TotalFilesSize": "9847752870",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "26"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "26",
+    "TotalFilesSize": "9847752870",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "26"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "26",
+    "TotalFilesSize": "9847752870",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "26"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\3",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "26",
+    "TotalFilesSize": "9847752870",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "26"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\1",
+    "FileTarget": "C:\\Users\\emiro\\OneDrive\\Documents\\Bureau\\2",
+    "State": "ACTIVE",
+    "TotalFilesToCopy": "26",
+    "TotalFilesSize": "9847752870",
+    "Progression": "0%",
+    "NbFilesLeftToDo": "26"
   }
 ]

@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\ayman\source\repos\teoprog\EasySave\View\obj\Debug\net7.0-windows\
+C:\Users\emiro\merge\EasySave\View\obj\Debug\net7.0-windows\
 EasySaveApp
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\ayman\source\repos\teoprog\EasySave\View\App.xaml
+C:\Users\emiro\merge\EasySave\View\App.xaml
 9969977369
 
 35-32362373
-221-869302953
+2211616767892
 MainWindow.xaml;MVVM\View\AboutUsView.xaml;MVVM\View\BlackListSoftwareView.xaml;MVVM\View\HomeView.xaml;MVVM\View\SecondView.xaml;MVVM\View\SettingsView.xaml;MVVM\View\ThirdView.xaml;Theme\DataGridTheme.xaml;Theme\MenuButtonTheme.xaml;
 
 False

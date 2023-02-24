@@ -49,6 +49,7 @@
                     <Button
                         Background="#1F1C2E"
                         BorderThickness="0,0,0,1"
+                        Click="PlayButtonClick"
                         Content="Play"
                         FontSize="30"
                         Foreground="White"
@@ -61,6 +62,7 @@
                     <Button
                         Background="#1F1C2E"
                         BorderThickness="0,0,0,1"
+                        Click="PauseButtonClick"
                         Content="Stop"
                         FontSize="30"
                         Foreground="White"
@@ -73,6 +75,7 @@
                     <Button
                         Background="#1F1C2E"
                         BorderThickness="0,0,0,1"
+                        Click="StopButtonClick"
                         Content="Break"
                         FontSize="30"
                         Foreground="White"

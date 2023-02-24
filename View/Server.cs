@@ -51,6 +51,7 @@ namespace EasySaveApp
         
         public void ListenForClients()
         {
+            string data;
             double lastprog = 0;
             // Attendre les connexions de clients
             while (true)
@@ -62,17 +63,62 @@ namespace EasySaveApp
                 // Envoyer une réponse au client
                 Task.Run(async () =>
                 {
-                    while (Save.globalProgression != 100) {
-                        if(lastprog != Save.globalProgression)
+                    while (Save.globalProgression != 100)
+                    {
+
+                        if (lastprog != Save.globalProgression)
+                        {
                             SendProgress(Save.globalProgression);
+                        }
+                        
                         lastprog = Save.globalProgression;
+                        await Task.Delay(100); // Attendre 100 ms pour éviter une boucle infinie
                     }
                 });
+
+                Task.Run(async () =>
+                {
+                    while (true)
+                    {
+                        string data = await ReceiveDataAsync();
+                        if (data != null)
+                        {
+                            if (data == "stop")
+                            {
+                                Save._stopped = true;
+                            }
+                            else if (data == "pause")
+                            {
+                                Save._paused = true;
+                            }
+                            else if (data == "play")
+                            {
+                                Save._paused = false;
+                            }
+                        }
+                    }
+                });
+
+
+           
+            }
+        }
+        public async Task<string> ReceiveDataAsync()
+        {
+            byte[] buffer = new byte[1024];
+            int bytesRead = await _client.GetStream().ReadAsync(buffer, 0, buffer.Length);
+            if (bytesRead == 0)
+            {
+                // Le client a fermé la connexion
+                return null;
+            }
+            else
+            {
+                string data = Encoding.ASCII.GetString(buffer, 0, bytesRead);
+                return data;
             }
         }
 
-
-        
         public void SendProgress(double progress)
         {
             var stream = _client.GetStream();

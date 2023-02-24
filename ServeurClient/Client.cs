@@ -10,22 +10,20 @@ namespace ServeurClient
 {
     public class Client
     {
-        public TcpClient client;
+        private TcpClient client;
 
-        public NetworkStream _stream;
+        private NetworkStream stream;
         
         public Client(string serverIp, int port)
         {
             client = new TcpClient(serverIp, port);
-            _stream = client.GetStream();
+            stream = client.GetStream();
         }
 
-        public string ReceiveData()
+        public void SendData(string data)
         {
-            byte[] buffer = new byte[1024];
-            int bytesRead = _stream.Read(buffer, 0, buffer.Length);
-            string data = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-            return data;
+            byte[] buffer = Encoding.ASCII.GetBytes(data);
+            stream.Write(buffer, 0, buffer.Length);
         }
 
         public void Close()
@@ -36,7 +34,7 @@ namespace ServeurClient
         public double GetProgress()
         {
             byte[] buffer = new byte[8];
-            _stream.Read(buffer, 0, 8);
+            stream.Read(buffer, 0, 8);
             return BitConverter.ToDouble(buffer, 0);
         }
 

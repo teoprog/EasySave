@@ -18,8 +18,8 @@ namespace View
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static Server _serveur;
-        private Client _client;
+        private static Server _serveur;
+        public Client _client;
         public MainWindow()
         {
             InitializeComponent();

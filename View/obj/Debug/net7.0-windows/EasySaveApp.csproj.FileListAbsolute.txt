@@ -338,3 +338,8 @@ C:\Users\ayman\Source\Repos\teoprog\EasySave\View\obj\Debug\net7.0-windows\refin
 C:\Users\ayman\Source\Repos\teoprog\EasySave\View\obj\Debug\net7.0-windows\EasySaveApp.pdb
 C:\Users\ayman\Source\Repos\teoprog\EasySave\View\obj\Debug\net7.0-windows\EasySaveApp.genruntimeconfig.cache
 C:\Users\ayman\Source\Repos\teoprog\EasySave\View\obj\Debug\net7.0-windows\ref\EasySaveApp.dll
+C:\Users\emiro\merge\EasySave\View\bin\Debug\net7.0-windows\ServeurClient.deps.json
+C:\Users\emiro\merge\EasySave\View\bin\Debug\net7.0-windows\ServeurClient.runtimeconfig.json
+C:\Users\emiro\merge\EasySave\View\bin\Debug\net7.0-windows\ServeurClient.exe
+C:\Users\emiro\merge\EasySave\View\bin\Debug\net7.0-windows\ServeurClient.dll
+C:\Users\emiro\merge\EasySave\View\bin\Debug\net7.0-windows\ServeurClient.pdb
